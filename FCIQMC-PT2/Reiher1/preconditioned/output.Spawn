@@ -1,6 +1,6 @@
- Number of processors:           40
- Processor            1 /          40  as head node.
- Sum:          820
+ Number of processors:          120
+ Processor            1 /         120  as head node.
+ Sum:         7260
  Memory Manager initialised with  99999.0 MB
 
  ================================================================
@@ -11,8 +11,8 @@
      55eb1e9bd3a3f08878e33ddc64239764dcc9e4b6
  Working directory: 
      /algpfs/dattani/Li2/54/prept2
- Running on: alnode164
- Started running on 20/10/2018 at 06:08:16
+ Running on: alnode166
+ Started running on 21/10/2018 at 21:22:40
  ================================================================
 
  Processing arguments
@@ -372,25 +372,5 @@ Initial Diagonal Shift:         0.1000000000
 Low memory requested for walkers, so increasing memory to 20Mb to avoid memory errors
 Memory allocated for a maximum particle number per node of:         436906
  Determinant related persistent storage requires:      23.333298 Mb / processor
-Spawning vectors allowing for a total of  -2147483648 particles to be spawned in any one iteration per core.
-Storing walkers in hash-table. Algorithm is now formally linear scaling with walker number
-Length of hash-table:        50000000
-Length of hash-table as a fraction of targetwalkers:          10000.00000
-Reference processor is:       38
-Initial reference is: (    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54)
-Initial number of particles set to     200000 and shift will be held at     0.100 until particle number gets to          200000
- Initial memory (without excitgens + temp arrays) consists of :      16.666641 Mb/Processor
- Only one array of memory to store main particle list allocated...
- Initial memory allocation sucessful...
- =============================================
-
-============ Semi-stochastic initialisation ============
-Generating the deterministic space...
-
-WARNING.  Error in generate_using_mp1_criterion
-Note that there are less connections to the Hartree-Fock than the requested size of the space. The space will therefore be smaller than requested, containing all connections.
-
-
-WARNING.  Error in generate_using_mp1_criterion
-Note that there are less connections to the Hartree-Fock than the requested size of the space. The space will therefore be smaller than requested, containing all connections.
-
+Spawning vectors allowing for a total of   1667000000 particles to be spawned in any one iteration per core.
+APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
