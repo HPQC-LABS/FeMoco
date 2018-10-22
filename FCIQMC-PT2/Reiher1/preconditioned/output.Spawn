@@ -12,7 +12,7 @@
  Working directory: 
      /algpfs/dattani/Li2/54/prept2
  Running on: alnode164
- Started running on 16/10/2018 at 07:08:04
+ Started running on 20/10/2018 at 06:08:16
  ================================================================
 
  Processing arguments
@@ -58,7 +58,7 @@ stepsshift 1
 maxwalkerbloom 3
 time 690
 semi-stochastic
-mp1-core 100000
+mp1-core 50000
 tau 0.01
 averagemcexcits 200.0
 no-coherent-init-rule
@@ -71,7 +71,9 @@ freeze 0 0
 endint
 
 logging
+
 binarypops
+popsfiletimer 2
 paired-replicas
 endlog
 end
@@ -384,6 +386,10 @@ Initial number of particles set to     200000 and shift will be held at     0.10
 
 ============ Semi-stochastic initialisation ============
 Generating the deterministic space...
+
+WARNING.  Error in generate_using_mp1_criterion
+Note that there are less connections to the Hartree-Fock than the requested size of the space. The space will therefore be smaller than requested, containing all connections.
+
 
 WARNING.  Error in generate_using_mp1_criterion
 Note that there are less connections to the Hartree-Fock than the requested size of the space. The space will therefore be smaller than requested, containing all connections.
