@@ -1,1 +1,2 @@
-/lhome/loadl/execute/allogin1.fkf.mpg.de.81910.0/0submit: /usr/share/modules/init/bash[11]: export: -f: unknown option
+/lhome/loadl/execute/allogin1.fkf.mpg.de.81911.0/0submit: /usr/share/modules/init/bash[11]: export: -f: unknown option
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 158
