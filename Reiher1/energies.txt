@@ -13,7 +13,9 @@ eps1= 2.00e-05 ndets=  5,145,281 energy_var= -13482.14965117 energy_tot -13482.1
 eps1= 1.50e-05 ndets=  8,338,162 energy_var= -13482.15205980 energy_tot -13482.1697906994 +- 0.0000091899 Ha
 eps1= 1.00e-05 ndets= 16,795,226 energy_var= -13482.15528337 energy_tot -13482.1711243260 +- 0.0000058208 Ha
 eps1= 9.00e-06 ndets= 20,130,515 energy_var= -13482.15608193 energy_tot -13482.1714668015 +- 0.0000436863 Ha
-Extrapolated SHCI-PT2                                                   -13482.1808
+eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1733795151 +- 0.0000248113 Ha
+(0.95 Conf.) Extrapolated Energy, using quadratic fit                   -13482.1812095054 +- 0.0012184577
+             Extrapolated Energy, using weighted quadratic fit          -13482.1825
 
 CC:
 CCSD                                                                    -13482.154243 
