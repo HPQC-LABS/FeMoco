@@ -37,8 +37,12 @@ D=2000, 3.732886E-05	                                                 -13482.172
 D=4000, 2.7185279E-05	                                                 -13482.1759303407
 Extrapolated DMRG                                                       -13482.18563627
 
+FCIQMC-RDM:
+Nw = 204.8 million                                                      -13482.1632(but need update from Nick)
+Nw = 409.6 million                                                      -13482.1686(8)
+
 FCIQMC-PT2:
 Nw = 204.8 million                                                      -13482.1742(14)
-Nw = 409.6 million                                                      -13482.1746(20)
+Nw = 409.6 million                                                      -13482.1751(11)
 
 
