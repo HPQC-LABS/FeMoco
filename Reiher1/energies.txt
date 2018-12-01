@@ -1,20 +1,20 @@
-RHF:                                                                     -13481.6573881860
-UHF:                                                                     -13481.6685094
+RHF:                                                                    -13481.6573881860
+UHF:                                                                    -13481.6685094
 
 SHCI-PT2:
-eps1= 1.00e-03 ndets=     11,131 energy_var= -13482.07768062 energy_tot -13482.1400649080 +- 0.0000098731 Ha 
-eps1= 5.00e-04 ndets=     36,131 energy_var= -13482.09682167 energy_tot -13482.1478389318 +- 0.0000095459 Ha
-eps1= 3.00e-04 ndets=     82,993 energy_var= -13482.10967562 energy_tot -13482.1533760102 +- 0.0000095186 Ha
-eps1= 2.00e-04 ndets=    156,233 energy_var= -13482.11880811 energy_tot -13482.1571802584 +- 0.0000075604 Ha
-eps1= 1.00e-04 ndets=    439,836 energy_var= -13482.13144147 energy_tot -13482.1621665784 +- 0.0000043737 Ha
-eps1= 5.00e-05 ndets=  1,218,964 energy_var= -13482.14068472 energy_tot -13482.1655502773 +- 0.0000047704 Ha
-eps1= 3.00e-05 ndets=  2,668,217 energy_var= -13482.14598296 energy_tot -13482.1674418193 +- 0.0000093787 Ha
-eps1= 2.00e-05 ndets=  5,145,281 energy_var= -13482.14965117 energy_tot -13482.1688397790 +- 0.0000097852 Ha
-eps1= 1.50e-05 ndets=  8,338,162 energy_var= -13482.15205980 energy_tot -13482.1697906994 +- 0.0000091899 Ha
-eps1= 1.00e-05 ndets= 16,795,226 energy_var= -13482.15528337 energy_tot -13482.1711243260 +- 0.0000058208 Ha
-eps1= 9.00e-06 ndets= 20,130,515 energy_var= -13482.15608193 energy_tot -13482.1714668015 +- 0.0000436863 Ha
-eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1733795151 +- 0.0000248113 Ha
-(0.95 Conf.) Extrapolated Energy, using quadratic fit                   -13482.1812095054 +- 0.0012184577
+eps1= 1.00e-03 ndets=     11,131 energy_var= -13482.07768062 energy_tot -13482.1400649080 +/- 0.0000098731 Ha 
+eps1= 5.00e-04 ndets=     36,131 energy_var= -13482.09682167 energy_tot -13482.1478389318 +/- 0.0000095459 Ha
+eps1= 3.00e-04 ndets=     82,993 energy_var= -13482.10967562 energy_tot -13482.1533760102 +/- 0.0000095186 Ha
+eps1= 2.00e-04 ndets=    156,233 energy_var= -13482.11880811 energy_tot -13482.1571802584 +/- 0.0000075604 Ha
+eps1= 1.00e-04 ndets=    439,836 energy_var= -13482.13144147 energy_tot -13482.1621665784 +/- 0.0000043737 Ha
+eps1= 5.00e-05 ndets=  1,218,964 energy_var= -13482.14068472 energy_tot -13482.1655502773 +/- 0.0000047704 Ha
+eps1= 3.00e-05 ndets=  2,668,217 energy_var= -13482.14598296 energy_tot -13482.1674418193 +/- 0.0000093787 Ha
+eps1= 2.00e-05 ndets=  5,145,281 energy_var= -13482.14965117 energy_tot -13482.1688397790 +/- 0.0000097852 Ha
+eps1= 1.50e-05 ndets=  8,338,162 energy_var= -13482.15205980 energy_tot -13482.1697906994 +/- 0.0000091899 Ha
+eps1= 1.00e-05 ndets= 16,795,226 energy_var= -13482.15528337 energy_tot -13482.1711243260 +/- 0.0000058208 Ha
+eps1= 9.00e-06 ndets= 20,130,515 energy_var= -13482.15608193 energy_tot -13482.1714668015 +/- 0.0000436863 Ha
+eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1733795151 +/- 0.0000248113 Ha
+(0.95 Conf.) Extrapolated Energy, using quadratic fit                   -13482.1812095054 +/- 0.0012184577
              Extrapolated Energy, using weighted quadratic fit          -13482.1824665581
 
 CC:
@@ -31,19 +31,22 @@ TCCSD CAS2(24,24) 10^-6                                                 -13482.1
 TCCSD CAS3(38,38) 10^-5                                                 -13482.173047
 
 DMRG:
-D=500, 7.6985283E-05	                                                 -13482.1607892402
-D=1000, 5.9557921E-05	                                                 -13482.1674539779
-D=1500, 4.9756649E-05	                                                 -13482.1705549431
-D=2000, 3.732886E-05	                                                 -13482.1723087879
-D=4000, 2.7185279E-05	                                                 -13482.1759303407
-Extrapolated DMRG                                                       -13482.18563627
+D=500,  discarded weight= 7.6985283E-05	(backward from 2000)            -13482.160789240
+D=1000, discarded weight= 5.9557921E-05	(backward from 2000)            -13482.167453977
+D=1500, discarded weight= 4.9756649E-05	(backward from 2000)            -13482.170554943
+D=2000, discarded weight= 3.8791056E-05	(backward from 2000)            -13482.172393711
+D=2000, discarded weight= 3.7328860E-05	(forward  from scratch)         -13482.172308787
+D=3000,	discarded weight= 3.7066252E-05	(backward from 4000)            -13482.174671210
+D=3500,	discarded weight= 3.3767877E-05	(backward from 4000)            -13482.175411992
+D=4000,	discarded weight= 2.8062357E-05	(backward from 4000)            -13482.175970469
+D=4000, discarded weight= 2.7185279E-05	(forward  from 2000)            -13482.175930340
+Extrapolated DMRG                                                       -13482.17994     +/- 0.0007939062
 
 FCIQMC-RDM:
-Nw = 204.8 million                                                      -13482.1632(but need update from Nick)
+Nw = 204.8 million                                                      -13482.1632 (but need update from Nick)
 Nw = 409.6 million                                                      -13482.1686(8)
 
 FCIQMC-PT2:
 Nw = 204.8 million                                                      -13482.1742(14)
 Nw = 409.6 million                                                      -13482.1751(11)
-
 
