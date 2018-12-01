@@ -31,7 +31,7 @@ TCCSD CAS2(24,24) 10^-6                                                 -13482.1
 TCCSD CAS3(38,38) 10^-5                                                 -13482.173047
 
 DMRG:
-D=500,  discarded weight= 7.6985283E-05	(backward from 2000)            -13482.160789240
+D=500,  discarded weight= 7.6985283E-05	(backward from 2000)     -13482.160789240
 D=1000, discarded weight= 5.9557921E-05	(backward from 2000)            -13482.167453977
 D=1500, discarded weight= 4.9756649E-05	(backward from 2000)            -13482.170554943
 D=2000, discarded weight= 3.8791056E-05	(backward from 2000)            -13482.172393711
