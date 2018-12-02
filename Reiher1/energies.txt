@@ -31,15 +31,15 @@ TCCSD CAS2(24,24) 10^-6                                                 -13482.1
 TCCSD CAS3(38,38) 10^-5                                                 -13482.173047
 
 DMRG:
-D=500,  discarded weight= 7.6985283E-05	(backward from 2000)            -13482.160789240
-D=1000, discarded weight= 5.9557921E-05	(backward from 2000)            -13482.167453977
-D=1500, discarded weight= 4.9756649E-05	(backward from 2000)            -13482.170554943
-D=2000, discarded weight= 3.8791056E-05	(backward from 2000)            -13482.172393711
-D=2000, discarded weight= 3.7328860E-05	(forward  from scratch)         -13482.172308787
-D=3000,	discarded weight= 3.7066252E-05	(backward from 4000)            -13482.174671210
-D=3500,	discarded weight= 3.3767877E-05	(backward from 4000)            -13482.175411992
-D=4000,	discarded weight= 2.8062357E-05	(backward from 4000)            -13482.175970469
-D=4000, discarded weight= 2.7185279E-05	(forward  from 2000)            -13482.175930340
+D=500,  discarded weight= 7.6985283E-05	(backward from 2000)     -13482.160789240
+D=1000, discarded weight= 5.9557921E-05	(backward from 2000)     -13482.167453977
+D=1500, discarded weight= 4.9756649E-05	(backward from 2000)     -13482.170554943
+D=2000, discarded weight= 3.8791056E-05	(backward from 2000)     -13482.172393711
+D=2000, discarded weight= 3.7328860E-05	(forward  from scratch)  -13482.172308787
+D=3000, discarded weight= 3.7066252E-05	(backward from 4000)     -13482.174671210
+D=3500, discarded weight= 3.3767877E-05	(backward from 4000)     -13482.175411992
+D=4000, discarded weight= 2.8062357E-05	(backward from 4000)     -13482.175970469
+D=4000, discarded weight= 2.7185279E-05	(forward  from 2000)     -13482.175930340
 Extrapolated DMRG                                                       -13482.17994     +/- 0.0007939062
 
 FCIQMC-RDM:
