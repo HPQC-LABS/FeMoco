@@ -46,9 +46,8 @@ Extrapolated DMRG                                                       -13482.1
 
 FCIQMC-RDM:
 Nw = 204.8 million                                                      -13482.1632 (but need update from Nick)
-Nw = 409.6 million                                                      -13482.16860(8)
+Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
 Nw = 204.8 million                                                      -13482.1742(14)
-Nw = 409.6 million                                                      -13482.1765(9)
-
+Nw = 409.6 million                                                      -13482.1764(7)
