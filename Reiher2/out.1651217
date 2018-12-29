@@ -1,0 +1,2173 @@
+ **********************************************************************
+                          MRCC program system
+ **********************************************************************
+ 
+                              Written by
+    Mihaly Kallay, Zoltan Rolik, Jozsef Csontos, Istvan Ladjanszki,
+       Lorant Szegedy, Bence Ladoczki, Gyula Samu, Klara Petrov,
+        Mate Farkas, Peter Nagy, David Mester, and Bence Hegely
+ 
+        Department of Physical Chemistry and Materials Science
+            Budapest University of Technology and Economics
+                  Budapest P.O.Box 91, H-1521 Hungary
+ 
+                              www.mrcc.hu
+
+ ************************ 2018-12-19 13:46:59 *************************
+ Executing minp...
+
+ Reading input from MINP...
+ 
+ Input file:
+ 
+# TITLE
+#basis=VDZ-EMSL
+uncontract=off
+iface=cfour
+itol=18
+scftol=14
+cctol=7
+calc=CC(3)
+mem=124GB
+core=corr
+ccmaxit=999
+scfmaxit=9999
+scftype=RHF
+
+scfiguess=ao
+#rohftype=standard
+rohftype=semicanonical
+mult=4
+charge=0
+#rest=2
+
+#symm=1
+#occ=34/31
+#refdet=serialno
+#31
+#3
+
+#unit=angstrom
+#geom=xyz
+#5
+#
+#C   0.5692  0.4588  0.4104
+#Br -1.1974 -0.1841 -0.0279
+#Cl  1.8199 -0.6755 -0.0667
+#F   0.7719  1.6198 -0.2026
+#H   0.6093  0.5962  1.4724
+#
+#
+
+tprint=0.01
+verbosity=4
+nstate=1
+
+ 
+ 
+ Checking keyword combinations...
+ 
+ Keywords:
+ 
+ active=none
+ agrid=ld0006-ld0590
+ basis=
+ basopt=off
+ bpcompo=0.985
+ bpcompv=0.98
+ bpdfo=0.985
+ bpocc=0.985
+ bppdo=0.985
+ bppdv=0.98
+ bpedo=0.985
+ bpedv=0.98
+ calc=cc(3)
+ ccmaxit=999
+ ccprog=mrcc
+ cctol=7
+ charge=0
+ cialg=disk
+ ciguess=off
+ cmpgrp=auto
+ core=corr
+ corembed=off
+ dboc=off
+ dendec=cholesky
+ dens=0
+ dfalg=invsqrt
+ dfbasis_cor=none
+ dfbasis_scf=none
+ dfintran=ovirt
+ dft=off
+ diag=david
+ domrad=10.d0
+ drpaalg=fit
+ ecp=auto
+ edisp=off
+ embed=off
+ epert=none
+ eps=0.975
+ excrad=0.d0
+ excrad_fin=0.000000000D+00
+ freq=off
+ gauss=spher
+ geom=zmat
+ gopt=off
+ ghost=none
+ gtol=7
+ grtol=10
+ hamilton=dc
+ iface=cfour
+ intalg=auto
+ itol=18
+ lcorthr=loose
+ lccrest=off
+ lmp2dens=on
+ lnoepso=3e-5
+ lnoepsv=1e-6
+ localcc=off
+ locintrf=disk
+ maxact=off
+ maxex=0
+ bfbasis=none
+ mem=124gb
+ molden=on
+ mulmet=0
+ mult=4
+ nacto=0
+ nactv=0
+ naf_cor=off
+ naf_scf=off
+ nafalg=albe
+ naftyp=
+ nchol=auto
+ ndeps=1e-3
+ nstate=1
+ nsing=0
+ ntrip=0
+ occ=
+ optalg=
+ optmaxit=50
+ optetol=1e-6
+ optgtol=1e-4
+ optstol=1e-3
+ orblocc=off
+ orbloco=off
+ orblocv=off
+ osveps=1e-3
+ ovirt=off
+ ovosnorb=80.0
+ ptfreq=0.0
+ popul=off
+ pressure=100000
+ qmmm=off
+ refdet=none
+ rest=0
+ rgrid=log3
+ rohftype=semicanonical
+ scspe=1.d0
+ scsps=1.2d0
+ scspt=0.33333333333333
+ scfalg=auto
+ scfdamp=off
+ scfdiis=on
+ scfdiis_end=9999
+ scfdiis_start=1
+ scfdiis_step=1
+ scfdtol=18
+ scfext=10
+ scfiguess=ao
+ scflshift=off
+ scfmaxit=9999
+ scftype=rhf
+ scftol=14
+ spairtol=1e-4
+ symm=
+ talg=occ
+ temp=298.15
+ test=off
+ tprint=0.01
+ uncontract=off
+ unit=angs
+ verbosity=4
+ wpairtol=0.100000000E-05
+
+ ************************ 2018-12-19 13:46:59 *************************
+ Executing goldstone...
+
+ Generation of CC equations in terms of H and T...
+ Generation of antisymmetrized Goldstone diagrams...
+ Number of diagrams in T^1 equations:    15
+ Number of diagrams in T^2 equations:    37
+ Number of diagrams in T^3 equations:    47
+ Translation of diagrams to factorized equations...
+ Optimizing intermediate calculation...
+ Number of floating-point operations per iteration step:   1.6989E+13
+ Probable CPU time per iteration step (hours):    169.89
+ Required memory (Mbytes):    6178.5
+ Number of intermediates:                                  71
+ Number of intermediates to be stored:                     28
+ Length of intermediate file (Mbytes):     329.4
+
+ ************************ 2018-12-19 13:46:59 *************************
+ Executing xmrcc...
+
+ **********************************************************************
+ CC(                     3 ) calculation 
+ 
+ 
+ Allocation of6178.5 Mbytes of memory...
+ Number of spinorbitals:                   114
+ Number of alpha electrons:                       34
+ Number of beta electrons:                        31
+ Spin multiplicity:                     2
+ z-component of spin:  1.5
+ Spatial symmetry:                      1
+ Convergence criterion:  1.0E-07
+ Construction of occupation graphs...
+ Number of                     0 -fold excitations:                      1
+ Number of                     1 -fold excitations:                   1588
+ Number of                     2 -fold excitations:                 923350
+ Number of                     3 -fold excitations:              254862412
+ Total number of configurations:              255787351
+ Calculation of coupling coefficients...
+ Length of intermediate file (Mbytes):     248.8
+ 
+ ======================================================================
+ 
+ Memory requirements /Mbyte/: 
+               Minimal        Optimal
+ Real*8:      18943.0752     18943.0752
+ Integer:         2.4493
+ Total:       18945.5245     18945.5245
+ 
+
+ ************************ 2018-12-19 13:47:00 *************************
+ Executing mrcc...
+
+ **********************************************************************
+ CCSDT calculation                                                      
+ 
+ 
+ OpenMP parallel version is running.
+ Number of CPUs:  20
+ Allocation of18943.1 Mbytes of memory...
+ Number of spinorbitals: 114
+ Number of alpha electrons: 34
+ Number of beta  electrons: 31
+ Spin multiplicity: 2
+ z-component of spin:  1.5
+ Spatial symmetry: 1
+ Convergence criterion:  1.0E-07
+ Construction of occupation graphs...
+ Number of 0-fold excitations: 1
+ Number of 1-fold excitations: 1588
+ Number of 2-fold excitations: 923350
+ Number of 3-fold excitations: 254862412
+ Total number of determinants: 255787351
+ Calculation of coupling coefficients...
+ Initial cluster amplitudes are generated.
+ Length of intermediate file (Mbytes):     248.8
+ Reading integral list from unit 55...
+ Sorting integrals...
+ Energy of reference determinant [au]:  -13482.602899444948
+ Calculation of MP denominators...
+ 
+ Starting CC iteration...
+ ======================================================================
+ Norm of residual vector:     0.50809967
+ CPU time [min]:   100.902                   Wall time [min]:     9.717
+ 
+ Iteration  1  CC energy:-13483.43320966  Energy decrease:   0.83031021
+ ======================================================================
+ Norm of residual vector:    13.34996828
+ CPU time [min]:   203.372                   Wall time [min]:    19.433
+ 
+ Iteration  2  CC energy:-13483.42705136  Energy decrease:   0.00615829
+ ======================================================================
+ Norm of residual vector:    13.43484561
+ CPU time [min]:   310.114                   Wall time [min]:    29.692
+ 
+ Iteration  3  CC energy:-13483.35747198  Energy decrease:   0.06957938
+ ======================================================================
+ Norm of residual vector:    15.58058236
+ CPU time [min]:   416.821                   Wall time [min]:    40.142
+ 
+ Iteration  4  CC energy:-13483.35588466  Energy decrease:   0.00158731
+ ======================================================================
+ Norm of residual vector:    14.18250323
+ CPU time [min]:   523.162                   Wall time [min]:    50.479
+ 
+ Iteration  5  CC energy:-13483.29644659  Energy decrease:   0.05943807
+ ======================================================================
+ Norm of residual vector:    14.34067418
+ CPU time [min]:   630.689                   Wall time [min]:    61.134
+ 
+ Iteration  6  CC energy:-13483.22204617  Energy decrease:   0.07440042
+ ======================================================================
+ Norm of residual vector:    11.50777642
+ CPU time [min]:   738.946                   Wall time [min]:    72.214
+ 
+ Iteration  7  CC energy:-13483.21556177  Energy decrease:   0.00648441
+ ======================================================================
+ Norm of residual vector:    11.26890023
+ CPU time [min]:   848.642                   Wall time [min]:    83.515
+ 
+ Iteration  8  CC energy:-13483.20040398  Energy decrease:   0.01515779
+ ======================================================================
+ Norm of residual vector:    11.02899169
+ CPU time [min]:   958.768                   Wall time [min]:    95.118
+ 
+ Iteration  9  CC energy:-13483.20021447  Energy decrease:   0.00018951
+ ======================================================================
+ Norm of residual vector:    11.09338768
+ CPU time [min]:  1069.753                   Wall time [min]:   106.946
+ 
+ Iteration 10  CC energy:-13483.13985611  Energy decrease:   0.06035837
+ ======================================================================
+ Norm of residual vector:     8.40207893
+ CPU time [min]:  1180.813                   Wall time [min]:   119.036
+ 
+ Iteration 11  CC energy:-13483.12792247  Energy decrease:   0.01193364
+ ======================================================================
+ Norm of residual vector:     7.81277160
+ CPU time [min]:  1294.120                   Wall time [min]:   131.441
+ 
+ Iteration 12  CC energy:-13483.11461472  Energy decrease:   0.01330775
+ ======================================================================
+ Norm of residual vector:     7.44942454
+ CPU time [min]:  1407.995                   Wall time [min]:   144.124
+ 
+ Iteration 13  CC energy:-13483.11141811  Energy decrease:   0.00319662
+ ======================================================================
+ Norm of residual vector:     7.34579858
+ CPU time [min]:  1522.077                   Wall time [min]:   156.934
+ 
+ Iteration 14  CC energy:-13483.11032660  Energy decrease:   0.00109150
+ ======================================================================
+ Norm of residual vector:     7.33974458
+ CPU time [min]:  1638.364                   Wall time [min]:   170.324
+ 
+ Iteration 15  CC energy:-13483.10789444  Energy decrease:   0.00243216
+ ======================================================================
+ Norm of residual vector:     7.12205023
+ CPU time [min]:  1756.156                   Wall time [min]:   183.785
+ 
+ Iteration 16  CC energy:-13483.10755412  Energy decrease:   0.00034032
+ ======================================================================
+ Norm of residual vector:     7.03033128
+ CPU time [min]:  1873.675                   Wall time [min]:   197.091
+ 
+ Iteration 17  CC energy:-13483.10721520  Energy decrease:   0.00033892
+ ======================================================================
+ Norm of residual vector:     7.04386843
+ CPU time [min]:  1992.329                   Wall time [min]:   211.181
+ 
+ Iteration 18  CC energy:-13483.10687407  Energy decrease:   0.00034113
+ ======================================================================
+ Norm of residual vector:     7.00234469
+ CPU time [min]:  2112.886                   Wall time [min]:   225.879
+ 
+ Iteration 19  CC energy:-13483.10679799  Energy decrease:   0.00007608
+ ======================================================================
+ Norm of residual vector:     7.00662399
+ CPU time [min]:  2232.833                   Wall time [min]:   240.957
+ 
+ Iteration 20  CC energy:-13483.10240001  Energy decrease:   0.00439798
+ ======================================================================
+ Norm of residual vector:     6.60597480
+ CPU time [min]:  2354.413                   Wall time [min]:   255.470
+ 
+ Iteration 21  CC energy:-13483.10214816  Energy decrease:   0.00025185
+ ======================================================================
+ Norm of residual vector:     6.57926516
+ CPU time [min]:  2477.194                   Wall time [min]:   270.654
+ 
+ Iteration 22  CC energy:-13483.09669417  Energy decrease:   0.00545399
+ ======================================================================
+ Norm of residual vector:     5.99505944
+ CPU time [min]:  2602.289                   Wall time [min]:   286.457
+ 
+ Iteration 23  CC energy:-13483.09549438  Energy decrease:   0.00119979
+ ======================================================================
+ Norm of residual vector:     5.89343608
+ CPU time [min]:  2727.531                   Wall time [min]:   302.557
+ 
+ Iteration 24  CC energy:-13483.09523950  Energy decrease:   0.00025488
+ ======================================================================
+ Norm of residual vector:     5.84595874
+ CPU time [min]:  2854.182                   Wall time [min]:   318.206
+ 
+ Iteration 25  CC energy:-13483.09385333  Energy decrease:   0.00138617
+ ======================================================================
+ Norm of residual vector:     5.70064823
+ CPU time [min]:  2981.230                   Wall time [min]:   333.704
+ 
+ Iteration 26  CC energy:-13483.09381270  Energy decrease:   0.00004064
+ ======================================================================
+ Norm of residual vector:     5.71442500
+ CPU time [min]:  3109.818                   Wall time [min]:   350.002
+ 
+ Iteration 27  CC energy:-13483.09351295  Energy decrease:   0.00029975
+ ======================================================================
+ Norm of residual vector:     5.67387198
+ CPU time [min]:  3239.789                   Wall time [min]:   366.780
+ 
+ Iteration 28  CC energy:-13483.09089423  Energy decrease:   0.00261872
+ ======================================================================
+ Norm of residual vector:     5.48716239
+ CPU time [min]:  3370.701                   Wall time [min]:   384.539
+ 
+ Iteration 29  CC energy:-13483.09089585  Energy decrease:   0.00000162
+ ======================================================================
+ Norm of residual vector:     5.48743769
+ CPU time [min]:  3502.762                   Wall time [min]:   403.074
+ 
+ Iteration 30  CC energy:-13483.08977635  Energy decrease:   0.00111950
+ ======================================================================
+ Norm of residual vector:     5.40491751
+ CPU time [min]:  3634.532                   Wall time [min]:   421.764
+ 
+ Iteration 31  CC energy:-13483.08962347  Energy decrease:   0.00015289
+ ======================================================================
+ Norm of residual vector:     5.41768425
+ CPU time [min]:  3768.441                   Wall time [min]:   440.744
+ 
+ Iteration 32  CC energy:-13483.08827868  Energy decrease:   0.00134479
+ ======================================================================
+ Norm of residual vector:     5.28268345
+ CPU time [min]:  3900.705                   Wall time [min]:   459.718
+ 
+ Iteration 33  CC energy:-13483.08827435  Energy decrease:   0.00000433
+ ======================================================================
+ Norm of residual vector:     5.28241836
+ CPU time [min]:  4036.984                   Wall time [min]:   479.485
+ 
+ Iteration 34  CC energy:-13483.08709818  Energy decrease:   0.00117617
+ ======================================================================
+ Norm of residual vector:     5.18103464
+ CPU time [min]:  4173.516                   Wall time [min]:   499.353
+ 
+ Iteration 35  CC energy:-13483.08666932  Energy decrease:   0.00042886
+ ======================================================================
+ Norm of residual vector:     5.15485595
+ CPU time [min]:  4310.251                   Wall time [min]:   519.074
+ 
+ Iteration 36  CC energy:-13483.08561678  Energy decrease:   0.00105254
+ ======================================================================
+ Norm of residual vector:     5.06511018
+ CPU time [min]:  4448.263                   Wall time [min]:   539.350
+ 
+ Iteration 37  CC energy:-13483.08572445  Energy decrease:   0.00010766
+ ======================================================================
+ Norm of residual vector:     5.07245453
+ CPU time [min]:  4585.619                   Wall time [min]:   559.740
+ 
+ Iteration 38  CC energy:-13483.08525734  Energy decrease:   0.00046711
+ ======================================================================
+ Norm of residual vector:     4.99426924
+ CPU time [min]:  4724.735                   Wall time [min]:   580.275
+ 
+ Iteration 39  CC energy:-13483.08640518  Energy decrease:   0.00114784
+ ======================================================================
+ Norm of residual vector:     5.12191953
+ CPU time [min]:  4865.406                   Wall time [min]:   601.272
+ 
+ Iteration 40  CC energy:-13483.08749205  Energy decrease:   0.00108687
+ ======================================================================
+ Norm of residual vector:     5.27915299
+ CPU time [min]:  5007.114                   Wall time [min]:   622.472
+ 
+ Iteration 41  CC energy:-13483.08847759  Energy decrease:   0.00098554
+ ======================================================================
+ Norm of residual vector:     5.44351910
+ CPU time [min]:  5149.973                   Wall time [min]:   643.622
+ 
+ Iteration 42  CC energy:-13483.08972317  Energy decrease:   0.00124558
+ ======================================================================
+ Norm of residual vector:     5.53872399
+ CPU time [min]:  5294.296                   Wall time [min]:   664.903
+ 
+ Iteration 43  CC energy:-13483.08943377  Energy decrease:   0.00028940
+ ======================================================================
+ Norm of residual vector:     5.56228552
+ CPU time [min]:  5439.968                   Wall time [min]:   686.546
+ 
+ Iteration 44  CC energy:-13483.09039890  Energy decrease:   0.00096513
+ ======================================================================
+ Norm of residual vector:     5.61043642
+ CPU time [min]:  5585.543                   Wall time [min]:   708.616
+ 
+ Iteration 45  CC energy:-13483.08867539  Energy decrease:   0.00172351
+ ======================================================================
+ Norm of residual vector:     5.57067270
+ CPU time [min]:  5731.925                   Wall time [min]:   730.921
+ 
+ Iteration 46  CC energy:-13483.08954979  Energy decrease:   0.00087440
+ ======================================================================
+ Norm of residual vector:     5.60478485
+ CPU time [min]:  5878.406                   Wall time [min]:   753.245
+ 
+ Iteration 47  CC energy:-13483.08713823  Energy decrease:   0.00241156
+ ======================================================================
+ Norm of residual vector:     5.55784592
+ CPU time [min]:  6027.548                   Wall time [min]:   775.685
+ 
+ Iteration 48  CC energy:-13483.08797096  Energy decrease:   0.00083273
+ ======================================================================
+ Norm of residual vector:     5.64042187
+ CPU time [min]:  6177.769                   Wall time [min]:   798.345
+ 
+ Iteration 49  CC energy:-13483.08601652  Energy decrease:   0.00195445
+ ======================================================================
+ Norm of residual vector:     5.65115423
+ CPU time [min]:  6329.436                   Wall time [min]:   821.353
+ 
+ Iteration 50  CC energy:-13483.08644939  Energy decrease:   0.00043288
+ ======================================================================
+ 
+ Convergence not achieved in 50 iterations!
+ 
+ Final results:
+ Total CCSDT energy [au]:         -13483.086449392787
+ Total MP2 energy [au]:           -13483.433209658764
+ 
+ Dominant cluster amplitudes
+ Printing threshold:  1.00E-02
+ 
+    1.000000  Reference determinant                                     
+   -0.345315  1b -> 34b                                                 
+    0.011255  1b -> 35b                                                 
+    0.012695  1b -> 38b                                                 
+    0.016284  1b -> 39b                                                 
+    0.031356  1b -> 41b                                                 
+   -0.029009  1b -> 42b                                                 
+   -0.018270  1b -> 44b                                                 
+    0.020077  1b -> 46b                                                 
+    0.037347  2b -> 34b                                                 
+    0.030613  2b -> 36b                                                 
+    0.038768  2b -> 42b                                                 
+    0.027262  2b -> 43b                                                 
+   -0.025366  2b -> 45b                                                 
+   -0.015160  2b -> 46b                                                 
+    0.022022  2b -> 52b                                                 
+   -0.211667  3b -> 34b                                                 
+    0.010220  3b -> 35b                                                 
+    0.011568  3b -> 37b                                                 
+    0.035949  3b -> 41b                                                 
+   -0.029411  3b -> 42b                                                 
+   -0.010725  3b -> 44b                                                 
+    0.019739  3b -> 46b                                                 
+   -0.011594  3b -> 51b                                                 
+   -0.012631  3b -> 53b                                                 
+    0.337012  4b -> 34b                                                 
+   -0.016509  4b -> 36b                                                 
+   -0.021735  4b -> 39b                                                 
+   -0.010603  4b -> 40b                                                 
+   -0.016173  4b -> 41b                                                 
+    0.020181  4b -> 42b                                                 
+   -0.014516  4b -> 46b                                                 
+   -0.012502  4b -> 49b                                                 
+    0.012837  4b -> 50b                                                 
+    0.013303  4b -> 54b                                                 
+    0.418849  5b -> 34b                                                 
+   -0.011893  5b -> 41b                                                 
+    0.025956  5b -> 42b                                                 
+    0.012194  5b -> 43b                                                 
+   -0.010969  5b -> 45b                                                 
+   -0.014676  5b -> 46b                                                 
+    0.053865  6b -> 34b                                                 
+   -0.029195  6b -> 36b                                                 
+   -0.023262  6b -> 41b                                                 
+   -0.020165  6b -> 42b                                                 
+   -0.027142  6b -> 43b                                                 
+    0.026579  6b -> 45b                                                 
+    0.011450  6b -> 48b                                                 
+   -0.010334  6b -> 49b                                                 
+   -0.019858  6b -> 52b                                                 
+    0.261143  7b -> 34b                                                 
+   -0.010203  7b -> 37b                                                 
+    0.029681  7b -> 38b                                                 
+   -0.010480  7b -> 46b                                                 
+   -0.010261  7b -> 49b                                                 
+    0.307316  8b -> 34b                                                 
+   -0.012603  8b -> 35b                                                 
+    0.036645  8b -> 36b                                                 
+   -0.014689  8b -> 40b                                                 
+    0.055787  8b -> 41b                                                 
+    0.015461  8b -> 42b                                                 
+    0.033651  8b -> 43b                                                 
+   -0.019266  8b -> 44b                                                 
+   -0.021066  8b -> 45b                                                 
+    0.046389  8b -> 46b                                                 
+    0.023435  8b -> 47b                                                 
+   -0.020193  8b -> 48b                                                 
+    0.058852  8b -> 52b                                                 
+   -0.010079  8b -> 56b                                                 
+    0.365816  9b -> 34b                                                 
+   -0.016122  9b -> 37b                                                 
+   -0.021439  9b -> 38b                                                 
+   -0.026864  9b -> 39b                                                 
+   -0.011176  9b -> 40b                                                 
+   -0.061298  9b -> 41b                                                 
+   -0.011691  9b -> 43b                                                 
+    0.014971  9b -> 44b                                                 
+   -0.028392  9b -> 46b                                                 
+    0.011178  9b -> 53b                                                 
+   -0.873138  10b -> 34b                                                
+   -0.012698  10b -> 35b                                                
+    0.027500  10b -> 36b                                                
+    0.026898  10b -> 37b                                                
+    0.014689  10b -> 38b                                                
+    0.034001  10b -> 39b                                                
+    0.013368  10b -> 40b                                                
+    0.061567  10b -> 41b                                                
+   -0.030499  10b -> 42b                                                
+   -0.015999  10b -> 44b                                                
+    0.024997  10b -> 46b                                                
+   -0.017269  10b -> 52b                                                
+   -0.021708  10b -> 53b                                                
+   -0.012437  10b -> 55b                                                
+    0.529329  11b -> 34b                                                
+   -0.015536  11b -> 35b                                                
+    0.090194  11b -> 36b                                                
+    0.020477  11b -> 37b                                                
+    0.057110  11b -> 38b                                                
+    0.011157  11b -> 40b                                                
+    0.118828  11b -> 41b                                                
+    0.045660  11b -> 42b                                                
+    0.067271  11b -> 43b                                                
+   -0.013259  11b -> 44b                                                
+   -0.056681  11b -> 45b                                                
+    0.022495  11b -> 46b                                                
+    0.019014  11b -> 47b                                                
+   -0.023041  11b -> 48b                                                
+    0.015079  11b -> 49b                                                
+   -0.014162  11b -> 51b                                                
+    0.034376  11b -> 52b                                                
+   -0.035853  11b -> 53b                                                
+    0.012636  11b -> 55b                                                
+    0.012139  11b -> 56b                                                
+    0.012142  11b -> 57b                                                
+    0.055047  12b -> 34b                                                
+   -0.014918  12b -> 35b                                                
+   -0.014627  12b -> 36b                                                
+   -0.020246  12b -> 42b                                                
+   -0.011281  12b -> 43b                                                
+    0.012076  12b -> 48b                                                
+   -0.023649  12b -> 52b                                                
+    0.012532  12b -> 56b                                                
+    0.440943  13b -> 34b                                                
+    0.018968  13b -> 36b                                                
+    0.013785  13b -> 46b                                                
+    0.010764  13b -> 50b                                                
+    0.010678  13b -> 51b                                                
+   -0.011784  13b -> 54b                                                
+    0.010684  13b -> 56b                                                
+   -0.219885  14b -> 34b                                                
+   -0.032579  14b -> 35b                                                
+    0.030034  14b -> 36b                                                
+    0.016689  14b -> 37b                                                
+    0.014711  14b -> 38b                                                
+    0.036855  14b -> 41b                                                
+    0.017079  14b -> 43b                                                
+   -0.020248  14b -> 45b                                                
+   -0.011124  14b -> 53b                                                
+    3.684960  15b -> 34b                                                
+    0.014155  15b -> 36b                                                
+    0.014488  15b -> 41b                                                
+    0.034180  15b -> 42b                                                
+    0.026970  15b -> 43b                                                
+   -0.025032  15b -> 45b                                                
+   -0.016470  15b -> 46b                                                
+    0.012248  15b -> 52b                                                
+    0.013215  15b -> 54b                                                
+    0.011412  15b -> 55b                                                
+   -0.010615  15b -> 56b                                                
+   -0.353780  16b -> 34b                                                
+    0.015389  16b -> 35b                                                
+    0.015218  16b -> 36b                                                
+    0.013532  16b -> 38b                                                
+    0.019470  16b -> 41b                                                
+   -0.012458  16b -> 44b                                                
+    0.014014  16b -> 52b                                                
+    0.548561  17b -> 34b                                                
+   -0.012944  17b -> 35b                                                
+    0.012387  17b -> 38b                                                
+    0.016922  17b -> 39b                                                
+    0.011714  17b -> 41b                                                
+   -0.018360  17b -> 42b                                                
+   -0.010070  17b -> 43b                                                
+    0.012659  17b -> 45b                                                
+    0.029964  17b -> 46b                                                
+   -0.012559  17b -> 54b                                                
+   -0.279556  18b -> 34b                                                
+    0.022153  18b -> 35b                                                
+    0.010350  18b -> 37b                                                
+    0.010691  18b -> 38b                                                
+    0.024370  18b -> 41b                                                
+   -0.016918  18b -> 42b                                                
+   -0.010533  18b -> 53b                                                
+   -0.840725  19b -> 34b                                                
+    0.027758  19b -> 35b                                                
+   -0.038679  19b -> 36b                                                
+   -0.018144  19b -> 37b                                                
+   -0.020423  19b -> 38b                                                
+    0.022370  19b -> 40b                                                
+    0.028723  19b -> 41b                                                
+    0.022495  19b -> 43b                                                
+   -0.015622  19b -> 44b                                                
+   -0.020104  19b -> 45b                                                
+    0.029405  19b -> 46b                                                
+    0.010389  19b -> 47b                                                
+    0.016872  19b -> 52b                                                
+    0.017112  19b -> 56b                                                
+    0.402654  20b -> 34b                                                
+   -0.012654  20b -> 35b                                                
+    0.040062  20b -> 36b                                                
+    0.034010  20b -> 38b                                                
+    0.024284  20b -> 41b                                                
+    0.024291  20b -> 42b                                                
+    0.023064  20b -> 43b                                                
+   -0.021544  20b -> 45b                                                
+   -0.011381  20b -> 53b                                                
+    3.926460  21b -> 34b                                                
+   -0.019305  21b -> 35b                                                
+    0.039770  21b -> 36b                                                
+    0.019730  21b -> 38b                                                
+    0.012803  21b -> 40b                                                
+    0.020410  21b -> 41b                                                
+    0.015926  21b -> 42b                                                
+    0.022937  21b -> 43b                                                
+   -0.010251  21b -> 44b                                                
+   -0.019744  21b -> 45b                                                
+    0.017653  21b -> 46b                                                
+    0.014154  21b -> 47b                                                
+    0.034408  21b -> 52b                                                
+   -0.347510  22b -> 34b                                                
+    0.012180  22b -> 36b                                                
+    0.010981  22b -> 41b                                                
+    0.014134  22b -> 42b                                                
+    0.017870  22b -> 43b                                                
+   -0.010659  22b -> 44b                                                
+   -0.012634  22b -> 45b                                                
+    0.017501  22b -> 46b                                                
+    0.011048  22b -> 47b                                                
+   -0.013427  22b -> 48b                                                
+    0.037950  22b -> 52b                                                
+    0.012574  22b -> 55b                                                
+   -0.012102  23b -> 33b                                                
+   -0.106080  23b -> 34b                                                
+    0.035751  23b -> 35b                                                
+   -0.052224  23b -> 37b                                                
+    0.020493  23b -> 38b                                                
+   -0.014043  23b -> 39b                                                
+    0.025386  23b -> 42b                                                
+    0.032053  23b -> 43b                                                
+   -0.028109  23b -> 45b                                                
+    0.015281  23b -> 46b                                                
+   -0.010314  23b -> 48b                                                
+    0.015260  23b -> 49b                                                
+    0.014059  23b -> 52b                                                
+    0.016370  23b -> 54b                                                
+   -0.082101  24b -> 34b                                                
+   -0.012643  24b -> 35b                                                
+   -0.023204  24b -> 36b                                                
+   -0.019919  24b -> 37b                                                
+    0.010559  24b -> 39b                                                
+    0.013682  24b -> 41b                                                
+   -0.032478  24b -> 42b                                                
+   -0.014952  24b -> 43b                                                
+    0.012622  24b -> 45b                                                
+    0.014038  24b -> 46b                                                
+   -0.012004  24b -> 50b                                                
+   -0.010362  24b -> 51b                                                
+    0.156687  25b -> 34b                                                
+    0.033817  25b -> 41b                                                
+   -0.012891  25b -> 42b                                                
+    0.011194  25b -> 49b                                                
+   -0.015463  25b -> 53b                                                
+    0.216192  26b -> 34b                                                
+    0.070974  26b -> 36b                                                
+    0.013517  26b -> 38b                                                
+   -0.015310  26b -> 41b                                                
+    0.024617  26b -> 42b                                                
+   -0.016120  26b -> 45b                                                
+   -0.024153  26b -> 46b                                                
+    0.012923  26b -> 50b                                                
+    0.017866  26b -> 52b                                                
+    0.012180  26b -> 55b                                                
+    0.185036  27b -> 34b                                                
+   -0.013155  27b -> 35b                                                
+    0.010584  27b -> 38b                                                
+    0.016536  27b -> 39b                                                
+   -0.016258  27b -> 40b                                                
+    0.045659  27b -> 41b                                                
+   -0.060070  27b -> 42b                                                
+   -0.023117  27b -> 43b                                                
+   -0.018003  27b -> 44b                                                
+    0.016705  27b -> 46b                                                
+    0.015023  27b -> 49b                                                
+   -0.013794  27b -> 50b                                                
+   -0.011567  27b -> 51b                                                
+   -0.016266  27b -> 52b                                                
+   -0.023101  27b -> 53b                                                
+    0.011366  27b -> 57b                                                
+    0.136575  28b -> 34b                                                
+    0.014144  28b -> 36b                                                
+   -0.012845  28b -> 41b                                                
+    0.021253  28b -> 42b                                                
+    0.010202  28b -> 43b                                                
+    0.191564  29b -> 34b                                                
+    0.012164  29b -> 39b                                                
+    0.032016  29b -> 41b                                                
+   -0.014374  29b -> 42b                                                
+   -0.013592  29b -> 44b                                                
+    0.015369  29b -> 49b                                                
+   -0.015172  29b -> 53b                                                
+   -0.022947  30b -> 33b                                                
+   -0.090817  30b -> 35b                                                
+    2.111489  30b -> 36b                                                
+    0.266408  30b -> 37b                                                
+    0.480946  30b -> 38b                                                
+   -0.421928  30b -> 39b                                                
+   -0.705900  30b -> 40b                                                
+   -0.053837  30b -> 43b                                                
+   -0.040254  30b -> 44b                                                
+    0.068846  30b -> 45b                                                
+    0.061355  30b -> 46b                                                
+    0.066571  30b -> 48b                                                
+   -0.091955  30b -> 49b                                                
+    0.091343  30b -> 50b                                                
+    0.137794  30b -> 51b                                                
+   -0.057353  30b -> 52b                                                
+   -0.011188  30b -> 53b                                                
+   -0.048313  30b -> 54b                                                
+   -0.045406  30b -> 55b                                                
+    0.058359  30b -> 56b                                                
+    0.041194  30b -> 57b                                                
+    0.116943  31b -> 34b                                                
+    0.013817  31b -> 35b                                                
+   -0.037020  31b -> 36b                                                
+    0.013504  31b -> 39b                                                
+    0.030935  31b -> 41b                                                
+   -0.031537  31b -> 42b                                                
+   -0.019065  31b -> 44b                                                
+    0.012251  31b -> 45b                                                
+    0.028226  31b -> 46b                                                
+   -0.011490  31b -> 53b                                                
+    0.020893  1a -> 35a                                                 
+    0.010426  1a -> 37a                                                 
+    0.015072  1a -> 39a                                                 
+    0.030325  1a -> 41a                                                 
+   -0.028123  1a -> 42a                                                 
+   -0.017889  1a -> 44a                                                 
+    0.018148  1a -> 46a                                                 
+    0.037077  2a -> 36a                                                 
+    0.037972  2a -> 42a                                                 
+    0.026568  2a -> 43a                                                 
+   -0.026163  2a -> 45a                                                 
+   -0.016478  2a -> 46a                                                 
+    0.020970  2a -> 52a                                                 
+    0.012362  3a -> 35a                                                 
+    0.036872  3a -> 41a                                                 
+   -0.030062  3a -> 42a                                                 
+   -0.011053  3a -> 44a                                                 
+    0.020803  3a -> 46a                                                 
+   -0.010330  3a -> 50a                                                 
+   -0.013514  3a -> 51a                                                 
+   -0.012340  3a -> 53a                                                 
+   -0.013437  4a -> 36a                                                 
+   -0.021433  4a -> 39a                                                 
+   -0.010813  4a -> 40a                                                 
+   -0.016083  4a -> 41a                                                 
+    0.019203  4a -> 42a                                                 
+   -0.014441  4a -> 46a                                                 
+   -0.012097  4a -> 49a                                                 
+    0.012946  4a -> 50a                                                 
+    0.010057  4a -> 51a                                                 
+    0.013212  4a -> 54a                                                 
+   -0.010560  5a -> 41a                                                 
+    0.026136  5a -> 42a                                                 
+    0.012036  5a -> 43a                                                 
+   -0.010950  5a -> 45a                                                 
+   -0.014393  5a -> 46a                                                 
+   -0.029100  6a -> 36a                                                 
+   -0.023451  6a -> 41a                                                 
+   -0.021773  6a -> 42a                                                 
+   -0.027665  6a -> 43a                                                 
+    0.025488  6a -> 45a                                                 
+    0.011550  6a -> 48a                                                 
+   -0.013175  6a -> 49a                                                 
+   -0.021199  6a -> 52a                                                 
+    0.010526  7a -> 36a                                                 
+    0.030745  7a -> 38a                                                 
+   -0.011623  7a -> 49a                                                 
+   -0.010743  7a -> 52a                                                 
+   -0.012989  8a -> 35a                                                 
+    0.033004  8a -> 36a                                                 
+   -0.014444  8a -> 40a                                                 
+    0.056935  8a -> 41a                                                 
+    0.015299  8a -> 42a                                                 
+    0.033696  8a -> 43a                                                 
+   -0.019092  8a -> 44a                                                 
+   -0.021738  8a -> 45a                                                 
+    0.046702  8a -> 46a                                                 
+    0.023309  8a -> 47a                                                 
+   -0.020695  8a -> 48a                                                 
+    0.060661  8a -> 52a                                                 
+   -0.010219  8a -> 56a                                                 
+   -0.020089  9a -> 37a                                                 
+   -0.020103  9a -> 38a                                                 
+   -0.027351  9a -> 39a                                                 
+   -0.010202  9a -> 40a                                                 
+   -0.060349  9a -> 41a                                                 
+   -0.011851  9a -> 43a                                                 
+    0.015637  9a -> 44a                                                 
+   -0.028344  9a -> 46a                                                 
+    0.027801  10a -> 36a                                                
+    0.028193  10a -> 37a                                                
+    0.015624  10a -> 38a                                                
+    0.034976  10a -> 39a                                                
+    0.012629  10a -> 40a                                                
+    0.061781  10a -> 41a                                                
+   -0.029897  10a -> 42a                                                
+   -0.016106  10a -> 44a                                                
+    0.024611  10a -> 46a                                                
+   -0.017984  10a -> 52a                                                
+   -0.021150  10a -> 53a                                                
+   -0.012780  10a -> 55a                                                
+   -0.020572  11a -> 35a                                                
+    0.079945  11a -> 36a                                                
+    0.019693  11a -> 37a                                                
+    0.058057  11a -> 38a                                                
+    0.010291  11a -> 40a                                                
+    0.120050  11a -> 41a                                                
+    0.046854  11a -> 42a                                                
+    0.067516  11a -> 43a                                                
+   -0.059126  11a -> 45a                                                
+    0.023083  11a -> 46a                                                
+    0.019352  11a -> 47a                                                
+   -0.023914  11a -> 48a                                                
+    0.015080  11a -> 49a                                                
+   -0.016308  11a -> 51a                                                
+    0.033623  11a -> 52a                                                
+   -0.036654  11a -> 53a                                                
+    0.013134  11a -> 55a                                                
+    0.011538  11a -> 56a                                                
+    0.012877  11a -> 57a                                                
+   -0.013097  12a -> 36a                                                
+   -0.021234  12a -> 42a                                                
+   -0.011035  12a -> 43a                                                
+    0.012385  12a -> 48a                                                
+   -0.023455  12a -> 52a                                                
+    0.013675  12a -> 56a                                                
+    0.011401  13a -> 36a                                                
+    0.010269  13a -> 38a                                                
+    0.010489  13a -> 45a                                                
+    0.013657  13a -> 46a                                                
+    0.011496  13a -> 50a                                                
+    0.011331  13a -> 51a                                                
+   -0.012362  13a -> 54a                                                
+    0.010363  13a -> 56a                                                
+   -0.034080  14a -> 35a                                                
+    0.030959  14a -> 36a                                                
+    0.014133  14a -> 37a                                                
+    0.015423  14a -> 38a                                                
+    0.010739  14a -> 40a                                                
+    0.036881  14a -> 41a                                                
+    0.017098  14a -> 43a                                                
+   -0.021905  14a -> 45a                                                
+   -0.011482  14a -> 53a                                                
+    0.011208  15a -> 38a                                                
+    0.015895  15a -> 41a                                                
+    0.034465  15a -> 42a                                                
+    0.027732  15a -> 43a                                                
+   -0.025517  15a -> 45a                                                
+   -0.017246  15a -> 46a                                                
+    0.012174  15a -> 52a                                                
+    0.013304  15a -> 54a                                                
+    0.011469  15a -> 55a                                                
+   -0.011029  15a -> 56a                                                
+    0.016218  16a -> 35a                                                
+    0.023706  16a -> 36a                                                
+    0.012144  16a -> 38a                                                
+    0.018204  16a -> 41a                                                
+    0.010397  16a -> 43a                                                
+   -0.022944  16a -> 44a                                                
+    0.014118  16a -> 52a                                                
+    0.010499  16a -> 54a                                                
+   -0.025957  17a -> 36a                                                
+    0.015974  17a -> 38a                                                
+    0.019393  17a -> 39a                                                
+    0.014774  17a -> 41a                                                
+   -0.017507  17a -> 42a                                                
+    0.011669  17a -> 45a                                                
+    0.031147  17a -> 46a                                                
+   -0.013745  17a -> 54a                                                
+    0.025671  18a -> 35a                                                
+    0.011834  18a -> 37a                                                
+    0.010681  18a -> 38a                                                
+    0.012579  18a -> 39a                                                
+   -0.012361  18a -> 40a                                                
+    0.025144  18a -> 41a                                                
+   -0.015618  18a -> 42a                                                
+    0.010322  18a -> 46a                                                
+   -0.010651  18a -> 53a                                                
+    0.035805  19a -> 35a                                                
+   -0.046453  19a -> 36a                                                
+   -0.019730  19a -> 37a                                                
+   -0.020332  19a -> 38a                                                
+    0.025745  19a -> 40a                                                
+    0.028996  19a -> 41a                                                
+    0.022765  19a -> 43a                                                
+   -0.013541  19a -> 44a                                                
+   -0.021399  19a -> 45a                                                
+    0.029701  19a -> 46a                                                
+    0.010742  19a -> 47a                                                
+    0.017957  19a -> 52a                                                
+    0.017255  19a -> 56a                                                
+   -0.016460  20a -> 35a                                                
+    0.037051  20a -> 36a                                                
+    0.034578  20a -> 38a                                                
+    0.010332  20a -> 40a                                                
+    0.025073  20a -> 41a                                                
+    0.025714  20a -> 42a                                                
+    0.023418  20a -> 43a                                                
+   -0.021675  20a -> 45a                                                
+   -0.012173  20a -> 53a                                                
+   -0.017065  21a -> 35a                                                
+    0.042326  21a -> 36a                                                
+    0.010766  21a -> 37a                                                
+    0.019333  21a -> 38a                                                
+    0.018176  21a -> 40a                                                
+    0.022276  21a -> 41a                                                
+    0.012033  21a -> 42a                                                
+    0.021991  21a -> 43a                                                
+   -0.017553  21a -> 44a                                                
+   -0.019790  21a -> 45a                                                
+    0.018427  21a -> 46a                                                
+    0.013622  21a -> 47a                                                
+    0.034192  21a -> 52a                                                
+    0.011182  22a -> 40a                                                
+    0.010724  22a -> 41a                                                
+    0.013171  22a -> 42a                                                
+    0.018513  22a -> 43a                                                
+   -0.015098  22a -> 44a                                                
+   -0.014711  22a -> 45a                                                
+    0.017002  22a -> 46a                                                
+    0.011404  22a -> 47a                                                
+   -0.013701  22a -> 48a                                                
+    0.039885  22a -> 52a                                                
+    0.013670  22a -> 55a                                                
+    0.070584  23a -> 35a                                                
+    0.026108  23a -> 36a                                                
+   -0.046437  23a -> 37a                                                
+    0.022165  23a -> 38a                                                
+    0.020041  23a -> 42a                                                
+    0.026973  23a -> 43a                                                
+   -0.022135  23a -> 45a                                                
+    0.017401  23a -> 46a                                                
+    0.011270  23a -> 49a                                                
+    0.013385  23a -> 52a                                                
+    0.012404  23a -> 54a                                                
+   -0.010020  24a -> 35a                                                
+    0.010208  24a -> 41a                                                
+   -0.033037  24a -> 42a                                                
+   -0.016210  24a -> 43a                                                
+   -0.010042  24a -> 44a                                                
+    0.013650  24a -> 45a                                                
+    0.014430  24a -> 46a                                                
+    0.044166  25a -> 36a                                                
+    0.026125  25a -> 41a                                                
+   -0.013729  25a -> 42a                                                
+   -0.011901  25a -> 53a                                                
+   -0.011309  26a -> 35a                                                
+    0.060706  26a -> 36a                                                
+    0.014914  26a -> 38a                                                
+   -0.012281  26a -> 41a                                                
+    0.026027  26a -> 42a                                                
+   -0.013494  26a -> 45a                                                
+   -0.024875  26a -> 46a                                                
+    0.012851  26a -> 50a                                                
+    0.019886  26a -> 52a                                                
+    0.011846  26a -> 55a                                                
+   -0.010911  26a -> 56a                                                
+    0.011054  27a -> 38a                                                
+    0.015859  27a -> 39a                                                
+   -0.012856  27a -> 40a                                                
+    0.046946  27a -> 41a                                                
+   -0.060267  27a -> 42a                                                
+   -0.022638  27a -> 43a                                                
+   -0.019150  27a -> 44a                                                
+    0.017304  27a -> 46a                                                
+    0.015660  27a -> 49a                                                
+   -0.015162  27a -> 50a                                                
+   -0.014051  27a -> 51a                                                
+   -0.017000  27a -> 52a                                                
+   -0.023602  27a -> 53a                                                
+    0.012805  27a -> 57a                                                
+    0.011006  28a -> 36a                                                
+   -0.011882  28a -> 41a                                                
+    0.018978  28a -> 42a                                                
+    0.010643  28a -> 43a                                                
+   -0.011087  28a -> 45a                                                
+   -0.018441  29a -> 36a                                                
+    0.018786  29a -> 39a                                                
+    0.033498  29a -> 41a                                                
+   -0.012772  29a -> 42a                                                
+   -0.012786  29a -> 44a                                                
+    0.019875  29a -> 49a                                                
+   -0.014365  29a -> 53a                                                
+   -0.069408  30a -> 35a                                                
+   -0.173178  30a -> 36a                                                
+    0.132140  30a -> 37a                                                
+    0.309557  30a -> 38a                                                
+   -0.303834  30a -> 39a                                                
+   -0.417478  30a -> 40a                                                
+   -0.043737  30a -> 43a                                                
+   -0.036832  30a -> 44a                                                
+    0.061568  30a -> 45a                                                
+    0.039807  30a -> 46a                                                
+    0.051886  30a -> 48a                                                
+   -0.067074  30a -> 49a                                                
+    0.072232  30a -> 50a                                                
+    0.100827  30a -> 51a                                                
+   -0.048596  30a -> 52a                                                
+   -0.019827  30a -> 53a                                                
+   -0.028292  30a -> 54a                                                
+   -0.037484  30a -> 55a                                                
+    0.049114  30a -> 56a                                                
+    0.035591  30a -> 57a                                                
+   -0.027334  31a -> 36a                                                
+    0.028181  31a -> 41a                                                
+   -0.031241  31a -> 42a                                                
+   -0.015204  31a -> 44a                                                
+    0.012189  31a -> 45a                                                
+    0.026084  31a -> 46a                                                
+    0.011733  31a -> 49a                                                
+   -0.012073  31a -> 53a                                                
+    0.022238  33a -> 36a                                                
+    0.013613  34a -> 35a                                                
+   -0.046622  34a -> 36a                                                
+    0.013360  34a -> 38a                                                
+    0.012797  34a -> 39a                                                
+    0.023474  34a -> 41a                                                
+   -0.015309  34a -> 42a                                                
+    0.014114  18b 24b -> 34b 35b                                        
+   -0.018651  23b 24b -> 33b 34b                                        
+    0.010768  23b 24b -> 34b 35b                                        
+   -0.011488  23b 24b -> 33b 36b                                        
+    0.021199  23b 24b -> 33b 37b                                        
+   -0.014386  16b 25b -> 34b 44b                                        
+   -0.010475  17b 26b -> 34b 44b                                        
+    0.010751  24b 26b -> 34b 37b                                        
+    0.010036  19b 27b -> 34b 35b                                        
+    0.010328  24b 27b -> 34b 35b                                        
+    0.010218  25b 27b -> 34b 35b                                        
+    0.012799  23b 28b -> 33b 37b                                        
+    0.018647  24b 28b -> 34b 37b                                        
+   -0.011068  24b 28b -> 34b 38b                                        
+   -0.011194  14b 29b -> 34b 35b                                        
+    0.012579  26b 29b -> 34b 36b                                        
+   -0.011616  1b 30b -> 34b 35b                                         
+    0.014295  1b 30b -> 34b 36b                                         
+    0.017561  2b 30b -> 34b 36b                                         
+   -0.022017  3b 30b -> 34b 36b                                         
+    0.044591  4b 30b -> 34b 36b                                         
+   -0.039705  6b 30b -> 34b 36b                                         
+   -0.019612  7b 30b -> 34b 36b                                         
+    0.075910  8b 30b -> 34b 36b                                         
+   -0.076708  9b 30b -> 34b 36b                                         
+   -0.076702  10b 30b -> 34b 36b                                        
+   -0.025414  10b 30b -> 34b 37b                                        
+   -0.019439  10b 30b -> 34b 39b                                        
+   -0.028433  11b 30b -> 34b 37b                                        
+    0.015335  11b 30b -> 34b 38b                                        
+   -0.074477  11b 30b -> 34b 40b                                        
+    0.013321  11b 30b -> 33b 41b                                        
+   -0.547531  12b 30b -> 34b 36b                                        
+   -0.202339  13b 30b -> 34b 36b                                        
+   -0.131989  14b 30b -> 34b 36b                                        
+   -0.015965  14b 30b -> 34b 37b                                        
+   -0.920932  15b 30b -> 34b 36b                                        
+    0.129549  15b 30b -> 34b 37b                                        
+    0.062274  15b 30b -> 34b 38b                                        
+   -0.178723  15b 30b -> 34b 40b                                        
+   -0.011129  15b 30b -> 34b 41b                                        
+    0.015619  15b 30b -> 34b 45b                                        
+   -0.011295  15b 30b -> 34b 49b                                        
+    0.108801  16b 30b -> 34b 36b                                        
+    0.153470  17b 30b -> 34b 36b                                        
+    0.015359  17b 30b -> 34b 37b                                        
+   -0.015244  18b 30b -> 34b 37b                                        
+    0.017054  18b 30b -> 34b 40b                                        
+   -0.010922  19b 30b -> 33b 34b                                        
+   -0.381149  19b 30b -> 34b 36b                                        
+    0.044859  19b 30b -> 34b 37b                                        
+    0.048733  19b 30b -> 34b 38b                                        
+   -0.049060  19b 30b -> 34b 39b                                        
+   -0.156212  19b 30b -> 34b 40b                                        
+    0.012723  19b 30b -> 34b 46b                                        
+   -0.011647  19b 30b -> 34b 49b                                        
+    0.014563  19b 30b -> 34b 51b                                        
+    0.263232  20b 30b -> 34b 36b                                        
+    0.010111  20b 30b -> 34b 38b                                        
+   -0.022347  20b 30b -> 34b 40b                                        
+    0.011129  20b 30b -> 34b 46b                                        
+    1.041276  21b 30b -> 34b 36b                                        
+    0.078789  21b 30b -> 34b 37b                                        
+   -0.038186  21b 30b -> 34b 38b                                        
+    0.116633  21b 30b -> 34b 39b                                        
+    0.096845  21b 30b -> 34b 40b                                        
+   -0.027349  21b 30b -> 34b 46b                                        
+   -0.037447  21b 30b -> 34b 51b                                        
+   -0.090090  22b 30b -> 34b 36b                                        
+   -0.066790  22b 30b -> 34b 37b                                        
+    0.037029  22b 30b -> 34b 38b                                        
+   -0.063748  22b 30b -> 34b 39b                                        
+   -0.066418  22b 30b -> 34b 40b                                        
+    0.013044  22b 30b -> 34b 46b                                        
+    0.011053  22b 30b -> 34b 51b                                        
+   -0.030639  23b 30b -> 34b 36b                                        
+   -0.013985  23b 30b -> 33b 37b                                        
+   -0.049457  23b 30b -> 34b 37b                                        
+    0.021516  23b 30b -> 34b 40b                                        
+   -0.011223  23b 30b -> 34b 44b                                        
+   -0.029968  24b 30b -> 33b 34b                                        
+   -0.040103  24b 30b -> 34b 35b                                        
+   -0.013693  24b 30b -> 33b 36b                                        
+    0.023089  24b 30b -> 33b 37b                                        
+   -0.010924  24b 30b -> 33b 38b                                        
+    0.020037  25b 30b -> 33b 34b                                        
+    0.052586  25b 30b -> 34b 35b                                        
+    0.023417  25b 30b -> 34b 36b                                        
+    0.010505  26b 30b -> 33b 37b                                        
+    0.014542  27b 30b -> 33b 34b                                        
+    0.123005  27b 30b -> 34b 36b                                        
+    0.014498  27b 30b -> 34b 39b                                        
+    0.017832  28b 30b -> 33b 34b                                        
+    0.017778  28b 30b -> 34b 35b                                        
+    0.013348  28b 30b -> 33b 37b                                        
+   -0.010375  28b 30b -> 33b 38b                                        
+    0.014487  29b 30b -> 34b 36b                                        
+   -0.016499  25b 31b -> 34b 35b                                        
+   -0.018159  1a 1b -> 35a 35b                                          
+    0.010820  14a 1b -> 35a 35b                                         
+   -0.011040  18a 1b -> 35a 35b                                         
+   -0.047205  30a 1b -> 35a 34b                                         
+    0.038134  30a 1b -> 36a 34b                                         
+    0.016316  30a 1b -> 37a 34b                                         
+   -0.166057  30a 2b -> 35a 34b                                         
+   -0.013769  30a 2b -> 36a 34b                                         
+   -0.018511  30a 2b -> 37a 34b                                         
+    0.010075  30a 2b -> 40a 34b                                         
+    0.012129  30a 2b -> 46a 34b                                         
+   -0.012907  3a 3b -> 35a 35b                                          
+   -0.012056  6a 3b -> 35a 35b                                          
+   -0.016138  16a 3b -> 35a 35b                                         
+   -0.018636  18a 3b -> 35a 35b                                         
+   -0.011914  19a 3b -> 35a 35b                                         
+   -0.017400  23a 3b -> 35a 35b                                         
+   -0.051883  30a 3b -> 35a 34b                                         
+   -0.022417  30a 3b -> 37a 34b                                         
+    0.010044  30a 3b -> 40a 34b                                         
+    0.186563  30a 4b -> 36a 34b                                         
+    0.057344  30a 4b -> 37a 34b                                         
+   -0.015464  5a 5b -> 57a 57b                                          
+   -0.033391  30a 5b -> 35a 34b                                         
+   -0.051548  30a 5b -> 36a 34b                                         
+   -0.035590  30a 5b -> 37a 34b                                         
+    0.016873  30a 5b -> 40a 34b                                         
+   -0.012046  3a 6b -> 35a 35b                                          
+   -0.018156  6a 6b -> 35a 35b                                          
+    0.010624  8a 6b -> 35a 35b                                          
+   -0.018943  16a 6b -> 35a 35b                                         
+   -0.023078  18a 6b -> 35a 35b                                         
+   -0.013971  19a 6b -> 35a 35b                                         
+   -0.021415  23a 6b -> 35a 35b                                         
+    0.015751  30a 6b -> 35a 34b                                         
+    0.010620  30a 6b -> 36a 34b                                         
+    0.023683  30a 6b -> 37a 34b                                         
+   -0.012340  30a 6b -> 46a 34b                                         
+   -0.010056  30a 6b -> 51a 34b                                         
+   -0.027125  30a 7b -> 35a 34b                                         
+    0.350091  30a 7b -> 36a 34b                                         
+    0.062670  30a 7b -> 37a 34b                                         
+   -0.016850  30a 7b -> 39a 34b                                         
+    0.010233  30a 7b -> 40a 34b                                         
+    0.010622  6a 8b -> 35a 35b                                          
+    0.015419  16a 8b -> 35a 35b                                         
+    0.017863  18a 8b -> 35a 35b                                         
+    0.010958  19a 8b -> 35a 35b                                         
+    0.016530  23a 8b -> 35a 35b                                         
+    0.010400  30a 8b -> 35a 34b                                         
+   -0.275128  30a 8b -> 36a 34b                                         
+   -0.055542  30a 8b -> 37a 34b                                         
+   -0.021576  30a 8b -> 38a 34b                                         
+    0.020803  30a 8b -> 39a 34b                                         
+    0.464820  30a 9b -> 36a 34b                                         
+    0.122699  30a 9b -> 37a 34b                                         
+   -0.019032  30a 9b -> 39a 34b                                         
+   -0.019435  30a 9b -> 46a 34b                                         
+   -0.010203  30a 9b -> 54a 34b                                         
+   -0.010823  30a 10b -> 35a 34b                                        
+    0.162262  30a 10b -> 36a 34b                                        
+    0.012325  30a 10b -> 37a 34b                                        
+   -0.021944  30a 10b -> 39a 34b                                        
+   -0.010705  30a 10b -> 51a 34b                                        
+   -0.012726  11a 11b -> 41a 41b                                        
+    0.010575  18a 11b -> 35a 35b                                        
+    0.052284  30a 11b -> 36a 34b                                        
+    0.053893  30a 11b -> 37a 34b                                        
+   -0.569781  30a 12b -> 36a 34b                                        
+    0.013922  30a 12b -> 44a 34b                                        
+   -0.017585  30a 13b -> 35a 34b                                        
+    0.024629  30a 13b -> 36a 34b                                        
+    0.056937  30a 13b -> 37a 34b                                        
+   -0.022026  30a 13b -> 39a 34b                                        
+    0.016053  30a 13b -> 40a 34b                                        
+   -0.011099  30a 13b -> 46a 34b                                        
+   -0.011025  30a 13b -> 54a 34b                                        
+    0.010672  1a 14b -> 35a 35b                                         
+   -0.013694  14a 14b -> 35a 35b                                        
+    0.019836  30a 14b -> 35a 34b                                        
+   -0.228440  30a 14b -> 36a 34b                                        
+   -0.049217  30a 14b -> 37a 34b                                        
+   -0.013559  10a 15b -> 36a 34b                                        
+    0.010232  15a 15b -> 36a 34b                                        
+   -0.011466  23a 15b -> 36a 34b                                        
+    0.014073  27a 15b -> 36a 34b                                        
+   -0.012998  28a 15b -> 36a 34b                                        
+    0.046937  30a 15b -> 35a 34b                                        
+   -2.196155  30a 15b -> 36a 34b                                        
+    0.288333  30a 15b -> 37a 34b                                        
+    0.017901  30a 15b -> 38a 34b                                        
+    0.061745  30a 15b -> 39a 34b                                        
+   -0.083499  30a 15b -> 40a 34b                                        
+    0.022692  30a 15b -> 41a 34b                                        
+    0.015734  30a 15b -> 42a 34b                                        
+    0.021403  30a 15b -> 43a 34b                                        
+    0.127205  30a 15b -> 44a 34b                                        
+   -0.045268  30a 15b -> 45a 34b                                        
+    0.023865  30a 15b -> 47a 34b                                        
+   -0.015632  30a 15b -> 49a 34b                                        
+    0.013427  30a 15b -> 50a 34b                                        
+    0.030558  30a 15b -> 52a 34b                                        
+   -0.018328  30a 15b -> 54a 34b                                        
+   -0.011002  30a 15b -> 35a 35b                                        
+   -0.012897  30a 15b -> 36a 36b                                        
+    0.011287  30a 15b -> 36a 41b                                        
+   -0.011445  30a 15b -> 36a 42b                                        
+    0.011090  30a 15b -> 36a 46b                                        
+    0.037385  33a 15b -> 36a 34b                                        
+   -0.016178  3a 16b -> 35a 35b                                         
+   -0.018994  6a 16b -> 35a 35b                                         
+    0.015471  8a 16b -> 35a 35b                                         
+   -0.030551  16a 16b -> 35a 35b                                        
+   -0.015906  16a 16b -> 44a 44b                                        
+   -0.031180  18a 16b -> 35a 35b                                        
+   -0.019439  19a 16b -> 35a 35b                                        
+    0.011379  21a 16b -> 35a 35b                                        
+   -0.029885  23a 16b -> 35a 35b                                        
+   -0.011073  26a 16b -> 35a 35b                                        
+    0.060193  30a 16b -> 36a 34b                                        
+   -0.041316  30a 16b -> 37a 34b                                        
+    0.011772  30a 16b -> 46a 34b                                        
+   -0.083191  30a 17b -> 36a 34b                                        
+   -0.029461  30a 17b -> 37a 34b                                        
+   -0.012262  30a 17b -> 38a 34b                                        
+    0.010952  30a 17b -> 39a 34b                                        
+   -0.010880  1a 18b -> 35a 35b                                         
+   -0.018627  3a 18b -> 35a 35b                                         
+   -0.023095  6a 18b -> 35a 35b                                         
+    0.017866  8a 18b -> 35a 35b                                         
+    0.010487  11a 18b -> 35a 35b                                        
+   -0.031090  16a 18b -> 35a 35b                                        
+   -0.046255  18a 18b -> 35a 35b                                        
+   -0.025676  19a 18b -> 35a 35b                                        
+    0.012385  20a 18b -> 35a 35b                                        
+    0.014636  21a 18b -> 35a 35b                                        
+   -0.035091  23a 18b -> 35a 35b                                        
+   -0.014696  26a 18b -> 35a 35b                                        
+   -0.028828  30a 18b -> 35a 34b                                        
+    0.315383  30a 18b -> 36a 34b                                        
+   -0.015512  30a 18b -> 39a 34b                                        
+    0.017019  30a 18b -> 40a 34b                                        
+   -0.025727  30a 18b -> 44a 34b                                        
+    0.010852  30a 18b -> 45a 34b                                        
+   -0.011905  3a 19b -> 35a 35b                                         
+   -0.013964  6a 19b -> 35a 35b                                         
+    0.010956  8a 19b -> 35a 35b                                         
+   -0.019362  16a 19b -> 35a 35b                                        
+   -0.025674  18a 19b -> 35a 35b                                        
+   -0.020693  19a 19b -> 35a 35b                                        
+   -0.017521  19a 19b -> 36a 36b                                        
+    0.010003  20a 19b -> 35a 35b                                        
+    0.011498  20a 19b -> 36a 36b                                        
+    0.010146  21a 19b -> 35a 35b                                        
+   -0.020697  23a 19b -> 35a 35b                                        
+   -1.783272  30a 19b -> 36a 34b                                        
+    0.103495  30a 19b -> 37a 34b                                        
+    0.040072  30a 19b -> 38a 34b                                        
+   -0.042123  30a 19b -> 39a 34b                                        
+   -0.084050  30a 19b -> 40a 34b                                        
+   -0.011810  30a 19b -> 41a 34b                                        
+   -0.014028  30a 19b -> 43a 34b                                        
+   -0.015079  30a 19b -> 44a 34b                                        
+    0.015530  30a 19b -> 45a 34b                                        
+   -0.010437  33a 19b -> 36a 34b                                        
+    0.012354  18a 20b -> 35a 35b                                        
+    0.011532  19a 20b -> 36a 36b                                        
+   -0.015036  20a 20b -> 36a 36b                                        
+   -0.018261  30a 20b -> 35a 34b                                        
+   -0.357760  30a 20b -> 36a 34b                                        
+   -0.054387  30a 20b -> 37a 34b                                        
+    0.019783  30a 20b -> 40a 34b                                        
+    0.014035  30a 20b -> 46a 34b                                        
+    0.011681  30a 20b -> 51a 34b                                        
+    0.011924  16a 21b -> 35a 35b                                        
+    0.015758  18a 21b -> 35a 35b                                        
+    0.010711  19a 21b -> 35a 35b                                        
+   -0.014991  21a 21b -> 57a 57b                                        
+    0.016152  22a 21b -> 57a 57b                                        
+    0.011962  23a 21b -> 35a 35b                                        
+   -0.015273  30a 21b -> 36a 34b                                        
+   -0.037908  30a 21b -> 38a 34b                                        
+    0.087439  30a 21b -> 39a 34b                                        
+    0.070823  30a 21b -> 40a 34b                                        
+    0.015781  30a 21b -> 41a 34b                                        
+    0.018969  30a 21b -> 43a 34b                                        
+    0.064217  30a 21b -> 44a 34b                                        
+   -0.022597  30a 21b -> 45a 34b                                        
+    0.018047  33a 21b -> 36a 34b                                        
+    0.016200  21a 22b -> 57a 57b                                        
+   -0.018098  22a 22b -> 57a 57b                                        
+   -0.372462  30a 22b -> 36a 34b                                        
+   -0.031748  30a 22b -> 37a 34b                                        
+    0.014180  30a 22b -> 38a 34b                                        
+   -0.022991  30a 22b -> 39a 34b                                        
+   -0.037695  30a 22b -> 40a 34b                                        
+   -0.018447  3a 23b -> 35a 35b                                         
+   -0.022708  6a 23b -> 35a 35b                                         
+    0.017671  8a 23b -> 35a 35b                                         
+   -0.031770  16a 23b -> 35a 35b                                        
+   -0.037445  18a 23b -> 35a 35b                                        
+   -0.022245  19a 23b -> 35a 35b                                        
+    0.012290  21a 23b -> 35a 35b                                        
+   -0.037892  23a 23b -> 35a 35b                                        
+   -0.013592  23a 23b -> 37a 37b                                        
+   -0.011966  24a 23b -> 36a 33b                                        
+    0.022531  24a 23b -> 37a 33b                                        
+    0.010285  26a 23b -> 37a 33b                                        
+   -0.013052  26a 23b -> 35a 35b                                        
+    0.014853  28a 23b -> 37a 33b                                        
+   -0.010200  28a 23b -> 38a 33b                                        
+   -0.114556  30a 23b -> 36a 34b                                        
+   -0.038983  30a 23b -> 37a 34b                                        
+   -0.012495  30a 23b -> 38a 34b                                        
+    0.020722  30a 23b -> 40a 34b                                        
+   -0.017765  30a 23b -> 44a 34b                                        
+    0.012558  30a 23b -> 46a 34b                                        
+   -0.014754  18a 24b -> 35a 34b                                        
+   -0.010872  23a 24b -> 35a 34b                                        
+   -0.016531  24a 24b -> 36a 34b                                        
+    0.014529  24a 24b -> 37a 34b                                        
+   -0.011075  24a 24b -> 36a 36b                                        
+    0.012033  24a 24b -> 37a 36b                                        
+    0.012141  24a 24b -> 36a 37b                                        
+   -0.029312  24a 24b -> 37a 37b                                        
+    0.011948  24a 24b -> 38a 37b                                        
+    0.012029  24a 24b -> 37a 38b                                        
+   -0.011789  26a 24b -> 37a 37b                                        
+    0.010268  28a 24b -> 37a 34b                                        
+   -0.015714  28a 24b -> 37a 37b                                        
+   -0.010011  29a 24b -> 36a 34b                                        
+   -0.027832  30a 24b -> 35a 34b                                        
+    0.027608  30a 24b -> 36a 34b                                        
+    0.011157  30a 24b -> 37a 34b                                        
+    0.010425  30a 24b -> 38a 34b                                        
+   -0.011465  34a 24b -> 36a 34b                                        
+   -0.010723  11a 25b -> 46a 34b                                        
+    0.014462  16a 25b -> 44a 34b                                        
+   -0.010956  23a 25b -> 35a 34b                                        
+   -0.016069  25a 25b -> 35a 35b                                        
+   -0.011229  27a 25b -> 36a 34b                                        
+   -0.014993  29a 25b -> 36a 34b                                        
+   -0.224753  30a 25b -> 35a 34b                                        
+    0.069673  30a 25b -> 36a 34b                                        
+   -0.010818  30a 25b -> 40a 34b                                        
+   -0.020780  34a 25b -> 36a 34b                                        
+   -0.011794  16a 26b -> 44a 34b                                        
+   -0.011328  16a 26b -> 35a 35b                                        
+    0.010822  18a 26b -> 35a 34b                                        
+   -0.015066  18a 26b -> 35a 35b                                        
+   -0.012691  23a 26b -> 35a 35b                                        
+   -0.011585  24a 26b -> 37a 37b                                        
+    0.014928  30a 26b -> 37a 34b                                        
+   -0.011266  14a 27b -> 35a 34b                                        
+   -0.010207  19a 27b -> 35a 34b                                        
+   -0.011266  27a 27b -> 36a 34b                                        
+   -0.010420  27a 27b -> 36a 36b                                        
+    0.025639  30a 27b -> 36a 34b                                        
+   -0.044055  30a 27b -> 37a 34b                                        
+   -0.021330  30a 27b -> 38a 34b                                        
+    0.012852  30a 27b -> 39a 34b                                        
+   -0.011790  31a 27b -> 36a 34b                                        
+   -0.015602  24a 28b -> 37a 37b                                        
+   -0.023561  28a 28b -> 37a 37b                                        
+    0.012499  28a 28b -> 38a 37b                                        
+    0.012592  28a 28b -> 37a 38b                                        
+    0.022084  30a 28b -> 36a 34b                                        
+    0.021705  30a 28b -> 37a 34b                                        
+    0.012021  14a 29b -> 35a 34b                                        
+   -0.010592  26a 29b -> 36a 34b                                        
+    0.018486  27a 29b -> 36a 34b                                        
+    0.010307  29a 29b -> 40a 34b                                        
+   -0.082097  30a 29b -> 35a 34b                                        
+    0.028903  30a 29b -> 36a 34b                                        
+    0.013520  31a 29b -> 36a 34b                                        
+   -0.019060  1a 30b -> 36a 34b                                         
+   -0.061491  3a 30b -> 36a 34b                                         
+   -0.031704  4a 30b -> 36a 34b                                         
+   -0.045692  5a 30b -> 36a 34b                                         
+    0.043982  6a 30b -> 36a 34b                                         
+   -0.114811  7a 30b -> 36a 34b                                         
+   -0.677659  8a 30b -> 36a 34b                                         
+    0.010882  9a 30b -> 37a 33b                                         
+    0.136658  9a 30b -> 36a 34b                                         
+    0.203871  10a 30b -> 36a 34b                                        
+    0.015201  10a 30b -> 36a 36b                                        
+   -0.014327  10a 30b -> 36a 40b                                        
+   -0.013843  11a 30b -> 41a 33b                                        
+   -0.034833  11a 30b -> 36a 34b                                        
+   -0.116251  11a 30b -> 37a 34b                                        
+    0.048888  11a 30b -> 40a 34b                                        
+    0.011687  11a 30b -> 36a 40b                                        
+   -0.355009  12a 30b -> 36a 34b                                        
+   -0.012855  13a 30b -> 36a 36b                                        
+    0.016060  13a 30b -> 36a 40b                                        
+    0.560211  14a 30b -> 36a 34b                                        
+   -0.014464  14a 30b -> 37a 34b                                        
+    0.011573  14a 30b -> 36a 36b                                        
+   -0.010344  14a 30b -> 36a 40b                                        
+    0.035379  15a 30b -> 36a 34b                                        
+   -0.095951  16a 30b -> 36a 34b                                        
+    0.064723  17a 30b -> 36a 34b                                        
+   -0.082833  19a 30b -> 36a 34b                                        
+    0.037472  19a 30b -> 37a 34b                                        
+   -0.030311  19a 30b -> 40a 34b                                        
+    0.025360  20a 30b -> 36a 34b                                        
+    0.011149  21a 30b -> 36a 34b                                        
+   -0.014155  21a 30b -> 37a 34b                                        
+   -0.033373  22a 30b -> 36a 34b                                        
+    0.010225  23a 30b -> 37a 33b                                        
+    0.051415  23a 30b -> 36a 34b                                        
+    0.014214  24a 30b -> 36a 33b                                        
+   -0.022939  24a 30b -> 37a 33b                                        
+    0.010590  24a 30b -> 38a 33b                                        
+   -0.010985  26a 30b -> 37a 33b                                        
+   -0.030694  26a 30b -> 36a 34b                                        
+   -0.014394  28a 30b -> 37a 33b                                        
+    0.010677  28a 30b -> 38a 33b                                        
+    0.045680  30a 30b -> 36a 33b                                        
+   -0.016693  30a 30b -> 38a 33b                                        
+    0.014873  30a 30b -> 39a 33b                                        
+    0.012020  30a 30b -> 40a 33b                                        
+   -0.032938  30a 30b -> 36a 34b                                        
+   -0.017669  30a 30b -> 37a 34b                                        
+   -0.034641  30a 30b -> 41a 34b                                        
+   -0.017081  30a 30b -> 42a 34b                                        
+    0.016466  30a 30b -> 46a 34b                                        
+    0.013400  30a 30b -> 51a 34b                                        
+    0.019375  30a 30b -> 36a 35b                                        
+    0.021292  30a 30b -> 43a 35b                                        
+   -0.014310  30a 30b -> 45a 35b                                        
+    0.345413  30a 30b -> 47a 35b                                        
+    0.152571  30a 30b -> 50a 35b                                        
+   -0.345912  30a 30b -> 52a 35b                                        
+    0.012056  30a 30b -> 35a 36b                                        
+   -1.268232  30a 30b -> 36a 36b                                        
+    0.282003  30a 30b -> 37a 36b                                        
+    0.133259  30a 30b -> 38a 36b                                        
+   -0.172372  30a 30b -> 39a 36b                                        
+   -0.414720  30a 30b -> 40a 36b                                        
+   -0.025435  30a 30b -> 41a 36b                                        
+   -0.018846  30a 30b -> 42a 36b                                        
+   -0.048307  30a 30b -> 43a 36b                                        
+    0.052200  30a 30b -> 45a 36b                                        
+   -0.019900  30a 30b -> 46a 36b                                        
+    0.025986  30a 30b -> 48a 36b                                        
+   -0.033230  30a 30b -> 49a 36b                                        
+    0.013244  30a 30b -> 50a 36b                                        
+    0.025780  30a 30b -> 51a 36b                                        
+   -0.042080  30a 30b -> 52a 36b                                        
+   -0.020741  30a 30b -> 55a 36b                                        
+    0.012552  30a 30b -> 56a 36b                                        
+    0.542359  30a 30b -> 36a 37b                                        
+    0.012223  30a 30b -> 37a 37b                                        
+   -0.012809  30a 30b -> 40a 37b                                        
+   -0.010667  30a 30b -> 41a 37b                                        
+    0.011275  30a 30b -> 45a 37b                                        
+    0.301504  30a 30b -> 36a 38b                                        
+   -0.023675  30a 30b -> 37a 38b                                        
+   -0.014631  30a 30b -> 40a 38b                                        
+   -0.012670  30a 30b -> 41a 38b                                        
+   -0.011544  30a 30b -> 43a 38b                                        
+    0.012188  30a 30b -> 45a 38b                                        
+   -0.010560  30a 30b -> 52a 38b                                        
+   -0.193275  30a 30b -> 36a 39b                                        
+    0.030320  30a 30b -> 37a 39b                                        
+    0.015019  30a 30b -> 40a 39b                                        
+   -1.033400  30a 30b -> 36a 40b                                        
+    0.016776  30a 30b -> 37a 40b                                        
+    0.024832  30a 30b -> 39a 40b                                        
+    0.033959  30a 30b -> 40a 40b                                        
+    0.015100  30a 30b -> 41a 40b                                        
+    0.011391  30a 30b -> 42a 40b                                        
+    0.019311  30a 30b -> 43a 40b                                        
+   -0.022985  30a 30b -> 45a 40b                                        
+    0.017049  30a 30b -> 52a 40b                                        
+   -0.015928  30a 30b -> 41a 41b                                        
+   -0.017578  30a 30b -> 42a 42b                                        
+   -0.010147  30a 30b -> 43a 42b                                        
+    0.013297  30a 30b -> 35a 43b                                        
+   -0.018621  30a 30b -> 36a 43b                                        
+    0.013553  30a 30b -> 35a 45b                                        
+    0.029611  30a 30b -> 36a 45b                                        
+   -0.011645  30a 30b -> 35a 47b                                        
+    0.015170  30a 30b -> 35a 48b                                        
+    0.026212  30a 30b -> 36a 48b                                        
+   -0.049423  30a 30b -> 36a 49b                                        
+    0.034715  30a 30b -> 36a 50b                                        
+    0.060970  30a 30b -> 36a 51b                                        
+   -0.021784  30a 30b -> 36a 52b                                        
+   -0.010731  30a 30b -> 36a 54b                                        
+   -0.021456  30a 30b -> 36a 55b                                        
+    0.015918  30a 30b -> 36a 56b                                        
+    0.012821  33a 30b -> 36a 34b                                        
+   -0.021053  33a 30b -> 36a 36b                                        
+    0.012116  33a 30b -> 36a 40b                                        
+    0.015457  25a 31b -> 35a 34b                                        
+   -0.018667  27a 31b -> 36a 34b                                        
+   -0.012544  30a 31b -> 35a 34b                                        
+    0.022188  30a 31b -> 36a 34b                                        
+    0.016418  30a 31b -> 37a 34b                                        
+    0.013764  30a 33a -> 36a 37a                                        
+    0.010351  30a 33a -> 36a 41a                                        
+   -0.010353  30a 8b 21b -> 36a 34b 36b                                 
+    0.025821  30a 1b 30b -> 35a 34b 36b                                 
+   -0.059552  30a 1b 30b -> 36a 34b 36b                                 
+   -0.013073  30a 1b 30b -> 36a 34b 40b                                 
+    0.013907  30a 2b 30b -> 36a 34b 35b                                 
+   -0.045954  30a 2b 30b -> 36a 34b 36b                                 
+   -0.036564  30a 2b 30b -> 35a 34b 37b                                 
+   -0.038267  30a 2b 30b -> 35a 34b 38b                                 
+    0.027858  30a 2b 30b -> 35a 34b 39b                                 
+    0.068554  30a 2b 30b -> 35a 34b 40b                                 
+   -0.015084  30a 2b 30b -> 36a 34b 40b                                 
+    0.029120  30a 3b 30b -> 44a 34b 35b                                 
+    0.025607  30a 3b 30b -> 35a 34b 36b                                 
+   -0.011069  30a 3b 30b -> 36a 34b 36b                                 
+    0.012191  30a 3b 30b -> 37a 34b 36b                                 
+    0.010415  30a 3b 30b -> 36a 34b 37b                                 
+    0.529814  30a 3b 30b -> 35a 34b 38b                                 
+    0.100633  30a 3b 30b -> 35a 34b 39b                                 
+   -0.106964  30a 3b 30b -> 35a 34b 44b                                 
+    0.012641  30a 4b 30b -> 46a 34b 35b                                 
+   -0.062151  30a 4b 30b -> 36a 34b 36b                                 
+    0.023435  30a 4b 30b -> 36a 34b 39b                                 
+   -0.035298  30a 4b 30b -> 36a 34b 40b                                 
+   -0.013596  30a 4b 30b -> 37a 34b 40b                                 
+    0.362486  30a 4b 30b -> 35a 34b 46b                                 
+    0.225856  30a 5b 30b -> 39a 34b 35b                                 
+    0.013438  30a 5b 30b -> 35a 34b 36b                                 
+   -0.059382  30a 5b 30b -> 36a 34b 36b                                 
+    0.010405  30a 5b 30b -> 36a 34b 37b                                 
+   -0.015874  30a 5b 30b -> 36a 34b 40b                                 
+    0.059701  30a 5b 30b -> 35a 34b 46b                                 
+    0.078073  30a 6b 30b -> 44a 34b 35b                                 
+    0.105474  30a 6b 30b -> 36a 34b 36b                                 
+   -0.145186  30a 6b 30b -> 35a 34b 38b                                 
+   -0.139052  30a 6b 30b -> 35a 34b 39b                                 
+    0.013018  30a 6b 30b -> 36a 34b 40b                                 
+    0.086441  30a 7b 30b -> 49a 34b 35b                                 
+   -0.059402  30a 7b 30b -> 51a 34b 35b                                 
+    0.012432  30a 7b 30b -> 35a 34b 36b                                 
+    0.124109  30a 7b 30b -> 36a 34b 36b                                 
+    0.017989  30a 7b 30b -> 36a 34b 37b                                 
+    0.010561  30a 7b 30b -> 37a 34b 37b                                 
+    0.017340  30a 7b 30b -> 36a 34b 38b                                 
+    0.020855  30a 7b 30b -> 36a 34b 39b                                 
+   -0.083609  30a 7b 30b -> 36a 34b 40b                                 
+   -0.014713  30a 7b 30b -> 37a 34b 40b                                 
+   -0.024726  30a 7b 30b -> 35a 34b 46b                                 
+    0.020141  30a 7b 30b -> 35a 34b 49b                                 
+    0.021578  30a 7b 30b -> 35a 34b 51b                                 
+    0.010933  30a 7b 30b -> 36a 34b 51b                                 
+    0.119778  30a 8b 30b -> 36a 34b 36b                                 
+    0.012385  30a 8b 30b -> 38a 34b 36b                                 
+   -0.014219  30a 8b 30b -> 39a 34b 36b                                 
+   -0.010733  30a 8b 30b -> 40a 34b 36b                                 
+   -0.020644  30a 8b 30b -> 36a 34b 39b                                 
+    0.044481  30a 8b 30b -> 36a 34b 40b                                 
+    0.010273  30a 8b 30b -> 37a 34b 40b                                 
+    0.223822  30a 9b 30b -> 51a 34b 35b                                 
+    0.580757  30a 9b 30b -> 36a 34b 36b                                 
+    0.010924  30a 9b 30b -> 37a 34b 36b                                 
+    0.011063  30a 9b 30b -> 36a 34b 37b                                 
+    0.016668  30a 9b 30b -> 37a 34b 37b                                 
+    0.022789  30a 9b 30b -> 36a 34b 38b                                 
+    0.029555  30a 9b 30b -> 36a 34b 39b                                 
+   -0.105967  30a 9b 30b -> 36a 34b 40b                                 
+   -0.027340  30a 9b 30b -> 37a 34b 40b                                 
+    0.014289  30a 9b 30b -> 36a 34b 45b                                 
+    0.010438  30a 9b 30b -> 36a 34b 46b                                 
+    0.010667  30a 9b 30b -> 36a 34b 48b                                 
+    0.072405  30a 9b 30b -> 35a 34b 49b                                 
+    0.019792  30a 9b 30b -> 36a 34b 51b                                 
+   -0.027046  30a 10b 30b -> 48a 34b 35b                                
+   -0.111230  30a 10b 30b -> 50a 34b 35b                                
+    0.146199  30a 10b 30b -> 36a 34b 36b                                
+    0.026228  30a 10b 30b -> 37a 34b 36b                                
+    0.016565  30a 10b 30b -> 38a 34b 36b                                
+   -0.017846  30a 10b 30b -> 39a 34b 36b                                
+   -0.035546  30a 10b 30b -> 40a 34b 36b                                
+   -0.011390  30a 10b 30b -> 36a 34b 37b                                
+   -0.013492  30a 10b 30b -> 36a 34b 38b                                
+    0.010411  30a 10b 30b -> 36a 34b 39b                                
+    0.010230  30a 10b 30b -> 36a 34b 40b                                
+   -0.011202  30a 10b 30b -> 35a 34b 47b                                
+   -0.041279  30a 10b 30b -> 35a 34b 48b                                
+   -0.012565  30a 10b 30b -> 36a 34b 51b                                
+    0.022200  30a 10b 30b -> 35a 34b 52b                                
+    0.032151  30a 11b 30b -> 54a 34b 35b                                
+    0.020870  30a 11b 30b -> 36a 34b 36b                                
+    0.031511  30a 11b 30b -> 37a 34b 36b                                
+    0.018862  30a 11b 30b -> 38a 34b 36b                                
+   -0.011581  30a 11b 30b -> 39a 34b 36b                                
+    0.024038  30a 11b 30b -> 36a 34b 37b                                
+    0.016540  30a 11b 30b -> 36a 34b 38b                                
+    0.058934  30a 11b 30b -> 36a 34b 39b                                
+   -0.329417  30a 11b 30b -> 36a 34b 40b                                
+   -0.016530  30a 11b 30b -> 37a 34b 40b                                
+   -0.020500  30a 11b 30b -> 35a 34b 45b                                
+    0.011434  30a 11b 30b -> 36a 34b 46b                                
+    0.013360  30a 11b 30b -> 36a 34b 51b                                
+   -0.037726  30a 11b 30b -> 35a 34b 55b                                
+   -0.017963  30a 12b 30b -> 47a 34b 35b                                
+    0.022969  30a 12b 30b -> 50a 34b 35b                                
+    0.024104  30a 12b 30b -> 52a 34b 35b                                
+   -0.014016  30a 12b 30b -> 35a 34b 36b                                
+   -0.121240  30a 12b 30b -> 36a 34b 36b                                
+   -0.074016  30a 12b 30b -> 37a 34b 36b                                
+   -0.081491  30a 12b 30b -> 38a 34b 36b                                
+    0.077522  30a 12b 30b -> 39a 34b 36b                                
+    0.151529  30a 12b 30b -> 40a 34b 36b                                
+    0.015325  30a 12b 30b -> 43a 34b 36b                                
+   -0.021409  30a 12b 30b -> 45a 34b 36b                                
+   -0.016215  30a 12b 30b -> 48a 34b 36b                                
+    0.020735  30a 12b 30b -> 49a 34b 36b                                
+   -0.016006  30a 12b 30b -> 50a 34b 36b                                
+   -0.029533  30a 12b 30b -> 51a 34b 36b                                
+    0.016410  30a 12b 30b -> 52a 34b 36b                                
+    0.010878  30a 12b 30b -> 55a 34b 36b                                
+   -0.082017  30a 12b 30b -> 36a 34b 37b                                
+   -0.010372  30a 12b 30b -> 37a 34b 37b                                
+   -0.047044  30a 12b 30b -> 36a 34b 38b                                
+    0.246238  30a 12b 30b -> 36a 34b 40b                                
+   -0.012754  30a 12b 30b -> 36a 34b 45b                                
+   -0.015823  30a 12b 30b -> 35a 34b 47b                                
+   -0.062123  30a 12b 30b -> 35a 34b 50b                                
+   -0.013808  30a 12b 30b -> 36a 34b 51b                                
+   -0.010593  30a 13b 30b -> 47a 34b 35b                                
+    0.247330  30a 13b 30b -> 36a 34b 36b                                
+   -0.019701  30a 13b 30b -> 37a 34b 36b                                
+   -0.027845  30a 13b 30b -> 38a 34b 36b                                
+    0.033341  30a 13b 30b -> 39a 34b 36b                                
+    0.039234  30a 13b 30b -> 40a 34b 36b                                
+   -0.031711  30a 13b 30b -> 36a 34b 37b                                
+    0.056168  30a 13b 30b -> 36a 34b 39b                                
+   -0.012584  30a 13b 30b -> 37a 34b 40b                                
+    0.010180  30a 13b 30b -> 36a 36b 40b                                
+   -0.019378  30a 14b 30b -> 48a 34b 35b                                
+    0.230048  30a 14b 30b -> 36a 34b 36b                                
+    0.020319  30a 14b 30b -> 37a 34b 36b                                
+   -0.020069  30a 14b 30b -> 40a 34b 36b                                
+   -0.029386  30a 14b 30b -> 36a 34b 39b                                
+    0.039766  30a 14b 30b -> 36a 34b 40b                                
+    0.013344  30a 14b 30b -> 37a 34b 40b                                
+    0.032372  30a 14b 30b -> 35a 34b 50b                                
+   -0.012980  30a 14b 30b -> 36a 34b 51b                                
+   -0.010114  10a 15b 30b -> 36a 34b 40b                                
+   -0.012329  13a 15b 30b -> 36a 34b 36b                                
+    0.012541  13a 15b 30b -> 36a 34b 40b                                
+   -0.014095  30a 15b 30b -> 36a 33b 34b                                
+   -0.040903  30a 15b 30b -> 45a 34b 35b                                
+   -0.421971  30a 15b 30b -> 47a 34b 35b                                
+    0.035557  30a 15b 30b -> 48a 34b 35b                                
+   -0.048440  30a 15b 30b -> 50a 34b 35b                                
+    0.283058  30a 15b 30b -> 52a 34b 35b                                
+   -0.020745  30a 15b 30b -> 35a 34b 36b                                
+    0.365688  30a 15b 30b -> 36a 34b 36b                                
+    0.031326  30a 15b 30b -> 37a 34b 36b                                
+   -0.124576  30a 15b 30b -> 38a 34b 36b                                
+    0.099250  30a 15b 30b -> 39a 34b 36b                                
+    0.147205  30a 15b 30b -> 40a 34b 36b                                
+    0.053055  30a 15b 30b -> 44a 34b 36b                                
+   -0.012164  30a 15b 30b -> 46a 34b 36b                                
+   -0.011817  30a 15b 30b -> 47a 34b 36b                                
+    0.012349  30a 15b 30b -> 49a 34b 36b                                
+   -0.013506  30a 15b 30b -> 50a 34b 36b                                
+   -0.017161  30a 15b 30b -> 51a 34b 36b                                
+    0.366850  30a 15b 30b -> 36a 34b 37b                                
+    0.030185  30a 15b 30b -> 37a 34b 37b                                
+   -0.011156  30a 15b 30b -> 39a 34b 37b                                
+   -0.028875  30a 15b 30b -> 40a 34b 37b                                
+    0.128036  30a 15b 30b -> 36a 34b 38b                                
+    0.019771  30a 15b 30b -> 37a 34b 38b                                
+   -0.016166  30a 15b 30b -> 40a 34b 38b                                
+    0.089395  30a 15b 30b -> 36a 34b 39b                                
+    0.010050  30a 15b 30b -> 40a 34b 39b                                
+    0.011022  30a 15b 30b -> 36a 36b 39b                                
+   -0.802069  30a 15b 30b -> 36a 34b 40b                                
+   -0.058695  30a 15b 30b -> 37a 34b 40b                                
+    0.010585  30a 15b 30b -> 39a 34b 40b                                
+    0.031123  30a 15b 30b -> 40a 34b 40b                                
+    0.014372  30a 15b 30b -> 41a 34b 40b                                
+    0.018121  30a 15b 30b -> 43a 34b 40b                                
+   -0.010476  30a 15b 30b -> 44a 34b 40b                                
+   -0.017401  30a 15b 30b -> 45a 34b 40b                                
+   -0.020328  30a 15b 30b -> 36a 34b 44b                                
+    0.034567  30a 15b 30b -> 35a 34b 45b                                
+    0.012489  30a 15b 30b -> 36a 34b 45b                                
+    0.030126  30a 15b 30b -> 36a 34b 46b                                
+    0.035469  30a 15b 30b -> 35a 34b 47b                                
+   -0.205260  30a 15b 30b -> 35a 34b 48b                                
+    0.032035  30a 15b 30b -> 36a 34b 48b                                
+   -0.070804  30a 15b 30b -> 36a 34b 49b                                
+    0.014769  30a 15b 30b -> 35a 34b 50b                                
+    0.047687  30a 15b 30b -> 36a 34b 50b                                
+    0.095618  30a 15b 30b -> 36a 34b 51b                                
+    0.023388  30a 15b 30b -> 35a 34b 52b                                
+   -0.014171  30a 15b 30b -> 36a 34b 52b                                
+   -0.018932  30a 15b 30b -> 36a 34b 55b                                
+   -0.017224  33a 15b 30b -> 36a 34b 36b                                
+    0.014543  30a 16b 30b -> 47a 34b 35b                                
+    0.038012  30a 16b 30b -> 49a 34b 35b                                
+   -0.012446  30a 16b 30b -> 52a 34b 35b                                
+   -0.232961  30a 16b 30b -> 36a 34b 36b                                
+    0.016166  30a 16b 30b -> 37a 34b 36b                                
+   -0.010635  30a 16b 30b -> 39a 34b 36b                                
+   -0.014882  30a 16b 30b -> 40a 34b 36b                                
+    0.035209  30a 16b 30b -> 36a 34b 37b                                
+    0.011885  30a 16b 30b -> 36a 34b 38b                                
+   -0.015759  30a 16b 30b -> 36a 34b 39b                                
+   -0.045828  30a 16b 30b -> 36a 34b 40b                                
+   -0.476816  30a 17b 30b -> 36a 34b 36b                                
+    0.023567  30a 17b 30b -> 38a 34b 36b                                
+   -0.045872  30a 17b 30b -> 40a 34b 36b                                
+    0.015344  30a 17b 30b -> 51a 34b 36b                                
+    0.016186  30a 17b 30b -> 36a 34b 39b                                
+   -0.024344  30a 17b 30b -> 36a 34b 40b                                
+    0.026296  30a 18b 30b -> 47a 34b 35b                                
+    0.010622  30a 18b 30b -> 48a 34b 35b                                
+   -0.020317  30a 18b 30b -> 52a 34b 35b                                
+    0.017245  30a 18b 30b -> 35a 34b 36b                                
+    0.215459  30a 18b 30b -> 36a 34b 36b                                
+    0.020239  30a 18b 30b -> 37a 34b 36b                                
+   -0.013177  30a 18b 30b -> 40a 34b 36b                                
+    0.056616  30a 18b 30b -> 36a 34b 37b                                
+    0.021027  30a 18b 30b -> 36a 34b 38b                                
+    0.020609  30a 18b 30b -> 36a 34b 39b                                
+   -0.160252  30a 18b 30b -> 36a 34b 40b                                
+    0.016766  30a 19b 30b -> 36a 33b 34b                                
+   -0.020141  30a 19b 30b -> 47a 34b 35b                                
+    0.035666  30a 19b 30b -> 48a 34b 35b                                
+    0.179873  30a 19b 30b -> 52a 34b 35b                                
+    1.466091  30a 19b 30b -> 36a 34b 36b                                
+   -0.075418  30a 19b 30b -> 37a 34b 36b                                
+   -0.039613  30a 19b 30b -> 38a 34b 36b                                
+    0.036133  30a 19b 30b -> 39a 34b 36b                                
+    0.178152  30a 19b 30b -> 40a 34b 36b                                
+    0.013773  30a 19b 30b -> 41a 34b 36b                                
+    0.020868  30a 19b 30b -> 43a 34b 36b                                
+   -0.023678  30a 19b 30b -> 45a 34b 36b                                
+   -0.010140  30a 19b 30b -> 48a 34b 36b                                
+    0.014604  30a 19b 30b -> 49a 34b 36b                                
+   -0.012864  30a 19b 30b -> 51a 34b 36b                                
+   -0.244697  30a 19b 30b -> 36a 34b 37b                                
+    0.010276  30a 19b 30b -> 38a 34b 37b                                
+   -0.012087  30a 19b 30b -> 40a 34b 37b                                
+   -0.247160  30a 19b 30b -> 36a 34b 38b                                
+    0.020709  30a 19b 30b -> 37a 34b 38b                                
+   -0.010651  30a 19b 30b -> 40a 34b 38b                                
+    0.204381  30a 19b 30b -> 36a 34b 39b                                
+   -0.019596  30a 19b 30b -> 37a 34b 39b                                
+    0.376273  30a 19b 30b -> 36a 34b 40b                                
+   -0.031456  30a 19b 30b -> 37a 34b 40b                                
+   -0.018300  30a 19b 30b -> 38a 34b 40b                                
+    0.023919  30a 19b 30b -> 40a 34b 40b                                
+    0.018390  30a 19b 30b -> 36a 34b 43b                                
+   -0.020276  30a 19b 30b -> 36a 34b 45b                                
+    0.022686  30a 19b 30b -> 35a 34b 47b                                
+   -0.012831  30a 19b 30b -> 36a 34b 48b                                
+    0.031392  30a 19b 30b -> 36a 34b 49b                                
+   -0.013044  30a 19b 30b -> 35a 34b 50b                                
+   -0.019890  30a 19b 30b -> 36a 34b 50b                                
+   -0.033451  30a 19b 30b -> 36a 34b 51b                                
+    0.047816  30a 19b 30b -> 35a 34b 52b                                
+    0.019031  30a 19b 30b -> 35a 34b 54b                                
+   -0.015135  30a 19b 30b -> 35a 34b 55b                                
+    0.012767  30a 19b 30b -> 36a 34b 55b                                
+    0.012007  33a 19b 30b -> 36a 34b 36b                                
+    0.011642  30a 20b 30b -> 47a 34b 35b                                
+   -0.028413  30a 20b 30b -> 50a 34b 35b                                
+   -0.014673  30a 20b 30b -> 52a 34b 35b                                
+    0.013660  30a 20b 30b -> 35a 34b 36b                                
+    0.354807  30a 20b 30b -> 36a 34b 36b                                
+    0.032131  30a 20b 30b -> 37a 34b 36b                                
+    0.051161  30a 20b 30b -> 38a 34b 36b                                
+   -0.048676  30a 20b 30b -> 39a 34b 36b                                
+   -0.079703  30a 20b 30b -> 40a 34b 36b                                
+    0.011624  30a 20b 30b -> 45a 34b 36b                                
+   -0.013629  30a 20b 30b -> 49a 34b 36b                                
+    0.016507  30a 20b 30b -> 51a 34b 36b                                
+   -0.023700  30a 20b 30b -> 36a 34b 38b                                
+    0.013948  30a 20b 30b -> 36a 34b 40b                                
+    0.011343  30a 20b 30b -> 37a 34b 40b                                
+    0.013976  30a 20b 30b -> 36a 34b 49b                                
+   -0.014204  30a 20b 30b -> 36a 34b 51b                                
+    0.012768  8a 21b 30b -> 36a 34b 36b                                 
+    0.017631  10a 21b 30b -> 36a 34b 36b                                
+   -0.010613  12a 21b 30b -> 36a 34b 36b                                
+   -0.019014  13a 21b 30b -> 36a 34b 36b                                
+    0.012605  14a 21b 30b -> 36a 34b 36b                                
+   -0.020922  30a 21b 30b -> 45a 34b 35b                                
+   -0.344934  30a 21b 30b -> 47a 34b 35b                                
+    0.010468  30a 21b 30b -> 48a 34b 35b                                
+   -0.201272  30a 21b 30b -> 50a 34b 35b                                
+   -0.095800  30a 21b 30b -> 52a 34b 35b                                
+   -1.229288  30a 21b 30b -> 36a 34b 36b                                
+   -0.109871  30a 21b 30b -> 37a 34b 36b                                
+    0.046052  30a 21b 30b -> 38a 34b 36b                                
+   -0.034781  30a 21b 30b -> 39a 34b 36b                                
+   -0.065150  30a 21b 30b -> 40a 34b 36b                                
+   -0.016843  30a 21b 30b -> 41a 34b 36b                                
+   -0.017205  30a 21b 30b -> 42a 34b 36b                                
+   -0.031607  30a 21b 30b -> 43a 34b 36b                                
+   -0.052447  30a 21b 30b -> 44a 34b 36b                                
+    0.046948  30a 21b 30b -> 45a 34b 36b                                
+    0.041925  30a 21b 30b -> 46a 34b 36b                                
+   -0.016495  30a 21b 30b -> 47a 34b 36b                                
+    0.032515  30a 21b 30b -> 48a 34b 36b                                
+   -0.045333  30a 21b 30b -> 49a 34b 36b                                
+    0.020481  30a 21b 30b -> 50a 34b 36b                                
+    0.070359  30a 21b 30b -> 51a 34b 36b                                
+   -0.036870  30a 21b 30b -> 52a 34b 36b                                
+   -0.017971  30a 21b 30b -> 55a 34b 36b                                
+    0.012731  30a 21b 30b -> 56a 34b 36b                                
+   -0.187453  30a 21b 30b -> 36a 34b 37b                                
+    0.028425  30a 21b 30b -> 37a 34b 37b                                
+   -0.161610  30a 21b 30b -> 36a 34b 38b                                
+    0.163883  30a 21b 30b -> 36a 34b 39b                                
+    0.012101  30a 21b 30b -> 36a 36b 39b                                
+    0.704909  30a 21b 30b -> 36a 34b 40b                                
+   -0.033611  30a 21b 30b -> 37a 34b 40b                                
+    0.018492  30a 21b 30b -> 40a 34b 40b                                
+   -0.019510  30a 21b 30b -> 44a 34b 40b                                
+    0.010111  30a 21b 30b -> 36a 36b 41b                                
+   -0.011099  30a 21b 30b -> 36a 36b 42b                                
+   -0.034174  30a 21b 30b -> 36a 34b 44b                                
+    0.010781  30a 21b 30b -> 35a 34b 45b                                
+    0.031233  30a 21b 30b -> 36a 34b 46b                                
+    0.010604  30a 21b 30b -> 36a 36b 46b                                
+   -0.010766  30a 21b 30b -> 35a 34b 48b                                
+    0.017433  30a 21b 30b -> 36a 34b 48b                                
+   -0.048514  30a 21b 30b -> 36a 34b 49b                                
+    0.029560  30a 21b 30b -> 35a 34b 50b                                
+    0.023621  30a 21b 30b -> 36a 34b 50b                                
+    0.057743  30a 21b 30b -> 36a 34b 51b                                
+    0.015175  30a 21b 30b -> 35a 34b 54b                                
+   -0.034285  30a 21b 30b -> 35a 34b 55b                                
+   -0.013722  33a 21b 30b -> 36a 34b 36b                                
+    0.010021  30a 22b 30b -> 36a 33b 34b                                
+    0.136515  30a 22b 30b -> 47a 34b 35b                                
+   -0.283172  30a 22b 30b -> 48a 34b 35b                                
+   -0.076739  30a 22b 30b -> 52a 34b 35b                                
+   -0.948054  30a 22b 30b -> 36a 34b 36b                                
+    0.106827  30a 22b 30b -> 37a 34b 36b                                
+    0.069595  30a 22b 30b -> 38a 34b 36b                                
+   -0.079511  30a 22b 30b -> 39a 34b 36b                                
+   -0.122427  30a 22b 30b -> 40a 34b 36b                                
+   -0.012613  30a 22b 30b -> 43a 34b 36b                                
+   -0.014485  30a 22b 30b -> 44a 34b 36b                                
+    0.013639  30a 22b 30b -> 45a 34b 36b                                
+   -0.014899  30a 22b 30b -> 49a 34b 36b                                
+    0.070150  30a 22b 30b -> 36a 34b 37b                                
+   -0.013524  30a 22b 30b -> 37a 34b 37b                                
+   -0.024098  30a 22b 30b -> 36a 34b 38b                                
+   -0.050713  30a 22b 30b -> 36a 34b 39b                                
+    0.010779  30a 22b 30b -> 36a 34b 40b                                
+    0.026730  30a 22b 30b -> 37a 34b 40b                                
+   -0.012500  30a 22b 30b -> 36a 34b 46b                                
+    0.033955  30a 22b 30b -> 35a 34b 47b                                
+   -0.098155  30a 22b 30b -> 35a 34b 48b                                
+    0.011001  30a 22b 30b -> 35a 34b 50b                                
+   -0.014505  30a 22b 30b -> 36a 34b 50b                                
+   -0.025178  30a 22b 30b -> 36a 34b 51b                                
+    0.167990  30a 22b 30b -> 35a 34b 52b                                
+    0.053589  11a 23b 30b -> 35a 34b 35b                                
+   -0.013331  30a 23b 30b -> 47a 34b 35b                                
+    0.034525  30a 23b 30b -> 54a 34b 35b                                
+    0.137016  30a 23b 30b -> 36a 34b 36b                                
+    0.126278  30a 23b 30b -> 37a 34b 36b                                
+   -0.017709  30a 23b 30b -> 38a 34b 36b                                
+    0.012760  30a 23b 30b -> 39a 34b 36b                                
+    0.112356  30a 23b 30b -> 40a 34b 36b                                
+    0.013216  30a 23b 30b -> 44a 34b 36b                                
+   -0.211201  30a 23b 30b -> 36a 34b 37b                                
+   -0.010984  30a 23b 30b -> 37a 34b 37b                                
+    0.017012  30a 23b 30b -> 40a 34b 37b                                
+   -0.016417  30a 23b 30b -> 36a 34b 38b                                
+    0.020459  30a 23b 30b -> 36a 34b 39b                                
+    0.016471  30a 23b 30b -> 36a 34b 40b                                
+    0.028076  30a 23b 30b -> 37a 34b 40b                                
+    0.013541  30a 23b 30b -> 38a 34b 40b                                
+   -0.013436  30a 23b 30b -> 39a 34b 40b                                
+   -0.039005  30a 23b 30b -> 40a 34b 40b                                
+    0.203399  30a 23b 30b -> 35a 34b 43b                                
+   -0.032435  30a 23b 30b -> 36a 34b 44b                                
+    0.015085  30a 23b 30b -> 35a 34b 45b                                
+   -0.072008  30a 23b 30b -> 35a 34b 56b                                
+   -0.010166  30a 23b 30b -> 35a 34b 57b                                
+   -0.142924  30a 24b 30b -> 36a 34b 35b                                
+   -0.026855  30a 24b 30b -> 35a 34b 36b                                
+   -0.010542  30a 24b 30b -> 36a 34b 37b                                
+   -0.143741  30a 25b 30b -> 36a 34b 35b                                
+   -0.014141  30a 25b 30b -> 40a 34b 35b                                
+    0.365370  30a 25b 30b -> 35a 34b 36b                                
+   -0.058117  30a 25b 30b -> 36a 34b 36b                                
+   -0.018867  30a 25b 30b -> 35a 34b 37b                                
+    0.016968  30a 25b 30b -> 36a 34b 37b                                
+   -0.018597  30a 25b 30b -> 35a 34b 38b                                
+    0.014444  30a 25b 30b -> 36a 34b 38b                                
+    0.015149  30a 25b 30b -> 35a 34b 39b                                
+   -0.015685  30a 25b 30b -> 36a 34b 39b                                
+    0.034847  30a 25b 30b -> 35a 34b 40b                                
+   -0.023193  30a 25b 30b -> 36a 34b 40b                                
+    0.017384  30a 26b 30b -> 40a 34b 35b                                
+   -0.036530  30a 26b 30b -> 44a 34b 35b                                
+    0.041607  30a 26b 30b -> 36a 34b 36b                                
+    0.286597  30a 26b 30b -> 35a 34b 37b                                
+    0.072499  30a 26b 30b -> 35a 34b 40b                                
+    0.010285  30a 26b 30b -> 36a 34b 40b                                
+    0.127410  30a 27b 30b -> 49a 34b 35b                                
+    0.035406  30a 27b 30b -> 36a 34b 37b                                
+    0.039070  30a 27b 30b -> 36a 34b 38b                                
+   -0.050370  30a 27b 30b -> 36a 34b 39b                                
+   -0.047358  30a 27b 30b -> 36a 34b 40b                                
+    0.034159  30a 27b 30b -> 35a 34b 51b                                
+    0.038385  30a 28b 30b -> 36a 34b 35b                                
+   -0.025432  30a 29b 30b -> 35a 34b 36b                                
+   -0.063607  30a 29b 30b -> 36a 34b 36b                                
+   -0.014041  30a 29b 30b -> 35a 34b 37b                                
+    0.012694  30a 29b 30b -> 36a 34b 37b                                
+   -0.019302  30a 29b 30b -> 35a 34b 38b                                
+    0.010390  30a 29b 30b -> 36a 34b 38b                                
+    0.016320  30a 29b 30b -> 35a 34b 39b                                
+    0.023063  30a 29b 30b -> 35a 34b 40b                                
+   -0.027974  30a 29b 30b -> 36a 34b 40b                                
+    0.010109  30a 33a 21b -> 36a 37a 34b                                
+    0.012967  1a 30a 30b -> 35a 36a 34b                                 
+   -0.106631  3a 30a 30b -> 35a 38a 34b                                 
+    0.020075  4a 30a 30b -> 36a 37a 34b                                 
+    0.012405  5a 30a 30b -> 35a 46a 34b                                 
+    0.221953  6a 30a 30b -> 35a 38a 34b                                 
+    0.074099  6a 30a 30b -> 35a 39a 34b                                 
+    0.010151  7a 30a 30b -> 36a 37a 34b                                 
+   -0.337455  7a 30a 30b -> 35a 46a 34b                                 
+    0.119573  7a 30a 30b -> 35a 49a 34b                                 
+   -0.041624  8a 30a 30b -> 36a 37a 34b                                 
+   -0.026943  8a 30a 30b -> 36a 38a 34b                                 
+    0.018540  8a 30a 30b -> 36a 39a 34b                                 
+    0.063709  8a 30a 30b -> 36a 40a 34b                                 
+    0.010056  9a 30a 30b -> 36a 38a 34b                                 
+   -0.017761  9a 30a 30b -> 36a 40a 34b                                 
+   -0.026145  10a 30a 30b -> 35a 48a 34b                                
+    0.204596  11a 30a 30b -> 36a 37a 34b                                
+   -0.017559  11a 30a 30b -> 36a 38a 34b                                
+   -0.087005  11a 30a 30b -> 36a 40a 34b                                
+   -0.031122  11a 30a 30b -> 36a 44a 34b                                
+   -0.283931  11a 30a 30b -> 35a 54a 34b                                
+   -0.133639  11a 30a 30b -> 35a 55a 34b                                
+   -0.029085  12a 30a 30b -> 36a 37a 34b                                
+   -0.054777  12a 30a 30b -> 36a 38a 34b                                
+    0.046281  12a 30a 30b -> 36a 39a 34b                                
+    0.064062  12a 30a 30b -> 36a 40a 34b                                
+    0.020307  12a 30a 30b -> 36a 44a 34b                                
+    0.014117  12a 30a 30b -> 36a 49a 34b                                
+   -0.016536  12a 30a 30b -> 36a 51a 34b                                
+   -0.051370  13a 30a 30b -> 36a 37a 34b                                
+   -0.104545  13a 30a 30b -> 36a 38a 34b                                
+    0.076533  13a 30a 30b -> 36a 39a 34b                                
+    0.166626  13a 30a 30b -> 36a 40a 34b                                
+    0.019090  13a 30a 30b -> 36a 44a 34b                                
+   -0.022306  13a 30a 30b -> 36a 46a 34b                                
+   -0.014470  13a 30a 30b -> 36a 48a 34b                                
+    0.026494  13a 30a 30b -> 36a 49a 34b                                
+   -0.025355  13a 30a 30b -> 36a 50a 34b                                
+   -0.044221  13a 30a 30b -> 36a 51a 34b                                
+    0.023221  14a 30a 30b -> 36a 37a 34b                                
+    0.054819  14a 30a 30b -> 36a 38a 34b                                
+   -0.035427  14a 30a 30b -> 36a 39a 34b                                
+   -0.081557  14a 30a 30b -> 36a 40a 34b                                
+    0.011571  14a 30a 30b -> 36a 51a 34b                                
+    0.084994  15a 30a 30b -> 36a 37a 34b                                
+    0.021981  15a 30a 30b -> 36a 38a 34b                                
+   -0.012312  15a 30a 30b -> 36a 39a 34b                                
+   -0.028740  15a 30a 30b -> 36a 40a 34b                                
+    0.076208  15a 30a 30b -> 35a 47a 34b                                
+   -0.255436  15a 30a 30b -> 35a 48a 34b                                
+   -0.043569  15a 30a 30b -> 35a 52a 34b                                
+   -0.010257  16a 30a 30b -> 36a 37a 34b                                
+    0.012629  16a 30a 30b -> 36a 44a 34b                                
+    0.019531  19a 30a 30b -> 36a 37a 34b                                
+   -0.010912  19a 30a 30b -> 36a 38a 34b                                
+   -0.016078  19a 30a 30b -> 36a 40a 34b                                
+    0.014268  19a 30a 30b -> 35a 52a 34b                                
+   -0.014389  19a 30a 30b -> 35a 55a 34b                                
+    0.016045  20a 30a 30b -> 36a 38a 34b                                
+   -0.013878  20a 30a 30b -> 36a 39a 34b                                
+    0.010019  21a 30a 30b -> 36a 38a 34b                                
+   -0.029573  21a 30a 30b -> 36a 40a 34b                                
+    0.018015  21a 30a 30b -> 36a 44a 34b                                
+    0.384652  21a 30a 30b -> 35a 52a 34b                                
+   -0.011670  22a 30a 30b -> 36a 40a 34b                                
+    0.011483  22a 30a 30b -> 36a 44a 34b                                
+   -0.059788  22a 30a 30b -> 35a 47a 34b                                
+   -0.143272  22a 30a 30b -> 35a 48a 34b                                
+    0.344175  22a 30a 30b -> 35a 52a 34b                                
+    0.208608  23a 30a 30b -> 35a 47a 34b                                
+   -0.022984  23a 30a 30b -> 35a 52a 34b                                
+   -0.019468  23a 30a 30b -> 35a 36a 35b                                
+   -0.020367  25a 30a 30b -> 35a 36a 34b                                
+    0.054469  26a 30a 30b -> 35a 37a 34b                                
+    0.011596  26a 30a 30b -> 35a 40a 34b                                
+   -0.011882  27a 30a 30b -> 36a 37a 34b                                
+   -0.022113  27a 30a 30b -> 35a 39a 34b                                
+   -0.020822  27a 30a 30b -> 35a 46a 34b                                
+ 
+ ************************ 2018-12-20 03:28:52 *************************
+                      Normal termination of mrcc.
+ **********************************************************************
+--- SharcNET Job Epilogue ---
+Job completed successfully.
+               jobid: 1651217
+               resid: 3126691
+         exit status: 0
+      allocated time: 49314.7
+           user time: 322855
+         system time: 56948.4
+peak rss=132620025856; peak vsz=133053640704 (bytes)
+atime=49314.7; utime=322855; stime=56948.4; exit=0
