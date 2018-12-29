@@ -20,18 +20,18 @@ eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1
              Extrapolated Energy, using weighted quadratic fit          -13482.1824665581
 
 CC:
-CCSD                                                                    -13482.154243391968 
-CCSD                                                                    -13482.154678438
+CCSD-MRCC/NWCHEM                                                        -13482.154243391968 
+CCSD-PySCF                                                              -13482.154678438
 CCSD(T)-MRCC                                                            -13482.173916820444
-CCSD(T)-NWCHEM                                                          -13482.175402218
+CCSD(T)-PySCF                                                           -13482.175402218
 CCSDT-MRCC                                                              -13482.177790577623
 CCSDT-NWCHEM                                                            -13482.177791 
 CCSDT(2)_Q-NWCHEM                                                       -13482.180062 
 CCCSDTQP(cf)-NWCHEM                                                     -13482.180304
 CCSDT(Q)-MRCC                                                           -13482.181613872461
-CCSDTQ-MRCC (running, ~14 hours/iteration, 140 hours total)
+CCSDTQ-MRCC (running, 4 days/iteration, on 4th iteration)
 CCSDTQ-CFOUR is also possible (figure out how to get >50 iterations)
-CCSDTQ(P)-MRCC (need 3TB and local disk, very do-able)
+CCSDTQ(P)-MRCC (need 2.6TB with 12 cores and local disk, very do-able)
 
 TCC:
 TCCSD CAS1(8,8)                                                         -13482.189928 
