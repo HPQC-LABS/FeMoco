@@ -2,14 +2,13 @@ clear('all')
 RDMEstimates204d8m=load('RDMEstimates.toBeUniformed');
 RDMEstimates204d8m_stepsize1=RDMEstimates204d8m(1:87348,:);
 
-averaged=movmean(RDMEstimates204d8m_stepsize1(:,2:end),[0 9],1);
-RDMEstimates204d8m_stepsize1_averaged=[RDMEstimates204d8m_stepsize1(1:10:end,1) averaged(1:10:end,:)];
+summed=10*movmean(RDMEstimates204d8m_stepsize1(:,2:end),[0 9],1);
+RDMEstimates204d8m_stepsize1_averaged=[RDMEstimates204d8m_stepsize1(1:10:end,1) summed(1:10:end,:)];
 
 RDMEstimates204d8m_stepsize10=RDMEstimates204d8m(87348+1:end,:);
 
-RDMEstimates204d8m_uniform=[RDMEstimates204d8m_stepsize1 ;RDMEstimates204d8m_stepsize10];
+RDMEstimates204d8m_uniform=[RDMEstimates204d8m_stepsize1_averaged ;RDMEstimates204d8m_stepsize10];
 save('RDMEstimates.uniform','RDMEstimates204d8m_uniform','-ASCII');
-
 
 %% Proof that the above works:
 
@@ -35,10 +34,9 @@ A=[
 28    6      8
 29    5      7];
 
-averaged=movmean(A(:,2:end),[0,9],1);
-Raveraged=[A(1:10:end,1) averaged(1:10:end,:)];
+summed=10*movmean(A(:,2:end),[0,9],1);
+Rsummed=[A(1:10:end,1) summed(1:10:end,:)];
 
-%Raveraged =
-% 10.0000    4.5000    4.5000
-% 20.0000    4.5000    4.5000
-
+%summed =
+% 10    45    45
+% 20    45    45
