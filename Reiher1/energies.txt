@@ -53,9 +53,9 @@ D=5000, discarded weight= 2.4106249E-05	(forward  from 2000)            -13482.1
 Extrapolated DMRG                                                       -13482.1805     +/- 0.0007
 
 FCIQMC-RDM:
-Nw = 204.8 million                                                      -13482.16644(7)
+Nw = 204.8 million                                                      -13482.16637(9)
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
-Nw = 204.8 million                                                      -13482.17492(98)
-Nw = 409.6 million                                                      -13482.17640(70)
+Nw = 204.8 million                                                      -13482.17562(150)
+Nw = 409.6 million                                                      -13482.17640(070)
