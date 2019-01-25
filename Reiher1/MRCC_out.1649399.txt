@@ -2153,3 +2153,25 @@ nstate=1
  
  Iteration 10  CC energy:-13482.18177545  Energy decrease:   0.00001688
  ======================================================================
+ Norm of residual vector:     0.00033714
+ CPU time [min]:911394.865                   Wall time [min]: 49187.329
+ 
+ Iteration 11  CC energy:-13482.18178098  Energy decrease:   0.00000554
+ ======================================================================
+ 
+ Fatal error in mrcc.
+ Program will stop.
+ 
+ ************************ 2019-01-24 23:25:37 *************************
+                   Error at the termination of mrcc.
+ **********************************************************************
+--- SharcNET Job Epilogue ---
+Job returned with status 1.
+               jobid: 1649399
+               resid: 3124871
+         exit status: 1
+      allocated time: 3190380
+           user time: 58182800
+         system time: 1797770
+peak rss=805022433280; peak vsz=950032990208 (bytes)
+atime=3190380; utime=58182800; stime=1797770; exit=1
