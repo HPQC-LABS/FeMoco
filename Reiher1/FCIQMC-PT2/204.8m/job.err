@@ -1,4 +1,3 @@
-/lhome/loadl/execute/allogin1.fkf.mpg.de.85851.0/0submit2: /usr/share/modules/init/bash[11]: export: -f: unknown option
-mv: cannot stat '/algpfs/dattamv': No such file or directory
-cp: cannot stat '/algpfs/dattani/Li2/54/pt2/2e5/4e5/8e5/1.6e6/3.2e6/6.4e6/12.8m/25.6m/51.2m/102.4m/204.8m/c2/c/c/c/c/c/c/c/c/c/c/c2/c/c/c/c/c/c/c/c/c/c//FCIMCStats': No such file or directory
-cp: cannot stat '/algpfs/dattani/Li2/54/pt2/2e5/4e5/8e5/1.6e6/3.2e6/6.4e6/12.8m/25.6m/51.2m/102.4m/204.8m/c2/c/c/c/c/c/c/c/c/c/c/c2/c/c/c/c/c/c/c/c/c/c//INITIATORStats': No such file or directory
+/lhome/loadl/execute/allogin1.fkf.mpg.de.85852.0/0submit: /usr/share/modules/init/bash[11]: export: -f: unknown option
+cp: cannot stat '../FCIMCStats': No such file or directory
+cp: cannot stat '../INITIATORStats': No such file or directory
