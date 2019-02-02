@@ -29,7 +29,7 @@ CCSDT-NWCHEM                                                            -13482.1
 CCSDT(2)_Q-NWCHEM                                                       -13482.180062 
 CCCSDTQP(cf)-NWCHEM                                                     -13482.180304
 CCSDT(Q)-MRCC                                                           -13482.181613872461
-CCSDTQ-MRCC (running, 4 days/iteration, on 4th iteration)
+CCSDTQ-MRCC (running, 4 days/iteration)                                 -13482.18178301
 CCSDTQ-CFOUR is also possible (figure out how to get >50 iterations)
 CCSDTQ(P)-MRCC (need 2.6TB with 12 cores and local disk, very do-able)
 
