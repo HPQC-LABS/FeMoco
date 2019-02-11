@@ -1,21 +1,4 @@
-/lhome/loadl/execute/allogin1.fkf.mpg.de.86795.0/0submit: /usr/share/modules/init/bash[11]: export: -f: unknown option
+/lhome/loadl/execute/allogin1.fkf.mpg.de.87036.0/0submit: /usr/share/modules/init/bash[11]: export: -f: unknown option
 cp: cannot stat '../FCIMCStats': No such file or directory
 cp: cannot stat '../INITIATORStats': No such file or directory
-forrtl: severe (174): SIGSEGV, segmentation fault occurred
-Image              PC                Routine            Line        Source             
-mneci              0000000000E2CBC1  Unknown               Unknown  Unknown
-mneci              0000000000E2B317  Unknown               Unknown  Unknown
-mneci              0000000000DD9894  Unknown               Unknown  Unknown
-mneci              0000000000DD96A6  Unknown               Unknown  Unknown
-mneci              0000000000D6DD0F  Unknown               Unknown  Unknown
-mneci              0000000000D72BDD  Unknown               Unknown  Unknown
-libpthread.so.0    00002B2A985F6B00  Unknown               Unknown  Unknown
-mneci              000000000041E40D  Unknown               Unknown  Unknown
-mneci              00000000004F37DC  Unknown               Unknown  Unknown
-mneci              00000000004F6925  Unknown               Unknown  Unknown
-mneci              00000000004BE31F  Unknown               Unknown  Unknown
-mneci              000000000040FA4E  Unknown               Unknown  Unknown
-mneci              0000000000408331  Unknown               Unknown  Unknown
-mneci              0000000000407DFE  Unknown               Unknown  Unknown
-libc.so.6          00002B2A9A52D6E5  Unknown               Unknown  Unknown
-mneci              0000000000407D09  Unknown               Unknown  Unknown
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
