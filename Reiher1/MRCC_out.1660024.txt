@@ -348,3 +348,13 @@ nstate=1
  
  Iteration  3  CC energy:-13482.18178347  Energy decrease:   0.00000046
  ======================================================================
+ Norm of residual vector:     0.00010906
+ CPU time [min]:372742.892                   Wall time [min]: 17358.913
+ 
+ Iteration  4  CC energy:-13482.18178550  Energy decrease:   0.00000203
+ ======================================================================
+ Norm of residual vector:     0.00006178
+ CPU time [min]:474664.995                   Wall time [min]: 21837.439
+ 
+ Iteration  5  CC energy:-13482.18178625  Energy decrease:   0.00000075
+ ======================================================================
