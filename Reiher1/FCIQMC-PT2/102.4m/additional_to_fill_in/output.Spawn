@@ -1,0 +1,3422 @@
+ Number of processors:           40
+ Processor            1 /          40  as head node.
+ Sum:          820
+ Memory Manager initialised with  99999.0 MB
+
+ ================================================================
+ Compiled on Jul 01 2018 at 03:07:35
+ Compiled using configuration:
+     cmake-Intel-par-CLUSTER
+ VCS BASE repository version:
+     97ae7927745199413473c9e6098dac7f6c60e843
+ Working directory: 
+     /algpfs/dattani/Li2/54/pt2/2e5/4e5/8e5/1.6e6/3.2e6/6.4e6/12.8m/25.6m/51.2m/102.4m/c/c/c/c/c/c/c/c/c/c/c/c/c/c/c_every1
+ Running on: alnode162
+ Started running on 16/02/2019 at 11:01:44
+ ================================================================
+
+ Processing arguments
+ input.Spawn                                                                    
+                                                                                
+                                                                                
+                   
+ Reading from file: input.Spawn
+ Using the default set of defaults.
+
+****************************************************************
+
+title
+
+system read
+electrons 54
+spin-restrict 0
+nonuniformrandexcits 4ind-weighted-part-exact
+nobrillouintheorem
+(hphf 1
+molpromimic
+endsys
+
+calc
+time 2830
+methods
+method vertex fcimc
+endmethods
+(nmcyc 100000)
+diagshift 0.0
+shiftdamp 0.1
+ totalwalkers  1024e5
+ STARTSINGLEPART 10000
+(startcas 6,6
+(walkcontgrow
+ readpops
+proje-changeref 1.2
+ trial-wavefunction
+(pops-trial  1000
+ read-trial
+ semi-stochastic
+(pops-core  20000
+ read-core
+tau 0.001 search
+(max-tau 0.000005
+truncinitiator
+addtoinitiator 3
+(shiftequilsteps 2000
+maxwalkerbloom 1
+allrealcoeff
+realspawncutoff 0.3
+memoryfacpart  2.5
+memoryfacspawn  2.5
+stepsshift 10
+jump-shift
+(definedet 1 2 3 4  6 14
+en2-initiator
+endcalc
+
+integral
+(partiallyfreezevirt  197,0
+endint
+
+logging
+write-core
+write-trial
+binarypops
+(compare-trial-and-fciqmc-amps
+hist-excit-tofrom
+popsfiletimer 4
+highlypopwrite 10000
+printorboccs 1000
+writeinitiators
+calcrdmonfly 3 0000 1
+(rdm-main-size-fac 0.01
+(rdm-spawn-size-fac 0.01
+(rdm-recv-size-fac 0.01
+(hdf5-pops-write
+(hdf5-pops-read
+(write-spin-free-rdm
+(diagflyonerdm
+(printrodump
+PRINTRODUMP
+(printonerdm
+endlog
+end
+
+****************************************************************
+
+ RDM on fly
+ unspecified
+ Filling RDMs without explicitly specifying the number of replica simplations
+ Defaulting to using 2 replicas
+ Allocating each processor as a separate node.
+ I am the node root for node            0
+======== SYSTEM ==========
+  NUMBER OF ELECTRONS :    54
+  Restricting the spin state of the system, TSPN :  T
+  GLOBAL MS :            0
+  *** GENERIC SYSTEM ***  
+ Only one irrep found. Turning off symmetry for rest of calculation.
+  NUMBER OF SPIN ORBITALS IN BASIS :   108
+*** CREATING BASIS FNs FROM FCIDUMP ***
+  Maximum number of symmetries:   1
+ Turning Symmetry off
+  Generating abelian symmetry table with  0 generators
+  Number of symmetry classes: 1
+ 
+Ordering Basis (Closed):    0   0   0   0   0   0   0   0
+Ordering Basis (Open  ):    0   0   0   0   0   0   0   0
+ Turning Symmetry off
+*** READING PRIMITIVE INTEGRALS FROM FCIDUMP ***
+ UMatSize:                1103355
+Memory required for integral storage:      8.417930603     Mb/Shared Memory
+Two-electron integrals with a magnitude over    0.1000000E-07 are screened
+Ignoring integral (chem. notation) (  15   1|  17  14):   1.615616620460000E-009
+Ignoring integral (chem. notation) (  15   4|  25  14):  -1.142917490590000E-009
+Ignoring integral (chem. notation) (  16   9|  25  22):  -7.900136823290000E-009
+Ignoring integral (chem. notation) (  22  15|  26   1):  -1.751551176990000E-009
+Ignoring integral (chem. notation) (  12   4|  27  15):  -1.086016526350000E-009
+Ignoring integral (chem. notation) (  22  15|  28  20):   7.849162098449999E-009
+Ignoring integral (chem. notation) (  23   3|  30   7):   9.698570973080000E-011
+Ignoring integral (chem. notation) (  17   6|  30  11):  -3.506897537320000E-009
+Ignoring integral (chem. notation) (  22  12|  30  11):  -6.872341781400000E-009
+Ignoring integral (chem. notation) (  24   2|  30  14):   6.650491111410000E-009
+Ignoring integral (chem. notation) (  26  19|  30  15):  -4.430208754460000E-009
+Ignoring integral (chem. notation) (  28  19|  30  15):  -7.049303192940000E-009
+Ignoring integral (chem. notation) (  30  17|  30  15):   3.483669828460000E-009
+Ignoring integral (chem. notation) (  21  15|  30  18):   8.092971832170001E-010
+Ignoring integral (chem. notation) (  29  15|  30  20):   5.636007501680000E-010
+Ignoring integral (chem. notation) (  27  15|  31   8):   6.775780423420000E-009
+Ignoring integral (chem. notation) (  31  27|  31  15):   3.218211574580000E-009
+Ignoring integral (chem. notation) (  30  12|  31  19):   9.851622182100000E-009
+Ignoring integral (chem. notation) (  30  15|  32   8):  -4.500603188680000E-009
+Ignoring integral (chem. notation) (  29  15|  33   3):   7.072761898590000E-009
+Ignoring integral (chem. notation) (  25   1|  33  22):   7.292319897780000E-009
+Ignoring integral (chem. notation) (  26   1|  33  27):  -3.690706844740000E-009
+Ignoring integral (chem. notation) (  26   9|  33  27):   4.759882491700000E-009
+Ignoring integral (chem. notation) (  30  13|  33  28):   3.197434320980000E-009
+Ignoring integral (chem. notation) (  28  22|  33  30):   4.977004555550000E-009
+Ignoring integral (chem. notation) (  27  15|  33  32):   3.326734809610000E-009
+Ignoring integral (chem. notation) (  25  15|  34  20):   6.543081187360000E-009
+Ignoring integral (chem. notation) (  25  14|  34  23):   2.962165744130000E-010
+Ignoring integral (chem. notation) (  19  15|  34  25):  -8.515072515320001E-009
+Ignoring integral (chem. notation) (  22  11|  34  25):   8.621333766150000E-009
+Ignoring integral (chem. notation) (  28  20|  34  25):   6.548946197680000E-009
+Ignoring integral (chem. notation) (  21   1|  34  27):   1.355806694700000E-009
+Ignoring integral (chem. notation) (  25  15|  34  29):  -9.402439550440000E-009
+Ignoring integral (chem. notation) (  20  15|  35   5):  -3.154115909660000E-009
+Ignoring integral (chem. notation) (  34  23|  35  29):  -4.339861518510000E-009
+Ignoring integral (chem. notation) (  17   6|  36  15):  -4.299825898510000E-009
+Ignoring integral (chem. notation) (  16  13|  37  15):   9.188291673700001E-009
+Ignoring integral (chem. notation) (  29  15|  37  15):  -6.276607853490000E-009
+Ignoring integral (chem. notation) (  26   7|  37  31):  -6.894658899490000E-009
+Ignoring integral (chem. notation) (  15  13|  38  18):  -7.588036582740000E-009
+Ignoring integral (chem. notation) (  33  30|  38  21):  -7.309069991810000E-009
+Ignoring integral (chem. notation) (  30   2|  38  32):   4.917889341720000E-009
+Ignoring integral (chem. notation) (  25  12|  39  31):   7.751084768929999E-009
+Ignoring integral (chem. notation) (  30  12|  39  32):  -3.503584164830000E-009
+Ignoring integral (chem. notation) (  36  10|  40  15):  -3.268581991230000E-009
+Ignoring integral (chem. notation) (  18  13|  40  23):   8.057037923330000E-009
+Ignoring integral (chem. notation) (  24  21|  40  32):   3.921456991360000E-011
+Ignoring integral (chem. notation) (  35  28|  41   8):  -7.648935106859999E-009
+Ignoring integral (chem. notation) (  19  11|  41  15):  -9.235792817320000E-009
+Ignoring integral (chem. notation) (  30  13|  41  28):   7.981487828160000E-009
+Ignoring integral (chem. notation) (  34  31|  42  19):   9.774584312850001E-009
+Ignoring integral (chem. notation) (  41  15|  42  25):   5.455241039250000E-009
+Ignoring integral (chem. notation) (  15  14|  43  29):  -8.933351330659999E-009
+Ignoring integral (chem. notation) (  36  33|  43  30):  -3.417513882330000E-010
+Ignoring integral (chem. notation) (  25  10|  43  32):  -5.817167453750000E-010
+Ignoring integral (chem. notation) (  36  35|  44  11):   8.862891970329999E-009
+Ignoring integral (chem. notation) (  15  12|  44  16):   4.846321032040000E-009
+Ignoring integral (chem. notation) (  31   4|  44  18):   3.428182845370000E-009
+Ignoring integral (chem. notation) (  34  19|  44  20):  -7.501879546690001E-009
+Ignoring integral (chem. notation) (  32  25|  44  24):   9.499972124850001E-011
+Ignoring integral (chem. notation) (  21   1|  44  31):   5.986957657350000E-009
+Ignoring integral (chem. notation) (  27  18|  44  38):  -5.995012706170000E-009
+Ignoring integral (chem. notation) (  20   7|  45   4):   2.311757020750000E-009
+Ignoring integral (chem. notation) (  33   5|  45   4):   2.649622795160000E-010
+Ignoring integral (chem. notation) (  20  15|  45  18):  -6.901401948240000E-009
+Ignoring integral (chem. notation) (  25  13|  45  26):   7.202683480340000E-009
+Ignoring integral (chem. notation) (  13   3|  45  27):   2.970222950110000E-009
+Ignoring integral (chem. notation) (  43  30|  46   3):  -8.324265903190000E-009
+Ignoring integral (chem. notation) (  25  15|  46  15):   1.357355503710000E-009
+Ignoring integral (chem. notation) (  24  21|  46  18):   7.281493852019999E-010
+Ignoring integral (chem. notation) (  11   7|  46  27):  -5.630991632390000E-009
+Ignoring integral (chem. notation) (  15  12|  46  30):   4.120294148540000E-009
+Ignoring integral (chem. notation) (  25  10|  47   5):   4.670975099570000E-009
+Ignoring integral (chem. notation) (  45  36|  47  11):  -2.561414431720000E-009
+Ignoring integral (chem. notation) (  29   3|  47  18):  -7.564191581859999E-009
+Ignoring integral (chem. notation) (  30   5|  47  22):   9.483663958840000E-009
+Ignoring integral (chem. notation) (  21  11|  48  10):  -6.137331968840000E-009
+Ignoring integral (chem. notation) (  48  21|  48  14):  -3.787804479850000E-009
+Ignoring integral (chem. notation) (  25  22|  48  15):  -2.633148064650000E-009
+Ignoring integral (chem. notation) (  46  16|  48  15):   4.092955798410000E-009
+Ignoring integral (chem. notation) (  46  31|  48  17):  -8.552471282570000E-009
+Ignoring integral (chem. notation) (  27  15|  48  25):   7.002762070850000E-010
+Ignoring integral (chem. notation) (  21  15|  48  33):   6.346178455930000E-009
+Ignoring integral (chem. notation) (  37  21|  48  48):   2.049846186600000E-009
+Ignoring integral (chem. notation) (  35  15|  49   9):  -3.927215275390000E-009
+Ignoring integral (chem. notation) (  40  34|  49  15):   9.092553260589999E-009
+Ignoring integral (chem. notation) (  32  19|  49  25):   5.501686651020000E-009
+Ignoring integral (chem. notation) (  33  30|  50  31):  -7.750720465660000E-009
+Ignoring integral (chem. notation) (  25  15|  50  37):  -6.476892426850000E-010
+Ignoring integral (chem. notation) (  30  15|  50  37):   4.898782231710000E-009
+Ignoring integral (chem. notation) (  33  18|  50  46):  -8.970215250950001E-009
+Ignoring integral (chem. notation) (  35  30|  51   6):  -2.666861059500000E-009
+Ignoring integral (chem. notation) (  34  21|  51  17):  -1.681749182200000E-009
+Ignoring integral (chem. notation) (  28  15|  51  18):  -1.934217068990000E-009
+Ignoring integral (chem. notation) (  48  21|  51  18):  -7.899155641200000E-009
+Ignoring integral (chem. notation) (  18  13|  51  27):   6.557483250010000E-009
+Ignoring integral (chem. notation) (  32  25|  51  28):  -8.591848957190000E-009
+Ignoring integral (chem. notation) (  46  30|  51  29):   6.956862983050000E-009
+Ignoring integral (chem. notation) (  49  14|  51  29):  -6.095149186520000E-009
+Ignoring integral (chem. notation) (  47  28|  51  31):   2.564968531580000E-009
+ Ignored more than 100 integrals.
+ Further threshold truncations not reported explicitly
+ Number of removed two-index integrals:                    118
+ Number of non-zero integrals:                1103237
+ ECORE=  -13212.9703260000     
+ Setting normal GetUMatEl routine
+ N_alpha:27 ; N_beta:27 ; LMS: 0 ; NEl:54
+ Fermi det (D0):(    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54)
+ Symmetry:  ( 0, 0, 0) 0
+NECI called from MOLPRO, so assuming orbitals ordered by occupation number.
+Calculating orbital energies...
+Reordering basis by orbital energies...
+ 
+Ordering Basis (Closed):    0   0   0   0   0   0   0   0
+Ordering Basis (Open  ):    0   0   0   0   0   0   0   0
+      1     41      0      0      0     -1 ( 0, 0, 0) 0   0       -2.513525501       -2.513525501 #
+      2     42      0      0      0      1 ( 0, 0, 0) 0   0       -2.513525501       -2.513525501 #
+      3     45      0      0      0     -1 ( 0, 0, 0) 0   0       -1.701027477       -1.701027477 #
+      4     46      0      0      0      1 ( 0, 0, 0) 0   0       -1.701027477       -1.701027477 #
+      5     31      0      0      0     -1 ( 0, 0, 0) 0   0       -1.456082221       -1.456082221 #
+      6     32      0      0      0      1 ( 0, 0, 0) 0   0       -1.456082221       -1.456082221 #
+      7     43      0      0      0     -1 ( 0, 0, 0) 0   0       -1.001243300       -1.001243300 #
+      8     44      0      0      0      1 ( 0, 0, 0) 0   0       -1.001243300       -1.001243300 #
+      9     53      0      0      0     -1 ( 0, 0, 0) 0   0       -0.981682673       -0.981682673 #
+     10     54      0      0      0      1 ( 0, 0, 0) 0   0       -0.981682673       -0.981682673 #
+     11     39      0      0      0     -1 ( 0, 0, 0) 0   0       -0.908678976       -0.908678976 #
+     12     40      0      0      0      1 ( 0, 0, 0) 0   0       -0.908678976       -0.908678976 #
+     13     37      0      0      0     -1 ( 0, 0, 0) 0   0       -0.884844573       -0.884844573 #
+     14     38      0      0      0      1 ( 0, 0, 0) 0   0       -0.884844573       -0.884844573 #
+     15     51      0      0      0     -1 ( 0, 0, 0) 0   0       -0.856691533       -0.856691533 #
+     16     52      0      0      0      1 ( 0, 0, 0) 0   0       -0.856691533       -0.856691533 #
+     17     33      0      0      0     -1 ( 0, 0, 0) 0   0       -0.844549179       -0.844549179 #
+     18     34      0      0      0      1 ( 0, 0, 0) 0   0       -0.844549179       -0.844549179 #
+     19     47      0      0      0     -1 ( 0, 0, 0) 0   0       -0.841636616       -0.841636616 #
+     20     48      0      0      0      1 ( 0, 0, 0) 0   0       -0.841636616       -0.841636616 #
+     21     35      0      0      0     -1 ( 0, 0, 0) 0   0       -0.822931687       -0.822931687 #
+     22     36      0      0      0      1 ( 0, 0, 0) 0   0       -0.822931687       -0.822931687 #
+     23      1      0      0      0     -1 ( 0, 0, 0) 0   0       -0.775632503       -0.775632503 #
+     24      2      0      0      0      1 ( 0, 0, 0) 0   0       -0.775632503       -0.775632503 #
+     25      3      0      0      0     -1 ( 0, 0, 0) 0   0       -0.770080730       -0.770080730 #
+     26      4      0      0      0      1 ( 0, 0, 0) 0   0       -0.770080730       -0.770080730 #
+     27      5      0      0      0     -1 ( 0, 0, 0) 0   0       -0.763755027       -0.763755027 #
+     28      6      0      0      0      1 ( 0, 0, 0) 0   0       -0.763755027       -0.763755027 #
+     29     49      0      0      0     -1 ( 0, 0, 0) 0   0       -0.761523435       -0.761523435 #
+     30     50      0      0      0      1 ( 0, 0, 0) 0   0       -0.761523435       -0.761523435 #
+     31      7      0      0      0     -1 ( 0, 0, 0) 0   0       -0.761256578       -0.761256578 #
+     32      8      0      0      0      1 ( 0, 0, 0) 0   0       -0.761256578       -0.761256578 #
+     33      9      0      0      0     -1 ( 0, 0, 0) 0   0       -0.757887650       -0.757887650 #
+     34     10      0      0      0      1 ( 0, 0, 0) 0   0       -0.757887650       -0.757887650 #
+     35     11      0      0      0     -1 ( 0, 0, 0) 0   0       -0.754256469       -0.754256469 #
+     36     12      0      0      0      1 ( 0, 0, 0) 0   0       -0.754256469       -0.754256469 #
+     37     13      0      0      0     -1 ( 0, 0, 0) 0   0       -0.750608242       -0.750608242 #
+     38     14      0      0      0      1 ( 0, 0, 0) 0   0       -0.750608242       -0.750608242 #
+     39     15      0      0      0     -1 ( 0, 0, 0) 0   0       -0.747551902       -0.747551902 #
+     40     16      0      0      0      1 ( 0, 0, 0) 0   0       -0.747551902       -0.747551902 #
+     41     17      0      0      0     -1 ( 0, 0, 0) 0   0       -0.739444136       -0.739444136 #
+     42     18      0      0      0      1 ( 0, 0, 0) 0   0       -0.739444136       -0.739444136 #
+     43     19      0      0      0     -1 ( 0, 0, 0) 0   0       -0.734916809       -0.734916809 #
+     44     20      0      0      0      1 ( 0, 0, 0) 0   0       -0.734916809       -0.734916809 #
+     45     21      0      0      0     -1 ( 0, 0, 0) 0   0       -0.728146069       -0.728146069 #
+     46     22      0      0      0      1 ( 0, 0, 0) 0   0       -0.728146069       -0.728146069 #
+     47     23      0      0      0     -1 ( 0, 0, 0) 0   0       -0.711271366       -0.711271366 #
+     48     24      0      0      0      1 ( 0, 0, 0) 0   0       -0.711271366       -0.711271366 #
+     49     25      0      0      0     -1 ( 0, 0, 0) 0   0       -0.702677791       -0.702677791 #
+     50     26      0      0      0      1 ( 0, 0, 0) 0   0       -0.702677791       -0.702677791 #
+     51     27      0      0      0     -1 ( 0, 0, 0) 0   0       -0.690557996       -0.690557996 #
+     52     28      0      0      0      1 ( 0, 0, 0) 0   0       -0.690557996       -0.690557996 #
+     53     29      0      0      0     -1 ( 0, 0, 0) 0   0       -0.650439832       -0.650439832 #
+     54     30      0      0      0      1 ( 0, 0, 0) 0   0       -0.650439832       -0.650439832 #
+     55     63      0      0      0     -1 ( 0, 0, 0) 0   0       -0.388827451       -0.388827451
+     56     64      0      0      0      1 ( 0, 0, 0) 0   0       -0.388827451       -0.388827451
+     57     59      0      0      0     -1 ( 0, 0, 0) 0   0       -0.380758750       -0.380758750
+     58     60      0      0      0      1 ( 0, 0, 0) 0   0       -0.380758750       -0.380758750
+     59     65      0      0      0     -1 ( 0, 0, 0) 0   0       -0.375897268       -0.375897268
+     60     66      0      0      0      1 ( 0, 0, 0) 0   0       -0.375897268       -0.375897268
+     61     55      0      0      0     -1 ( 0, 0, 0) 0   0       -0.369720415       -0.369720415
+     62     56      0      0      0      1 ( 0, 0, 0) 0   0       -0.369720415       -0.369720415
+     63     67      0      0      0     -1 ( 0, 0, 0) 0   0       -0.356349561       -0.356349561
+     64     68      0      0      0      1 ( 0, 0, 0) 0   0       -0.356349561       -0.356349561
+     65     61      0      0      0     -1 ( 0, 0, 0) 0   0       -0.351571078       -0.351571078
+     66     62      0      0      0      1 ( 0, 0, 0) 0   0       -0.351571078       -0.351571078
+     67     69      0      0      0     -1 ( 0, 0, 0) 0   0       -0.326510200       -0.326510200
+     68     70      0      0      0      1 ( 0, 0, 0) 0   0       -0.326510200       -0.326510200
+     69     71      0      0      0     -1 ( 0, 0, 0) 0   0       -0.316386936       -0.316386936
+     70     72      0      0      0      1 ( 0, 0, 0) 0   0       -0.316386936       -0.316386936
+     71     73      0      0      0     -1 ( 0, 0, 0) 0   0       -0.305180986       -0.305180986
+     72     74      0      0      0      1 ( 0, 0, 0) 0   0       -0.305180986       -0.305180986
+     73     75      0      0      0     -1 ( 0, 0, 0) 0   0       -0.285039461       -0.285039461
+     74     76      0      0      0      1 ( 0, 0, 0) 0   0       -0.285039461       -0.285039461
+     75     77      0      0      0     -1 ( 0, 0, 0) 0   0       -0.279829033       -0.279829033
+     76     78      0      0      0      1 ( 0, 0, 0) 0   0       -0.279829033       -0.279829033
+     77     79      0      0      0     -1 ( 0, 0, 0) 0   0       -0.276919363       -0.276919363
+     78     80      0      0      0      1 ( 0, 0, 0) 0   0       -0.276919363       -0.276919363
+     79     81      0      0      0     -1 ( 0, 0, 0) 0   0       -0.270703355       -0.270703355
+     80     82      0      0      0      1 ( 0, 0, 0) 0   0       -0.270703355       -0.270703355
+     81     57      0      0      0     -1 ( 0, 0, 0) 0   0       -0.256277906       -0.256277906
+     82     58      0      0      0      1 ( 0, 0, 0) 0   0       -0.256277906       -0.256277906
+     83     83      0      0      0     -1 ( 0, 0, 0) 0   0       -0.249694522       -0.249694522
+     84     84      0      0      0      1 ( 0, 0, 0) 0   0       -0.249694522       -0.249694522
+     85     85      0      0      0     -1 ( 0, 0, 0) 0   0       -0.247986144       -0.247986144
+     86     86      0      0      0      1 ( 0, 0, 0) 0   0       -0.247986144       -0.247986144
+     87     87      0      0      0     -1 ( 0, 0, 0) 0   0       -0.238399714       -0.238399714
+     88     88      0      0      0      1 ( 0, 0, 0) 0   0       -0.238399714       -0.238399714
+     89     89      0      0      0     -1 ( 0, 0, 0) 0   0       -0.223015438       -0.223015438
+     90     90      0      0      0      1 ( 0, 0, 0) 0   0       -0.223015438       -0.223015438
+     91     91      0      0      0     -1 ( 0, 0, 0) 0   0       -0.215751505       -0.215751505
+     92     92      0      0      0      1 ( 0, 0, 0) 0   0       -0.215751505       -0.215751505
+     93     93      0      0      0     -1 ( 0, 0, 0) 0   0       -0.208314285       -0.208314285
+     94     94      0      0      0      1 ( 0, 0, 0) 0   0       -0.208314285       -0.208314285
+     95     95      0      0      0     -1 ( 0, 0, 0) 0   0       -0.199162830       -0.199162830
+     96     96      0      0      0      1 ( 0, 0, 0) 0   0       -0.199162830       -0.199162830
+     97     97      0      0      0     -1 ( 0, 0, 0) 0   0       -0.195325492       -0.195325492
+     98     98      0      0      0      1 ( 0, 0, 0) 0   0       -0.195325492       -0.195325492
+     99     99      0      0      0     -1 ( 0, 0, 0) 0   0       -0.186806334       -0.186806334
+    100    100      0      0      0      1 ( 0, 0, 0) 0   0       -0.186806334       -0.186806334
+    101    101      0      0      0     -1 ( 0, 0, 0) 0   0       -0.181076317       -0.181076317
+    102    102      0      0      0      1 ( 0, 0, 0) 0   0       -0.181076317       -0.181076317
+    103    103      0      0      0     -1 ( 0, 0, 0) 0   0       -0.180186221       -0.180186221
+    104    104      0      0      0      1 ( 0, 0, 0) 0   0       -0.180186221       -0.180186221
+    105    105      0      0      0     -1 ( 0, 0, 0) 0   0       -0.176175093       -0.176175093
+    106    106      0      0      0      1 ( 0, 0, 0) 0   0       -0.176175093       -0.176175093
+    107    107      0      0      0     -1 ( 0, 0, 0) 0   0       -0.170206528       -0.170206528
+    108    108      0      0      0      1 ( 0, 0, 0) 0   0       -0.170206528       -0.170206528
+ Fock operator energy:  -13262.1961265441     
+ Setting normal GetUMatEl routine
+ Calculation supports multiple parallel runs
+ Number of simultaneous walker distributions:            2
+ Number of sign components in bit representation of determinant:            2
+Setting integer length of determinants as bit-strings to:      5
+Setting integer bit-length of determinants as bit-strings to:     64
+ SYMMETRY MULTIPLICATION TABLE
+ No Symmetry table found.
+           1  Symmetry PAIRS
+           1  DISTINCT ORBITAL PAIR PRODUCT SYMS
+ Symmetry and spin of orbitals correctly set up for excitation generators.
+ Simply transferring this into a spin orbital representation.
+ Not storing the H matrix.
+ <D0|H|D0>=  -13481.6573881860     
+ <D0|T|D0>=  -488.148323827860     
+ FDet has    27 alpha electrons, and    27 beta electrons.
+              351  alpha-alpha occupied electron pairs
+              351  beta-beta occupied electron pairs
+              729  alpha-beta occupied electron pairs
+              351 alpha-alpha (vacant) hole pairs
+              351 beta-beta (vacant) hole pairs
+              729 alpha-beta (vacant) hole pairs
+ 
+ Performing Parallel FCIQMC....
+ 
+ Generated reference determinants:
+(    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54) E = -13481.657388186
+(    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54) E = -13481.657388186
+Symmetry of reference determinant is:          0
+Symmetry of reference determinant from spin orbital symmetry info is:          0
+*********** INITIATOR METHOD IN USE ***********
+Starting with only the reference determinant in the fixed initiator space.
+Value for seed is:            7
+Running FCIQMC for   2830.000 minutes.
+Reference Energy set to:    -13481.6573881860
+Highest energy determinant is (approximately):     -13450.5957352052    
+Corresponding to a correlation energy of:      31.0616529808049    
+ Calculating approximate pDoubles for use with excitation generator by looking a excitations from reference.
+ 777843 double excitations, and    1458 single excitations found from reference. This will be used to calculate pDoubles.
+ pDoubles set to:       0.998129
+ pSingles set to:       0.001871
+ Using initial time-step:   1.000000000000000E-003
+ Connectivity of HF determinant is:       779301
+ POPSFILE VERSION            4  detected.
+ Number of iterations in previous simulation:       220130
+Using timestep specified in POPSFILE!
+ read-in time-step:   0.00017060
+Using pSingles and pDoubles from POPSFILE: 
+ pSingles:   0.02529453
+ pDoubles:   0.97470547
+Using pParallel from POPSFILE: 
+ pParallel:   0.30524971
+Memory allocated for a maximum particle number per node of:       11812848
+ The average current signs before death will be stored for use in the RDMs.
+ Determinant related persistent storage requires:     991.373657 Mb / processor
+Spawning vectors allowing for a total of     12800000 particles to be spawned in any one iteration per core.
+Storing walkers in hash-table. Algorithm is now formally linear scaling with walker number
+Length of hash-table:         1792000
+Length of hash-table as a fraction of targetwalkers:              0.70000
+Reference processor is:       28
+Initial reference is: (    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54)
+Reading in a total of       189005547 configurations from POPSFILE.
+ CurrWalkers:                4721618
+Initialising load balancing blocks from data in POPSFILE
+ Initial memory (without excitgens + temp arrays) consists of :    1427.186890 Mb/Processor
+ Only one array of memory to store main particle list allocated...
+ Initial memory allocation sucessful...
+ =============================================
+ Stochastically calculating the reduced density matrices from the FCIQMC wavefunction
+ incl. explicit connections to the following HF determinant:(    1,    2,    3,    4,    5,    6,    7,    8,    9,   10,   11,   12,   13,   14,   15,   16,   17,   18,   19,   20,   21,   22,   23,   24,   25,   26,   27,   28,   29,   30,   31,   32,   33,   34,   35,   36,   37,   38,   39,   40,   41,   42,   43,   44,   45,   46,   47,   48,   49,   50,   51,   52,   53,   54)
+ Calculating the energy from the reduced density matrix. This requires the 2 electron RDM from which the 1-RDM can also be constructed.
+
+ About to allocate main RDM array, size per MPI process (MB):      2.387894
+ Allocation of main RDM array complete.
+ About to allocate RDM spawning array, size per MPI process (MB):     15.919342
+ Allocation of RDM spawning array complete.
+ About to allocate RDM receiving arrays, size per MPI process (MB):      9.551605
+ Allocation of RDM receiving arrays complete.
+
+ Main RDM memory arrays consists of:     711.474838 MB per MPI process.
+ RDM memory allocation complete.
+
+
+============ Semi-stochastic initialisation ============
+Generating the deterministic space...
+Total size of deterministic space:    20000
+Size of deterministic space on this processor:      523
+Writing the core space to a file...
+Generating the Hamiltonian in the deterministic space...
+Semi-stochastic initialisation complete.
+Total time (seconds) taken for semi-stochastic initialisation:   99.233
+
+
+=========== Trial wavefunction initialisation ==========
+Generating the trial space...
+  Initialising wavefunctions by the Lanczos algorithm
+  Aborting Lanczos and initialising trial states with direct diagonalisation
+        1000
+  MAXIMUM WIDTH OF HAMIL :          342
+  TOTAL NUMBER OF NON-ZERO ELEMENTS :        56695
+        1000
+Size of trial space on this processor:       24
+Total size of the trial space:     1000
+Calculating the number of states in the connected space...
+Attempting to allocate con_space. Size =      743.199 Mb
+States found on this processor, including repeats: 19482525
+Generating and storing the connected space...
+Removing repeated states and sorting by processor...
+Performing MPI communication of connected states...
+Attempting to allocate temp_space. Size =      659.887 Mb
+Attempting to allocate con_space. Size =      659.887 Mb
+Total size of connected space:  584744234
+Size of connected space on this processor:   14622519
+Generating the vector \sum_j H_{ij} \psi^T_j...
+Writing the trial space to a file...
+Energy eigenvalue(s) of the trial space:  -13482.0147048     
+Trial wavefunction initialisation complete.
+Total time (seconds) taken for trial wavefunction initialisation: 2394.122
+
+ Allocating temporary array for walkers spawned from a particular Di.
+ This requires       0.015259 Mb/Processor
+# 1. Iter.             2. Tot. parts        3. Tot. ref          4. Proj. E (cyc)     5. Shift. (cyc)      9. Tot. Proj. E      10. Dets occ.        11. Dets spawned     12. Iter. time       39. EN2 Dets.       
+#          220130   204772899.877        9975.11812823        0.00000000000      -0.504076586227       -13481.6573882             189005547               0   0.00000000000                    0
+ Memory requirement for spawned arrays increased from   976.5625 to  1562.5000 Mb/Processor
+Calculating the 2 electron density matrix on the fly.
+Beginning to fill the RDMs during iteration         1
+ Reset fdv av at iteration            1
+WARNING: There is not enough space in the current RDM spawning array to store the RDM elements to be sent to process 17. We will now try and reallocate the entire RDM spawning array to be twice its current size. If there is not sufficient memory then the program may crash. This also requires recreating the hash table to some of this object, which may take some time.
+Old RDM spawning array had the following size (MB):     15.919342
+Required new array must have the following size (MB):     31.838684
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):      6.367737
+Required new RDM array must have the following size (MB):     18.505112
+WARNING: There is not enough space in the current RDM array to add the received RDM elements to the main RDM array. We will now try and reallocate this array to be 1.5 times larger. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):      2.387894
+Required new RDM array must have the following size (MB):      3.581833
+ Writing RDMs to file at iteration            1
+ Reset fdv av at iteration            2
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.505112
+Required new RDM array must have the following size (MB):     18.508148
+ Writing RDMs to file at iteration            2
+ Reset fdv av at iteration            3
+ Writing RDMs to file at iteration            3
+ Reset fdv av at iteration            4
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.508148
+Required new RDM array must have the following size (MB):     18.508682
+WARNING: There is not enough space in the current RDM array to add the received RDM elements to the main RDM array. We will now try and reallocate this array to be 1.5 times larger. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):      3.581833
+Required new RDM array must have the following size (MB):      5.372742
+ Writing RDMs to file at iteration            4
+ Reset fdv av at iteration            5
+ Writing RDMs to file at iteration            5
+ Reset fdv av at iteration            6
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.508682
+Required new RDM array must have the following size (MB):     18.509995
+ Writing RDMs to file at iteration            6
+ Reset fdv av at iteration            7
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.509995
+Required new RDM array must have the following size (MB):     18.519073
+ Writing RDMs to file at iteration            7
+ Reset fdv av at iteration            8
+ Writing RDMs to file at iteration            8
+ Reset fdv av at iteration            9
+ Writing RDMs to file at iteration            9
+ Reset fdv av at iteration           10
+           220140   204774228.093        9975.34720458      -0.501715328490      -0.504334836915       -13482.1591035             189073252        22559383   42.7752685547                  316
+ Writing RDMs to file at iteration           10
+ Reset fdv av at iteration           11
+ Writing RDMs to file at iteration           11
+ Reset fdv av at iteration           12
+ Writing RDMs to file at iteration           12
+ Reset fdv av at iteration           13
+ Writing RDMs to file at iteration           13
+ Reset fdv av at iteration           14
+ Writing RDMs to file at iteration           14
+ Reset fdv av at iteration           15
+ Writing RDMs to file at iteration           15
+ Reset fdv av at iteration           16
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.519073
+Required new RDM array must have the following size (MB):     18.524216
+ Writing RDMs to file at iteration           16
+ Reset fdv av at iteration           17
+ Writing RDMs to file at iteration           17
+ Reset fdv av at iteration           18
+ Writing RDMs to file at iteration           18
+ Reset fdv av at iteration           19
+ Writing RDMs to file at iteration           19
+ Reset fdv av at iteration           20
+           220150   204771295.587        9976.06354915      -0.501673032892      -0.504232350529       -13482.1590612             189070847        22554953   42.7304458618                  284
+ Writing RDMs to file at iteration           20
+ Reset fdv av at iteration           21
+ Writing RDMs to file at iteration           21
+ Reset fdv av at iteration           22
+ Writing RDMs to file at iteration           22
+ Reset fdv av at iteration           23
+ Writing RDMs to file at iteration           23
+ Reset fdv av at iteration           24
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.524216
+Required new RDM array must have the following size (MB):     18.525772
+ Writing RDMs to file at iteration           24
+ Reset fdv av at iteration           25
+ Writing RDMs to file at iteration           25
+ Reset fdv av at iteration           26
+ Writing RDMs to file at iteration           26
+ Reset fdv av at iteration           27
+ Writing RDMs to file at iteration           27
+ Reset fdv av at iteration           28
+ Writing RDMs to file at iteration           28
+ Reset fdv av at iteration           29
+ Writing RDMs to file at iteration           29
+ Reset fdv av at iteration           30
+           220160   204770728.371        9976.18140002      -0.501701021437      -0.503484203109       -13482.1590892             189069218        22561020   42.7207527161                  309
+ Writing RDMs to file at iteration           30
+ Reset fdv av at iteration           31
+ Writing RDMs to file at iteration           31
+ Reset fdv av at iteration           32
+ Writing RDMs to file at iteration           32
+ Reset fdv av at iteration           33
+ Writing RDMs to file at iteration           33
+ Reset fdv av at iteration           34
+ Writing RDMs to file at iteration           34
+ Reset fdv av at iteration           35
+ Writing RDMs to file at iteration           35
+ Reset fdv av at iteration           36
+ Writing RDMs to file at iteration           36
+ Reset fdv av at iteration           37
+ Writing RDMs to file at iteration           37
+ Reset fdv av at iteration           38
+ Writing RDMs to file at iteration           38
+ Reset fdv av at iteration           39
+ Writing RDMs to file at iteration           39
+ Reset fdv av at iteration           40
+           220170   204770208.276        9975.41124712      -0.501735066791      -0.503510638301       -13482.1591233             189068781        22557488   42.7464103699                  291
+ Writing RDMs to file at iteration           40
+ Reset fdv av at iteration           41
+ Writing RDMs to file at iteration           41
+ Reset fdv av at iteration           42
+ Writing RDMs to file at iteration           42
+ Reset fdv av at iteration           43
+ Writing RDMs to file at iteration           43
+ Reset fdv av at iteration           44
+ Writing RDMs to file at iteration           44
+ Reset fdv av at iteration           45
+ Writing RDMs to file at iteration           45
+ Reset fdv av at iteration           46
+ Writing RDMs to file at iteration           46
+ Reset fdv av at iteration           47
+ Writing RDMs to file at iteration           47
+ Reset fdv av at iteration           48
+ Writing RDMs to file at iteration           48
+ Reset fdv av at iteration           49
+ Writing RDMs to file at iteration           49
+ Reset fdv av at iteration           50
+           220180   204772220.929        9975.84242715      -0.501762445174      -0.503577667716       -13482.1591506             189070355        22572509   42.7773437500                  314
+ Writing RDMs to file at iteration           50
+ Reset fdv av at iteration           51
+ Writing RDMs to file at iteration           51
+ Reset fdv av at iteration           52
+ Writing RDMs to file at iteration           52
+ Reset fdv av at iteration           53
+ Writing RDMs to file at iteration           53
+ Reset fdv av at iteration           54
+ Writing RDMs to file at iteration           54
+ Reset fdv av at iteration           55
+ Writing RDMs to file at iteration           55
+ Reset fdv av at iteration           56
+ Writing RDMs to file at iteration           56
+ Reset fdv av at iteration           57
+ Writing RDMs to file at iteration           57
+ Reset fdv av at iteration           58
+ Writing RDMs to file at iteration           58
+ Reset fdv av at iteration           59
+ Writing RDMs to file at iteration           59
+ Reset fdv av at iteration           60
+           220190   204771520.677        9975.97264506      -0.501772823171      -0.503835297844       -13482.1591610             189068944        22565224   42.7750473022                  299
+ Writing RDMs to file at iteration           60
+ Reset fdv av at iteration           61
+ Writing RDMs to file at iteration           61
+ Reset fdv av at iteration           62
+ Writing RDMs to file at iteration           62
+ Reset fdv av at iteration           63
+ Writing RDMs to file at iteration           63
+ Reset fdv av at iteration           64
+ Writing RDMs to file at iteration           64
+ Reset fdv av at iteration           65
+ Writing RDMs to file at iteration           65
+ Reset fdv av at iteration           66
+ Writing RDMs to file at iteration           66
+ Reset fdv av at iteration           67
+ Writing RDMs to file at iteration           67
+ Reset fdv av at iteration           68
+ Writing RDMs to file at iteration           68
+ Reset fdv av at iteration           69
+ Writing RDMs to file at iteration           69
+ Reset fdv av at iteration           70
+           220200   204769919.742        9976.69918291      -0.501789551277      -0.503461923121       -13482.1591777             189067428        22558687   42.8033218384                  294
+ Writing RDMs to file at iteration           70
+ Reset fdv av at iteration           71
+ Writing RDMs to file at iteration           71
+ Reset fdv av at iteration           72
+ Writing RDMs to file at iteration           72
+ Reset fdv av at iteration           73
+ Writing RDMs to file at iteration           73
+ Reset fdv av at iteration           74
+ Writing RDMs to file at iteration           74
+ Reset fdv av at iteration           75
+ Writing RDMs to file at iteration           75
+ Reset fdv av at iteration           76
+ Writing RDMs to file at iteration           76
+ Reset fdv av at iteration           77
+ Writing RDMs to file at iteration           77
+ Reset fdv av at iteration           78
+ Writing RDMs to file at iteration           78
+ Reset fdv av at iteration           79
+ Writing RDMs to file at iteration           79
+ Reset fdv av at iteration           80
+           220210   204769227.093        9976.23041198      -0.501752098032      -0.503258690881       -13482.1591403             189067696        22550353   42.7566909790                  276
+ Writing RDMs to file at iteration           80
+ Reset fdv av at iteration           81
+ Writing RDMs to file at iteration           81
+ Reset fdv av at iteration           82
+ Writing RDMs to file at iteration           82
+ Reset fdv av at iteration           83
+ Writing RDMs to file at iteration           83
+ Reset fdv av at iteration           84
+ Writing RDMs to file at iteration           84
+ Reset fdv av at iteration           85
+ Writing RDMs to file at iteration           85
+ Reset fdv av at iteration           86
+ Writing RDMs to file at iteration           86
+ Reset fdv av at iteration           87
+ Writing RDMs to file at iteration           87
+ Reset fdv av at iteration           88
+ Writing RDMs to file at iteration           88
+ Reset fdv av at iteration           89
+ Writing RDMs to file at iteration           89
+ Reset fdv av at iteration           90
+           220220   204767385.342        9975.76626024      -0.501811807782      -0.502584781815       -13482.1592000             189065152        22556234   42.7498054504                  313
+ Writing RDMs to file at iteration           90
+ Reset fdv av at iteration           91
+ Writing RDMs to file at iteration           91
+ Reset fdv av at iteration           92
+ Writing RDMs to file at iteration           92
+ Reset fdv av at iteration           93
+ Writing RDMs to file at iteration           93
+ Reset fdv av at iteration           94
+ Writing RDMs to file at iteration           94
+ Reset fdv av at iteration           95
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.525772
+Required new RDM array must have the following size (MB):     18.527176
+ Writing RDMs to file at iteration           95
+ Reset fdv av at iteration           96
+ Writing RDMs to file at iteration           96
+ Reset fdv av at iteration           97
+ Writing RDMs to file at iteration           97
+ Reset fdv av at iteration           98
+ Writing RDMs to file at iteration           98
+ Reset fdv av at iteration           99
+ Writing RDMs to file at iteration           99
+ Reset fdv av at iteration          100
+           220230   204768056.521        9974.31047876      -0.501862285337      -0.502461133146       -13482.1592505             189065141        22558871   42.7443847656                  311
+ Writing RDMs to file at iteration          100
+ Reset fdv av at iteration          101
+ Writing RDMs to file at iteration          101
+ Reset fdv av at iteration          102
+ Writing RDMs to file at iteration          102
+ Reset fdv av at iteration          103
+ Writing RDMs to file at iteration          103
+ Reset fdv av at iteration          104
+ Writing RDMs to file at iteration          104
+ Reset fdv av at iteration          105
+ Writing RDMs to file at iteration          105
+ Reset fdv av at iteration          106
+ Writing RDMs to file at iteration          106
+ Reset fdv av at iteration          107
+ Writing RDMs to file at iteration          107
+ Reset fdv av at iteration          108
+ Writing RDMs to file at iteration          108
+ Reset fdv av at iteration          109
+ Writing RDMs to file at iteration          109
+ Reset fdv av at iteration          110
+           220240   204767245.613        9973.86186883      -0.501915042570      -0.502367307617       -13482.1593032             189065232        22560314   42.7363281250                  280
+ Writing RDMs to file at iteration          110
+ Reset fdv av at iteration          111
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.527176
+Required new RDM array must have the following size (MB):     18.530380
+ Writing RDMs to file at iteration          111
+ Reset fdv av at iteration          112
+ Writing RDMs to file at iteration          112
+ Reset fdv av at iteration          113
+ Writing RDMs to file at iteration          113
+ Reset fdv av at iteration          114
+ Writing RDMs to file at iteration          114
+ Reset fdv av at iteration          115
+ Writing RDMs to file at iteration          115
+ Reset fdv av at iteration          116
+ Writing RDMs to file at iteration          116
+ Reset fdv av at iteration          117
+ Writing RDMs to file at iteration          117
+ Reset fdv av at iteration          118
+ Writing RDMs to file at iteration          118
+ Reset fdv av at iteration          119
+ Writing RDMs to file at iteration          119
+ Reset fdv av at iteration          120
+           220250   204766079.817        9974.31536817      -0.501928694494      -0.502268688292       -13482.1593169             189063736        22560214   42.7622566223                  307
+ Writing RDMs to file at iteration          120
+ Reset fdv av at iteration          121
+ Writing RDMs to file at iteration          121
+ Reset fdv av at iteration          122
+ Writing RDMs to file at iteration          122
+ Reset fdv av at iteration          123
+ Writing RDMs to file at iteration          123
+ Reset fdv av at iteration          124
+ Writing RDMs to file at iteration          124
+ Reset fdv av at iteration          125
+ Writing RDMs to file at iteration          125
+ Reset fdv av at iteration          126
+ Writing RDMs to file at iteration          126
+ Reset fdv av at iteration          127
+ Writing RDMs to file at iteration          127
+ Reset fdv av at iteration          128
+ Writing RDMs to file at iteration          128
+ Reset fdv av at iteration          129
+ Writing RDMs to file at iteration          129
+ Reset fdv av at iteration          130
+           220260   204765906.015        9974.47034458      -0.501915506048      -0.501941215893       -13482.1593037             189063575        22558059   42.7648925781                  261
+ Writing RDMs to file at iteration          130
+ Reset fdv av at iteration          131
+ Writing RDMs to file at iteration          131
+ Reset fdv av at iteration          132
+ Writing RDMs to file at iteration          132
+ Reset fdv av at iteration          133
+ Writing RDMs to file at iteration          133
+ Reset fdv av at iteration          134
+ Writing RDMs to file at iteration          134
+ Reset fdv av at iteration          135
+ Writing RDMs to file at iteration          135
+ Reset fdv av at iteration          136
+ Writing RDMs to file at iteration          136
+ Reset fdv av at iteration          137
+ Writing RDMs to file at iteration          137
+ Reset fdv av at iteration          138
+ Writing RDMs to file at iteration          138
+ Reset fdv av at iteration          139
+WARNING: There is not enough space in the current RDM array to receive all of the communicated RDM elements. We will now try and reallocate this array to be large enough. If there is not sufficient memory then the program may crash.
+Old RDM array had the following size (MB):     18.530380
+Required new RDM array must have the following size (MB):     18.544250
+ Writing RDMs to file at iteration          139
+ Reset fdv av at iteration          140
+           220270   204764841.599        9974.63003046      -0.501896392924      -0.501774400930       -13482.1592846             189062520        22557201   42.7757797241                  295
+ Writing RDMs to file at iteration          140
+ Reset fdv av at iteration          141
+ Writing RDMs to file at iteration          141
+ Reset fdv av at iteration          142
+ Writing RDMs to file at iteration          142
+ Reset fdv av at iteration          143
+ Writing RDMs to file at iteration          143
+ Reset fdv av at iteration          144
+ Writing RDMs to file at iteration          144
+ Reset fdv av at iteration          145
+ Writing RDMs to file at iteration          145
+ Reset fdv av at iteration          146
+ Writing RDMs to file at iteration          146
+ Reset fdv av at iteration          147
+ Writing RDMs to file at iteration          147
+ Reset fdv av at iteration          148
+ Writing RDMs to file at iteration          148
+ Reset fdv av at iteration          149
+ Writing RDMs to file at iteration          149
+ Reset fdv av at iteration          150
+           220280   204765310.065        9975.09297944      -0.501905734673      -0.501858634888       -13482.1592939             189063052        22557493   42.7538070679                  293
+ Writing RDMs to file at iteration          150
+ Reset fdv av at iteration          151
+ Writing RDMs to file at iteration          151
+ Reset fdv av at iteration          152
+ Writing RDMs to file at iteration          152
+ Reset fdv av at iteration          153
+ Writing RDMs to file at iteration          153
+ Reset fdv av at iteration          154
+ Writing RDMs to file at iteration          154
+ Reset fdv av at iteration          155
+ Writing RDMs to file at iteration          155
+ Reset fdv av at iteration          156
+ Writing RDMs to file at iteration          156
+ Reset fdv av at iteration          157
+ Writing RDMs to file at iteration          157
+ Reset fdv av at iteration          158
+ Writing RDMs to file at iteration          158
+ Reset fdv av at iteration          159
+ Writing RDMs to file at iteration          159
+ Reset fdv av at iteration          160
+           220290   204764793.089        9974.05554326      -0.501954133873      -0.501828639010       -13482.1593423             189063193        22561681   42.7668952942                  304
+ Writing RDMs to file at iteration          160
+ Reset fdv av at iteration          161
+ Writing RDMs to file at iteration          161
+ Reset fdv av at iteration          162
+ Writing RDMs to file at iteration          162
+ Reset fdv av at iteration          163
+ Writing RDMs to file at iteration          163
+ Reset fdv av at iteration          164
+ Writing RDMs to file at iteration          164
+ Reset fdv av at iteration          165
+ Writing RDMs to file at iteration          165
+ Reset fdv av at iteration          166
+ Writing RDMs to file at iteration          166
+ Reset fdv av at iteration          167
+ Writing RDMs to file at iteration          167
+ Reset fdv av at iteration          168
+ Writing RDMs to file at iteration          168
+ Reset fdv av at iteration          169
+ Writing RDMs to file at iteration          169
+ Reset fdv av at iteration          170
+           220300   204764307.364        9975.11872189      -0.501962224586      -0.501681217941       -13482.1593504             189062701        22564350   42.7631835938                  284
+ Writing RDMs to file at iteration          170
+ Reset fdv av at iteration          171
+ Writing RDMs to file at iteration          171
+ Reset fdv av at iteration          172
+ Writing RDMs to file at iteration          172
+ Reset fdv av at iteration          173
+ Writing RDMs to file at iteration          173
+ Reset fdv av at iteration          174
+ Writing RDMs to file at iteration          174
+ Reset fdv av at iteration          175
+ Writing RDMs to file at iteration          175
+ Reset fdv av at iteration          176
+ Writing RDMs to file at iteration          176
+ Reset fdv av at iteration          177
+ Writing RDMs to file at iteration          177
+ Reset fdv av at iteration          178
+ Writing RDMs to file at iteration          178
+ Reset fdv av at iteration          179
+ Writing RDMs to file at iteration          179
+ Reset fdv av at iteration          180
+           220310   204766030.161        9976.18324524      -0.501907723972      -0.501967745019       -13482.1592959             189063793        22569416   42.7943344116                  325
+ Writing RDMs to file at iteration          180
+ Reset fdv av at iteration          181
+ Writing RDMs to file at iteration          181
+ Reset fdv av at iteration          182
+ Writing RDMs to file at iteration          182
+ Reset fdv av at iteration          183
+ Writing RDMs to file at iteration          183
+ Reset fdv av at iteration          184
+ Writing RDMs to file at iteration          184
+ Reset fdv av at iteration          185
+ Writing RDMs to file at iteration          185
+ Reset fdv av at iteration          186
+ Writing RDMs to file at iteration          186
+ Reset fdv av at iteration          187
+ Writing RDMs to file at iteration          187
+ Reset fdv av at iteration          188
+ Writing RDMs to file at iteration          188
+ Reset fdv av at iteration          189
+ Writing RDMs to file at iteration          189
+ Reset fdv av at iteration          190
+           220320   204764903.172        9976.64294834      -0.501868120590      -0.501883907161       -13482.1592563             189063745        22556610   42.7697257996                  306
+ Writing RDMs to file at iteration          190
+ Reset fdv av at iteration          191
+ Writing RDMs to file at iteration          191
+ Reset fdv av at iteration          192
+ Writing RDMs to file at iteration          192
+ Reset fdv av at iteration          193
+ Writing RDMs to file at iteration          193
+ Reset fdv av at iteration          194
+ Writing RDMs to file at iteration          194
+ Reset fdv av at iteration          195
+ Writing RDMs to file at iteration          195
+ Reset fdv av at iteration          196
+ Writing RDMs to file at iteration          196
+ Reset fdv av at iteration          197
+ Writing RDMs to file at iteration          197
+ Reset fdv av at iteration          198
+ Writing RDMs to file at iteration          198
+ Reset fdv av at iteration          199
+ Writing RDMs to file at iteration          199
+ Reset fdv av at iteration          200
+           220330   204764677.145        9976.20385728      -0.501887096744      -0.501744818111       -13482.1592753             189064250        22558089   42.7808609009                  315
+ Writing RDMs to file at iteration          200
+ Reset fdv av at iteration          201
+ Writing RDMs to file at iteration          201
+ Reset fdv av at iteration          202
+ Writing RDMs to file at iteration          202
+ Reset fdv av at iteration          203
+ Writing RDMs to file at iteration          203
+ Reset fdv av at iteration          204
+ Writing RDMs to file at iteration          204
+ Reset fdv av at iteration          205
+ Writing RDMs to file at iteration          205
+ Reset fdv av at iteration          206
+ Writing RDMs to file at iteration          206
+ Reset fdv av at iteration          207
+ Writing RDMs to file at iteration          207
+ Reset fdv av at iteration          208
+ Writing RDMs to file at iteration          208
+ Reset fdv av at iteration          209
+ Writing RDMs to file at iteration          209
+ Reset fdv av at iteration          210
+           220340   204764883.228        9976.06720219      -0.501890800836      -0.501720316972       -13482.1592790             189064415        22560321   42.8153305054                  293
+ Writing RDMs to file at iteration          210
+ Reset fdv av at iteration          211
+ Writing RDMs to file at iteration          211
+ Reset fdv av at iteration          212
+ Writing RDMs to file at iteration          212
+ Reset fdv av at iteration          213
+ Writing RDMs to file at iteration          213
+ Reset fdv av at iteration          214
+ Writing RDMs to file at iteration          214
+ Reset fdv av at iteration          215
+ Writing RDMs to file at iteration          215
+ Reset fdv av at iteration          216
+ Writing RDMs to file at iteration          216
+ Reset fdv av at iteration          217
+ Writing RDMs to file at iteration          217
+ Reset fdv av at iteration          218
+ Writing RDMs to file at iteration          218
+ Reset fdv av at iteration          219
+ Writing RDMs to file at iteration          219
+ Reset fdv av at iteration          220
+           220350   204764868.857        9976.23095492      -0.501876112617      -0.501963525811       -13482.1592643             189064088        22553724   42.7883796692                  291
+ Writing RDMs to file at iteration          220
+ Reset fdv av at iteration          221
+ Writing RDMs to file at iteration          221
+ Reset fdv av at iteration          222
+ Writing RDMs to file at iteration          222
+ Reset fdv av at iteration          223
+ Writing RDMs to file at iteration          223
+ Reset fdv av at iteration          224
+ Writing RDMs to file at iteration          224
+ Reset fdv av at iteration          225
+ Writing RDMs to file at iteration          225
+ Reset fdv av at iteration          226
+ Writing RDMs to file at iteration          226
+ Reset fdv av at iteration          227
+ Writing RDMs to file at iteration          227
+ Reset fdv av at iteration          228
+ Writing RDMs to file at iteration          228
+ Reset fdv av at iteration          229
+ Writing RDMs to file at iteration          229
+ Reset fdv av at iteration          230
+           220360   204765896.500        9975.49064919      -0.501859884450      -0.501976440674       -13482.1592481             189064126        22556178   42.7978515625                  296
+ Writing RDMs to file at iteration          230
+ Reset fdv av at iteration          231
+ Writing RDMs to file at iteration          231
+ Reset fdv av at iteration          232
+ Writing RDMs to file at iteration          232
+ Reset fdv av at iteration          233
+ Writing RDMs to file at iteration          233
+ Reset fdv av at iteration          234
+ Writing RDMs to file at iteration          234
+ Reset fdv av at iteration          235
+ Writing RDMs to file at iteration          235
+ Reset fdv av at iteration          236
+ Writing RDMs to file at iteration          236
+ Reset fdv av at iteration          237
+ Writing RDMs to file at iteration          237
+ Reset fdv av at iteration          238
+ Writing RDMs to file at iteration          238
+ Reset fdv av at iteration          239
+ Writing RDMs to file at iteration          239
+ Reset fdv av at iteration          240
+           220370   204766191.660        9975.05016750      -0.501887524314      -0.502242082564       -13482.1592757             189064243        22564111   42.7901382446                  290
+ Writing RDMs to file at iteration          240
+ Reset fdv av at iteration          241
+ Writing RDMs to file at iteration          241
+ Reset fdv av at iteration          242
+ Writing RDMs to file at iteration          242
+ Reset fdv av at iteration          243
+ Writing RDMs to file at iteration          243
+ Reset fdv av at iteration          244
+ Writing RDMs to file at iteration          244
+ Reset fdv av at iteration          245
+ Writing RDMs to file at iteration          245
+ Reset fdv av at iteration          246
+ Writing RDMs to file at iteration          246
+ Reset fdv av at iteration          247
+ Writing RDMs to file at iteration          247
+ Reset fdv av at iteration          248
+ Writing RDMs to file at iteration          248
+ Reset fdv av at iteration          249
+ Writing RDMs to file at iteration          249
+ Reset fdv av at iteration          250
+           220380   204764935.104        9975.50655211      -0.501924530105      -0.501875190157       -13482.1593127             189063506        22562120   42.7823257446                  274
+ Writing RDMs to file at iteration          250
+ Reset fdv av at iteration          251
+ Writing RDMs to file at iteration          251
+ Reset fdv av at iteration          252
+ Writing RDMs to file at iteration          252
+ Reset fdv av at iteration          253
+ Writing RDMs to file at iteration          253
+ Reset fdv av at iteration          254
+ Writing RDMs to file at iteration          254
+ Reset fdv av at iteration          255
+ Writing RDMs to file at iteration          255
+ Reset fdv av at iteration          256
+ Writing RDMs to file at iteration          256
+ Reset fdv av at iteration          257
+ Writing RDMs to file at iteration          257
+ Reset fdv av at iteration          258
+ Writing RDMs to file at iteration          258
+ Reset fdv av at iteration          259
+ Writing RDMs to file at iteration          259
+ Reset fdv av at iteration          260
+           220390   204768617.555        9975.06762657      -0.501900268172      -0.502185908458       -13482.1592885             189065824        22557386   42.7722663879                  270
+ Writing RDMs to file at iteration          260
+ Reset fdv av at iteration          261
+ Writing RDMs to file at iteration          261
+ Reset fdv av at iteration          262
+ Writing RDMs to file at iteration          262
+ Reset fdv av at iteration          263
+ Writing RDMs to file at iteration          263
+ Reset fdv av at iteration          264
+ Writing RDMs to file at iteration          264
+ Reset fdv av at iteration          265
+ Writing RDMs to file at iteration          265
+ Reset fdv av at iteration          266
+ Writing RDMs to file at iteration          266
+ Reset fdv av at iteration          267
+ Writing RDMs to file at iteration          267
+ Reset fdv av at iteration          268
+ Writing RDMs to file at iteration          268
+ Reset fdv av at iteration          269
+ Writing RDMs to file at iteration          269
+ Reset fdv av at iteration          270
+           220400   204767292.121        9975.22467012      -0.501904919787      -0.502706485558       -13482.1592931             189065047        22557037   42.7719726562                  295
+ Writing RDMs to file at iteration          270
+ Reset fdv av at iteration          271
+ Writing RDMs to file at iteration          271
+ Reset fdv av at iteration          272
+ Writing RDMs to file at iteration          272
+ Reset fdv av at iteration          273
+ Writing RDMs to file at iteration          273
+ Reset fdv av at iteration          274
+ Writing RDMs to file at iteration          274
+ Reset fdv av at iteration          275
+ Writing RDMs to file at iteration          275
+ Reset fdv av at iteration          276
+ Writing RDMs to file at iteration          276
+ Reset fdv av at iteration          277
+ Writing RDMs to file at iteration          277
+ Reset fdv av at iteration          278
+ Writing RDMs to file at iteration          278
+ Reset fdv av at iteration          279
+ Writing RDMs to file at iteration          279
+ Reset fdv av at iteration          280
+           220410   204766811.294        9975.07370871      -0.501934110096      -0.502534559424       -13482.1593223             189064610        22563913   42.7776374817                  282
+Writing out a popsfile after   4.000 hours...
+ 
+*********************************
+Writing a 64-bit POPSFILEBIN...
+Writing a total of 188998156 determinants.
+*********************************
+ 
+Time taken to write out POPSFILE: 174.619 seconds.
+ Writing RDMs to file at iteration          280
+ Reset fdv av at iteration          281
+ Writing RDMs to file at iteration          281
+ Reset fdv av at iteration          282
+ Writing RDMs to file at iteration          282
+ Reset fdv av at iteration          283
+ Writing RDMs to file at iteration          283
+ Reset fdv av at iteration          284
+ Writing RDMs to file at iteration          284
+ Reset fdv av at iteration          285
+ Writing RDMs to file at iteration          285
+ Reset fdv av at iteration          286
+ Writing RDMs to file at iteration          286
+ Reset fdv av at iteration          287
+ Writing RDMs to file at iteration          287
+ Reset fdv av at iteration          288
+ Writing RDMs to file at iteration          288
+ Reset fdv av at iteration          289
+ Writing RDMs to file at iteration          289
+ Reset fdv av at iteration          290
+           220420   204767817.509        9974.62475005      -0.501938170690      -0.502489032192       -13482.1593264             189065557        22571379   42.8762702942                  321
+ Writing RDMs to file at iteration          290
+ Reset fdv av at iteration          291
+ Writing RDMs to file at iteration          291
+ Reset fdv av at iteration          292
+ Writing RDMs to file at iteration          292
+ Reset fdv av at iteration          293
+ Writing RDMs to file at iteration          293
+ Reset fdv av at iteration          294
+ Writing RDMs to file at iteration          294
+ Reset fdv av at iteration          295
+ Writing RDMs to file at iteration          295
+ Reset fdv av at iteration          296
+ Writing RDMs to file at iteration          296
+ Reset fdv av at iteration          297
+ Writing RDMs to file at iteration          297
+ Reset fdv av at iteration          298
+ Writing RDMs to file at iteration          298
+ Reset fdv av at iteration          299
+ Writing RDMs to file at iteration          299
+ Reset fdv av at iteration          300
+           220430   204767584.842        9974.47688269      -0.501944291827      -0.502691739811       -13482.1593325             189065641        22557079   42.8532218933                  287
+ Writing RDMs to file at iteration          300
+ Reset fdv av at iteration          301
+ Writing RDMs to file at iteration          301
+ Reset fdv av at iteration          302
+ Writing RDMs to file at iteration          302
+ Reset fdv av at iteration          303
+ Writing RDMs to file at iteration          303
+ Reset fdv av at iteration          304
+ Writing RDMs to file at iteration          304
+ Reset fdv av at iteration          305
+ Writing RDMs to file at iteration          305
+ Reset fdv av at iteration          306
+ Writing RDMs to file at iteration          306
+ Reset fdv av at iteration          307
+ Writing RDMs to file at iteration          307
+ Reset fdv av at iteration          308
+ Writing RDMs to file at iteration          308
+ Reset fdv av at iteration          309
+ Writing RDMs to file at iteration          309
+ Reset fdv av at iteration          310
+           220440   204766724.310        9974.32625681      -0.501952274160      -0.502438911625       -13482.1593405             189065374        22551965   42.8558578491                  266
+ Writing RDMs to file at iteration          310
+ Reset fdv av at iteration          311
+ Writing RDMs to file at iteration          311
+ Reset fdv av at iteration          312
+ Writing RDMs to file at iteration          312
+ Reset fdv av at iteration          313
+ Writing RDMs to file at iteration          313
+ Reset fdv av at iteration          314
+ Writing RDMs to file at iteration          314
+ Reset fdv av at iteration          315
+ Writing RDMs to file at iteration          315
+ Reset fdv av at iteration          316
+ Writing RDMs to file at iteration          316
+ Reset fdv av at iteration          317
+ Writing RDMs to file at iteration          317
+ Reset fdv av at iteration          318
+ Writing RDMs to file at iteration          318
+ Reset fdv av at iteration          319
+ Writing RDMs to file at iteration          319
+ Reset fdv av at iteration          320
+           220450   204765806.451        9975.07923817      -0.501946743717      -0.502048394077       -13482.1593349             189064097        22554495   42.8709945679                  268
+ Writing RDMs to file at iteration          320
+ Reset fdv av at iteration          321
+ Writing RDMs to file at iteration          321
+ Reset fdv av at iteration          322
+ Writing RDMs to file at iteration          322
+ Reset fdv av at iteration          323
+ Writing RDMs to file at iteration          323
+ Reset fdv av at iteration          324
+ Writing RDMs to file at iteration          324
+ Reset fdv av at iteration          325
+ Writing RDMs to file at iteration          325
+ Reset fdv av at iteration          326
+ Writing RDMs to file at iteration          326
+ Reset fdv av at iteration          327
+ Writing RDMs to file at iteration          327
+ Reset fdv av at iteration          328
+ Writing RDMs to file at iteration          328
+ Reset fdv av at iteration          329
+ Writing RDMs to file at iteration          329
+ Reset fdv av at iteration          330
+           220460   204766510.639        9975.53813224      -0.501912549459      -0.502115777868       -13482.1593007             189065477        22557258   42.8550796509                  313
+ Writing RDMs to file at iteration          330
+ Reset fdv av at iteration          331
+ Writing RDMs to file at iteration          331
+ Reset fdv av at iteration          332
+ Writing RDMs to file at iteration          332
+ Reset fdv av at iteration          333
+ Writing RDMs to file at iteration          333
+ Reset fdv av at iteration          334
+ Writing RDMs to file at iteration          334
+ Reset fdv av at iteration          335
+ Writing RDMs to file at iteration          335
+ Reset fdv av at iteration          336
+ Writing RDMs to file at iteration          336
+ Reset fdv av at iteration          337
+ Writing RDMs to file at iteration          337
+ Reset fdv av at iteration          338
+ Writing RDMs to file at iteration          338
+ Reset fdv av at iteration          339
+ Writing RDMs to file at iteration          339
+ Reset fdv av at iteration          340
+           220470   204765660.149        9975.69580281      -0.501861859028      -0.502208344785       -13482.1592500             189065423        22558503   42.8722648621                  273
+ Writing RDMs to file at iteration          340
+ Reset fdv av at iteration          341
+ Writing RDMs to file at iteration          341
+ Reset fdv av at iteration          342
+ Writing RDMs to file at iteration          342
+ Reset fdv av at iteration          343
+ Writing RDMs to file at iteration          343
+ Reset fdv av at iteration          344
+ Writing RDMs to file at iteration          344
+ Reset fdv av at iteration          345
+ Writing RDMs to file at iteration          345
+ Reset fdv av at iteration          346
+ Writing RDMs to file at iteration          346
+ Reset fdv av at iteration          347
+ Writing RDMs to file at iteration          347
+ Reset fdv av at iteration          348
+ Writing RDMs to file at iteration          348
+ Reset fdv av at iteration          349
+ Writing RDMs to file at iteration          349
+ Reset fdv av at iteration          350
+           220480   204765708.533        9975.55176166      -0.501860525992      -0.501934149984       -13482.1592487             189064832        22555725   42.8679695129                  292
+ Writing RDMs to file at iteration          350
+ Reset fdv av at iteration          351
+ Writing RDMs to file at iteration          351
+ Reset fdv av at iteration          352
+ Writing RDMs to file at iteration          352
+ Reset fdv av at iteration          353
+ Writing RDMs to file at iteration          353
+ Reset fdv av at iteration          354
+ Writing RDMs to file at iteration          354
+ Reset fdv av at iteration          355
+ Writing RDMs to file at iteration          355
+ Reset fdv av at iteration          356
+ Writing RDMs to file at iteration          356
+ Reset fdv av at iteration          357
+ Writing RDMs to file at iteration          357
+ Reset fdv av at iteration          358
+ Writing RDMs to file at iteration          358
+ Reset fdv av at iteration          359
+ Writing RDMs to file at iteration          359
+ Reset fdv av at iteration          360
+           220490   204767008.333        9976.31130745      -0.501830894679      -0.502363709097       -13482.1592191             189066219        22558491   42.8499984741                  301
+ Writing RDMs to file at iteration          360
+ Reset fdv av at iteration          361
+ Writing RDMs to file at iteration          361
+ Reset fdv av at iteration          362
+ Writing RDMs to file at iteration          362
+ Reset fdv av at iteration          363
+ Writing RDMs to file at iteration          363
+ Reset fdv av at iteration          364
+ Writing RDMs to file at iteration          364
+ Reset fdv av at iteration          365
+ Writing RDMs to file at iteration          365
+ Reset fdv av at iteration          366
+ Writing RDMs to file at iteration          366
+ Reset fdv av at iteration          367
+ Writing RDMs to file at iteration          367
+ Reset fdv av at iteration          368
+ Writing RDMs to file at iteration          368
+ Reset fdv av at iteration          369
+ Writing RDMs to file at iteration          369
+ Reset fdv av at iteration          370
+           220500   204768568.480        9975.86505387      -0.501853528202      -0.502750294139       -13482.1592417             189067223        22558334   42.8507804871                  307
+ Writing RDMs to file at iteration          370
+ Reset fdv av at iteration          371
+ Writing RDMs to file at iteration          371
+ Reset fdv av at iteration          372
+ Writing RDMs to file at iteration          372
+ Reset fdv av at iteration          373
+ Writing RDMs to file at iteration          373
+ Reset fdv av at iteration          374
+ Writing RDMs to file at iteration          374
+ Reset fdv av at iteration          375
+ Writing RDMs to file at iteration          375
+ Reset fdv av at iteration          376
+ Writing RDMs to file at iteration          376
+ Reset fdv av at iteration          377
+ Writing RDMs to file at iteration          377
+ Reset fdv av at iteration          378
+ Writing RDMs to file at iteration          378
+ Reset fdv av at iteration          379
+ Writing RDMs to file at iteration          379
+ Reset fdv av at iteration          380
+           220510   204766573.401        9976.61212329      -0.501842997814      -0.502550130157       -13482.1592312             189065672        22560461   42.8349609375                  281
+ Writing RDMs to file at iteration          380
+ Reset fdv av at iteration          381
+ Writing RDMs to file at iteration          381
+ Reset fdv av at iteration          382
+ Writing RDMs to file at iteration          382
+ Reset fdv av at iteration          383
+ Writing RDMs to file at iteration          383
+ Reset fdv av at iteration          384
+ Writing RDMs to file at iteration          384
+ Reset fdv av at iteration          385
+ Writing RDMs to file at iteration          385
+ Reset fdv av at iteration          386
+ Writing RDMs to file at iteration          386
+ Reset fdv av at iteration          387
+ Writing RDMs to file at iteration          387
+ Reset fdv av at iteration          388
+ Writing RDMs to file at iteration          388
+ Reset fdv av at iteration          389
+ Writing RDMs to file at iteration          389
+ Reset fdv av at iteration          390
+           220520   204766324.135        9975.86146750      -0.501848376580      -0.502164557985       -13482.1592366             189065009        22563400   42.8382797241                  293
+ Writing RDMs to file at iteration          390
+ Reset fdv av at iteration          391
+ Writing RDMs to file at iteration          391
+ Reset fdv av at iteration          392
+ Writing RDMs to file at iteration          392
+ Reset fdv av at iteration          393
+ Writing RDMs to file at iteration          393
+ Reset fdv av at iteration          394
+ Writing RDMs to file at iteration          394
+ Reset fdv av at iteration          395
+ Writing RDMs to file at iteration          395
+ Reset fdv av at iteration          396
+ Writing RDMs to file at iteration          396
+ Reset fdv av at iteration          397
+ Writing RDMs to file at iteration          397
+ Reset fdv av at iteration          398
+ Writing RDMs to file at iteration          398
+ Reset fdv av at iteration          399
+ Writing RDMs to file at iteration          399
+ Reset fdv av at iteration          400
+           220530   204766445.163        9975.41772258      -0.501884856557      -0.502246513973       -13482.1592730             189065237        22558161   42.8261718750                  294
+ Writing RDMs to file at iteration          400
+ Reset fdv av at iteration          401
+ Writing RDMs to file at iteration          401
+ Reset fdv av at iteration          402
+ Writing RDMs to file at iteration          402
+ Reset fdv av at iteration          403
+ Writing RDMs to file at iteration          403
+ Reset fdv av at iteration          404
+ Writing RDMs to file at iteration          404
+ Reset fdv av at iteration          405
+ Writing RDMs to file at iteration          405
+ Reset fdv av at iteration          406
+ Writing RDMs to file at iteration          406
+ Reset fdv av at iteration          407
+ Writing RDMs to file at iteration          407
+ Reset fdv av at iteration          408
+ Writing RDMs to file at iteration          408
+ Reset fdv av at iteration          409
+ Writing RDMs to file at iteration          409
+ Reset fdv av at iteration          410
+           220540   204766603.329        9974.67376889      -0.501908866727      -0.502264509569       -13482.1592971             189065396        22556696   42.8316421509                  256
+ Writing RDMs to file at iteration          410
+ Reset fdv av at iteration          411
+ Writing RDMs to file at iteration          411
+ Reset fdv av at iteration          412
+ Writing RDMs to file at iteration          412
+ Reset fdv av at iteration          413
+ Writing RDMs to file at iteration          413
+ Reset fdv av at iteration          414
+ Writing RDMs to file at iteration          414
+ Reset fdv av at iteration          415
+ Writing RDMs to file at iteration          415
+ Reset fdv av at iteration          416
+ Writing RDMs to file at iteration          416
+ Reset fdv av at iteration          417
+ Writing RDMs to file at iteration          417
+ Reset fdv av at iteration          418
+ Writing RDMs to file at iteration          418
+ Reset fdv av at iteration          419
+ Writing RDMs to file at iteration          419
+ Reset fdv av at iteration          420
+           220550   204767148.684        9975.12922504      -0.501898847887      -0.502466500985       -13482.1592870             189065636        22567053   42.8085937500                  301
+ Writing RDMs to file at iteration          420
+ Reset fdv av at iteration          421
+ Writing RDMs to file at iteration          421
+ Reset fdv av at iteration          422
+ Writing RDMs to file at iteration          422
+ Reset fdv av at iteration          423
+ Writing RDMs to file at iteration          423
+ Reset fdv av at iteration          424
+ Writing RDMs to file at iteration          424
+ Reset fdv av at iteration          425
+ Writing RDMs to file at iteration          425
+ Reset fdv av at iteration          426
+ Writing RDMs to file at iteration          426
+ Reset fdv av at iteration          427
+ Writing RDMs to file at iteration          427
+ Reset fdv av at iteration          428
+ Writing RDMs to file at iteration          428
+ Reset fdv av at iteration          429
+ Writing RDMs to file at iteration          429
+ Reset fdv av at iteration          430
+           220560   204767631.011        9975.28162232      -0.501904392152      -0.502526087805       -13482.1592926             189066019        22555166   42.8296890259                  286
+ Writing RDMs to file at iteration          430
+ Reset fdv av at iteration          431
+ Writing RDMs to file at iteration          431
+ Reset fdv av at iteration          432
+ Writing RDMs to file at iteration          432
+ Reset fdv av at iteration          433
+ Writing RDMs to file at iteration          433
+ Reset fdv av at iteration          434
+ Writing RDMs to file at iteration          434
+ Reset fdv av at iteration          435
+ Writing RDMs to file at iteration          435
+ Reset fdv av at iteration          436
+ Writing RDMs to file at iteration          436
+ Reset fdv av at iteration          437
+ Writing RDMs to file at iteration          437
+ Reset fdv av at iteration          438
+ Writing RDMs to file at iteration          438
+ Reset fdv av at iteration          439
+ Writing RDMs to file at iteration          439
+ Reset fdv av at iteration          440
+           220570   204767176.934        9975.43317501      -0.501924642689      -0.502489778382       -13482.1593128             189065884        22556933   42.8314437866                  277
+ Writing RDMs to file at iteration          440
+ Reset fdv av at iteration          441
+ Writing RDMs to file at iteration          441
+ Reset fdv av at iteration          442
+ Writing RDMs to file at iteration          442
+ Reset fdv av at iteration          443
+ Writing RDMs to file at iteration          443
+ Reset fdv av at iteration          444
+ Writing RDMs to file at iteration          444
+ Reset fdv av at iteration          445
+ Writing RDMs to file at iteration          445
+ Reset fdv av at iteration          446
+ Writing RDMs to file at iteration          446
+ Reset fdv av at iteration          447
+ Writing RDMs to file at iteration          447
+ Reset fdv av at iteration          448
+ Writing RDMs to file at iteration          448
+ Reset fdv av at iteration          449
+ Writing RDMs to file at iteration          449
+ Reset fdv av at iteration          450
+           220580   204766262.702        9974.98516492      -0.501926994486      -0.502351920504       -13482.1593152             189065663        22563058   42.8212890625                  291
+ Writing RDMs to file at iteration          450
+ Reset fdv av at iteration          451
+ Writing RDMs to file at iteration          451
+ Reset fdv av at iteration          452
+ Writing RDMs to file at iteration          452
+ Reset fdv av at iteration          453
+ Writing RDMs to file at iteration          453
+ Reset fdv av at iteration          454
+ Writing RDMs to file at iteration          454
+ Reset fdv av at iteration          455
+ Writing RDMs to file at iteration          455
+ Reset fdv av at iteration          456
+ Writing RDMs to file at iteration          456
+ Reset fdv av at iteration          457
+ Writing RDMs to file at iteration          457
+ Reset fdv av at iteration          458
+ Writing RDMs to file at iteration          458
+ Reset fdv av at iteration          459
+ Writing RDMs to file at iteration          459
+ Reset fdv av at iteration          460
+           220590   204764810.565        9974.53982594      -0.501950591567      -0.502096555273       -13482.1593388             189063881        22554214   42.8091812134                  293
+ Writing RDMs to file at iteration          460
+ Reset fdv av at iteration          461
+ Writing RDMs to file at iteration          461
+ Reset fdv av at iteration          462
+ Writing RDMs to file at iteration          462
+ Reset fdv av at iteration          463
+ Writing RDMs to file at iteration          463
+ Reset fdv av at iteration          464
+ Writing RDMs to file at iteration          464
+ Reset fdv av at iteration          465
+ Writing RDMs to file at iteration          465
+ Reset fdv av at iteration          466
+ Writing RDMs to file at iteration          466
+ Reset fdv av at iteration          467
+ Writing RDMs to file at iteration          467
+ Reset fdv av at iteration          468
+ Writing RDMs to file at iteration          468
+ Reset fdv av at iteration          469
+ Writing RDMs to file at iteration          469
+ Reset fdv av at iteration          470
+           220600   204765130.869        9974.69847146      -0.501938308773      -0.501747116388       -13482.1593265             189064103        22557532   42.8267593384                  285
+ Writing RDMs to file at iteration          470
+ Reset fdv av at iteration          471
+ Writing RDMs to file at iteration          471
+ Reset fdv av at iteration          472
+ Writing RDMs to file at iteration          472
+ Reset fdv av at iteration          473
+ Writing RDMs to file at iteration          473
+ Reset fdv av at iteration          474
+ Writing RDMs to file at iteration          474
+ Reset fdv av at iteration          475
+ Writing RDMs to file at iteration          475
+ Reset fdv av at iteration          476
+ Writing RDMs to file at iteration          476
+ Reset fdv av at iteration          477
+ Writing RDMs to file at iteration          477
+ Reset fdv av at iteration          478
+ Writing RDMs to file at iteration          478
+ Reset fdv av at iteration          479
+ Writing RDMs to file at iteration          479
+ Reset fdv av at iteration          480
+           220610   204765536.741        9973.96244359      -0.501921728618      -0.501938829605       -13482.1593099             189063866        22565217   42.8125000000                  320
+ Writing RDMs to file at iteration          480
+ Reset fdv av at iteration          481
+ Writing RDMs to file at iteration          481
+ Reset fdv av at iteration          482
+ Writing RDMs to file at iteration          482
+ Reset fdv av at iteration          483
+ Writing RDMs to file at iteration          483
+ Reset fdv av at iteration          484
+ Writing RDMs to file at iteration          484
+ Reset fdv av at iteration          485
+ Writing RDMs to file at iteration          485
+ Reset fdv av at iteration          486
+ Writing RDMs to file at iteration          486
+ Reset fdv av at iteration          487
+ Writing RDMs to file at iteration          487
+ Reset fdv av at iteration          488
+ Writing RDMs to file at iteration          488
+ Reset fdv av at iteration          489
+ Writing RDMs to file at iteration          489
+ Reset fdv av at iteration          490
+           220620   204766376.691        9973.52552538      -0.502018083846      -0.501845023015       -13482.1594063             189063940        22560556   42.8451156616                  277
+ Writing RDMs to file at iteration          490
+ Reset fdv av at iteration          491
+ Writing RDMs to file at iteration          491
+ Reset fdv av at iteration          492
+ Writing RDMs to file at iteration          492
+ Reset fdv av at iteration          493
+ Writing RDMs to file at iteration          493
+ Reset fdv av at iteration          494
+ Writing RDMs to file at iteration          494
+ Reset fdv av at iteration          495
+ Writing RDMs to file at iteration          495
+ Reset fdv av at iteration          496
+ Writing RDMs to file at iteration          496
+ Reset fdv av at iteration          497
+ Writing RDMs to file at iteration          497
+ Reset fdv av at iteration          498
+ Writing RDMs to file at iteration          498
+ Reset fdv av at iteration          499
+ Writing RDMs to file at iteration          499
+ Reset fdv av at iteration          500
+           220630   204765099.006        9973.69052786      -0.502056548706      -0.502014966031       -13482.1594447             189062492        22565253   42.8392562866                  295
+ Writing RDMs to file at iteration          500
+ Reset fdv av at iteration          501
+ Writing RDMs to file at iteration          501
+ Reset fdv av at iteration          502
+ Writing RDMs to file at iteration          502
+ Reset fdv av at iteration          503
+ Writing RDMs to file at iteration          503
+ Reset fdv av at iteration          504
+ Writing RDMs to file at iteration          504
+ Reset fdv av at iteration          505
+ Writing RDMs to file at iteration          505
+ Reset fdv av at iteration          506
+ Writing RDMs to file at iteration          506
+ Reset fdv av at iteration          507
+ Writing RDMs to file at iteration          507
+ Reset fdv av at iteration          508
+ Writing RDMs to file at iteration          508
+ Reset fdv av at iteration          509
+ Writing RDMs to file at iteration          509
+ Reset fdv av at iteration          510
+           220640   204767585.826        9973.85274716      -0.502032672786      -0.502192869710       -13482.1594209             189064220        22566573   42.8414077759                  306
+ Writing RDMs to file at iteration          510
+ Reset fdv av at iteration          511
+ Writing RDMs to file at iteration          511
+ Reset fdv av at iteration          512
+ Writing RDMs to file at iteration          512
+ Reset fdv av at iteration          513
+ Writing RDMs to file at iteration          513
+ Reset fdv av at iteration          514
+ Writing RDMs to file at iteration          514
+ Reset fdv av at iteration          515
+ Writing RDMs to file at iteration          515
+ Reset fdv av at iteration          516
+ Writing RDMs to file at iteration          516
+ Reset fdv av at iteration          517
+ Writing RDMs to file at iteration          517
+ Reset fdv av at iteration          518
+ Writing RDMs to file at iteration          518
+ Reset fdv av at iteration          519
+ Writing RDMs to file at iteration          519
+ Reset fdv av at iteration          520
+           220650   204765230.375        9974.31176851      -0.502023986455      -0.502098743793       -13482.1594122             189061773        22564012   42.8072280884                  273
+ Writing RDMs to file at iteration          520
+ Reset fdv av at iteration          521
+ Writing RDMs to file at iteration          521
+ Reset fdv av at iteration          522
+ Writing RDMs to file at iteration          522
+ Reset fdv av at iteration          523
+ Writing RDMs to file at iteration          523
+ Reset fdv av at iteration          524
+ Writing RDMs to file at iteration          524
+ Reset fdv av at iteration          525
+ Writing RDMs to file at iteration          525
+ Reset fdv av at iteration          526
+ Writing RDMs to file at iteration          526
+ Reset fdv av at iteration          527
+ Writing RDMs to file at iteration          527
+ Reset fdv av at iteration          528
+ Writing RDMs to file at iteration          528
+ Reset fdv av at iteration          529
+ Writing RDMs to file at iteration          529
+ Reset fdv av at iteration          530
+           220660   204766077.107        9975.07120749      -0.501988091566      -0.502045629309       -13482.1593763             189062693        22553460   42.8250007629                  272
+ Writing RDMs to file at iteration          530
+ Reset fdv av at iteration          531
+ Writing RDMs to file at iteration          531
+ Reset fdv av at iteration          532
+ Writing RDMs to file at iteration          532
+ Reset fdv av at iteration          533
+ Writing RDMs to file at iteration          533
+ Reset fdv av at iteration          534
+ Writing RDMs to file at iteration          534
+ Reset fdv av at iteration          535
+ Writing RDMs to file at iteration          535
+ Reset fdv av at iteration          536
+ Writing RDMs to file at iteration          536
+ Reset fdv av at iteration          537
+ Writing RDMs to file at iteration          537
+ Reset fdv av at iteration          538
+ Writing RDMs to file at iteration          538
+ Reset fdv av at iteration          539
+ Writing RDMs to file at iteration          539
+ Reset fdv av at iteration          540
+           220670   204767774.887        9975.23154464      -0.501972244235      -0.502369157037       -13482.1593604             189063718        22561356   42.8212890625                  297
+ Writing RDMs to file at iteration          540
+ Reset fdv av at iteration          541
+ Writing RDMs to file at iteration          541
+ Reset fdv av at iteration          542
+ Writing RDMs to file at iteration          542
+ Reset fdv av at iteration          543
+ Writing RDMs to file at iteration          543
+ Reset fdv av at iteration          544
+ Writing RDMs to file at iteration          544
+ Reset fdv av at iteration          545
+ Writing RDMs to file at iteration          545
+ Reset fdv av at iteration          546
+ Writing RDMs to file at iteration          546
+ Reset fdv av at iteration          547
+ Writing RDMs to file at iteration          547
+ Reset fdv av at iteration          548
+ Writing RDMs to file at iteration          548
+ Reset fdv av at iteration          549
+ Writing RDMs to file at iteration          549
+ Reset fdv av at iteration          550
+           220680   204767195.749        9975.68632333      -0.501931473221      -0.502459135596       -13482.1593197             189062344        22563163   42.8265609741                  322
+ Writing RDMs to file at iteration          550
+ Reset fdv av at iteration          551
+ Writing RDMs to file at iteration          551
+ Reset fdv av at iteration          552
+ Writing RDMs to file at iteration          552
+ Reset fdv av at iteration          553
+ Writing RDMs to file at iteration          553
+ Reset fdv av at iteration          554
+ Writing RDMs to file at iteration          554
+ Reset fdv av at iteration          555
+ Writing RDMs to file at iteration          555
+ Reset fdv av at iteration          556
+ Writing RDMs to file at iteration          556
+ Reset fdv av at iteration          557
+ Writing RDMs to file at iteration          557
+ Reset fdv av at iteration          558
+ Writing RDMs to file at iteration          558
+ Reset fdv av at iteration          559
+ Writing RDMs to file at iteration          559
+ Reset fdv av at iteration          560
+           220690   204766635.913        9975.23965095      -0.501970169435      -0.502257627908       -13482.1593584             189062069        22560295   42.8314437866                  320
+ Writing RDMs to file at iteration          560
+ Reset fdv av at iteration          561
+ Writing RDMs to file at iteration          561
+ Reset fdv av at iteration          562
+ Writing RDMs to file at iteration          562
+ Reset fdv av at iteration          563
+ Writing RDMs to file at iteration          563
+ Reset fdv av at iteration          564
+ Writing RDMs to file at iteration          564
+ Reset fdv av at iteration          565
+ Writing RDMs to file at iteration          565
+ Reset fdv av at iteration          566
+ Writing RDMs to file at iteration          566
+ Reset fdv av at iteration          567
+ Writing RDMs to file at iteration          567
+ Reset fdv av at iteration          568
+ Writing RDMs to file at iteration          568
+ Reset fdv av at iteration          569
+ Writing RDMs to file at iteration          569
+ Reset fdv av at iteration          570
+           220700   204767941.246        9974.79639565      -0.501995890988      -0.502292952506       -13482.1593841             189062844        22566648   42.8367195129                  296
+ Writing RDMs to file at iteration          570
+ Reset fdv av at iteration          571
+ Writing RDMs to file at iteration          571
+ Reset fdv av at iteration          572
+ Writing RDMs to file at iteration          572
+ Reset fdv av at iteration          573
+ Writing RDMs to file at iteration          573
+ Reset fdv av at iteration          574
+ Writing RDMs to file at iteration          574
+ Reset fdv av at iteration          575
+ Writing RDMs to file at iteration          575
+ Reset fdv av at iteration          576
+ Writing RDMs to file at iteration          576
+ Reset fdv av at iteration          577
+ Writing RDMs to file at iteration          577
+ Reset fdv av at iteration          578
+ Writing RDMs to file at iteration          578
+ Reset fdv av at iteration          579
+ Writing RDMs to file at iteration          579
+ Reset fdv av at iteration          580
+           220710   204768741.381        9974.95274774      -0.501988572681      -0.502800631171       -13482.1593768             189064056        22567631   42.8193359375                  306
+ Writing RDMs to file at iteration          580
+ Reset fdv av at iteration          581
+ Writing RDMs to file at iteration          581
+ Reset fdv av at iteration          582
+ Writing RDMs to file at iteration          582
+ Reset fdv av at iteration          583
+ Writing RDMs to file at iteration          583
+ Reset fdv av at iteration          584
+ Writing RDMs to file at iteration          584
+ Reset fdv av at iteration          585
+ Writing RDMs to file at iteration          585
+ Reset fdv av at iteration          586
+ Writing RDMs to file at iteration          586
+ Reset fdv av at iteration          587
+ Writing RDMs to file at iteration          587
+ Reset fdv av at iteration          588
+ Writing RDMs to file at iteration          588
+ Reset fdv av at iteration          589
+ Writing RDMs to file at iteration          589
+ Reset fdv av at iteration          590
+           220720   204769853.382        9974.80061885      -0.501959192377      -0.503059405847       -13482.1593474             189064493        22553952   42.8287124634                  268
+ Writing RDMs to file at iteration          590
+ Reset fdv av at iteration          591
+ Writing RDMs to file at iteration          591
+ Reset fdv av at iteration          592
+ Writing RDMs to file at iteration          592
+ Reset fdv av at iteration          593
+ Writing RDMs to file at iteration          593
+ Reset fdv av at iteration          594
+ Writing RDMs to file at iteration          594
+ Reset fdv av at iteration          595
+ Writing RDMs to file at iteration          595
+ Reset fdv av at iteration          596
+ Writing RDMs to file at iteration          596
+ Reset fdv av at iteration          597
+ Writing RDMs to file at iteration          597
+ Reset fdv av at iteration          598
+ Writing RDMs to file at iteration          598
+ Reset fdv av at iteration          599
+ Writing RDMs to file at iteration          599
+ Reset fdv av at iteration          600
+           220730   204769906.952        9974.34394680      -0.501988197672      -0.503148094435       -13482.1593764             189064471        22562190   42.8255844116                  270
+ Writing RDMs to file at iteration          600
+ Reset fdv av at iteration          601
+ Writing RDMs to file at iteration          601
+ Reset fdv av at iteration          602
+ Writing RDMs to file at iteration          602
+ Reset fdv av at iteration          603
+ Writing RDMs to file at iteration          603
+ Reset fdv av at iteration          604
+ Writing RDMs to file at iteration          604
+ Reset fdv av at iteration          605
+ Writing RDMs to file at iteration          605
+ Reset fdv av at iteration          606
+ Writing RDMs to file at iteration          606
+ Reset fdv av at iteration          607
+ Writing RDMs to file at iteration          607
+ Reset fdv av at iteration          608
+ Writing RDMs to file at iteration          608
+ Reset fdv av at iteration          609
+ Writing RDMs to file at iteration          609
+ Reset fdv av at iteration          610
+           220740   204768432.341        9974.48542171      -0.501980191298      -0.503008418256       -13482.1593684             189063430        22551846   42.8427734375                  285
+Writing out a popsfile after   8.000 hours...
+ 
+*********************************
+Writing a 64-bit POPSFILEBIN...
+Writing a total of 188996617 determinants.
+*********************************
+ 
+Time taken to write out POPSFILE: 175.613 seconds.
+ Writing RDMs to file at iteration          610
+ Reset fdv av at iteration          611
+ Writing RDMs to file at iteration          611
+ Reset fdv av at iteration          612
+ Writing RDMs to file at iteration          612
+ Reset fdv av at iteration          613
+ Writing RDMs to file at iteration          613
+ Reset fdv av at iteration          614
+ Writing RDMs to file at iteration          614
+ Reset fdv av at iteration          615
+ Writing RDMs to file at iteration          615
+ Reset fdv av at iteration          616
+ Writing RDMs to file at iteration          616
+ Reset fdv av at iteration          617
+ Writing RDMs to file at iteration          617
+ Reset fdv av at iteration          618
+ Writing RDMs to file at iteration          618
+ Reset fdv av at iteration          619
+ Writing RDMs to file at iteration          619
+ Reset fdv av at iteration          620
+           220750   204767411.562        9974.02906386      -0.501995732675      -0.502807590119       -13482.1593839             189063045        22556325   42.8837890625                  262
+ Writing RDMs to file at iteration          620
+ Reset fdv av at iteration          621
+ Writing RDMs to file at iteration          621
+ Reset fdv av at iteration          622
+ Writing RDMs to file at iteration          622
+ Reset fdv av at iteration          623
+ Writing RDMs to file at iteration          623
+ Reset fdv av at iteration          624
+ Writing RDMs to file at iteration          624
+ Reset fdv av at iteration          625
+ Writing RDMs to file at iteration          625
+ Reset fdv av at iteration          626
+ Writing RDMs to file at iteration          626
+ Reset fdv av at iteration          627
+ Writing RDMs to file at iteration          627
+ Reset fdv av at iteration          628
+ Writing RDMs to file at iteration          628
+ Reset fdv av at iteration          629
+ Writing RDMs to file at iteration          629
+ Reset fdv av at iteration          630
+           220760   204770018.442        9975.37538813      -0.501947010560      -0.502817838826       -13482.1593352             189065502        22563732   42.8613281250                  268
+ Writing RDMs to file at iteration          630
+ Reset fdv av at iteration          631
+ Writing RDMs to file at iteration          631
+ Reset fdv av at iteration          632
+ Writing RDMs to file at iteration          632
+ Reset fdv av at iteration          633
+ Writing RDMs to file at iteration          633
+ Reset fdv av at iteration          634
+ Writing RDMs to file at iteration          634
+ Reset fdv av at iteration          635
+ Writing RDMs to file at iteration          635
+ Reset fdv av at iteration          636
+ Writing RDMs to file at iteration          636
+ Reset fdv av at iteration          637
+ Writing RDMs to file at iteration          637
+ Reset fdv av at iteration          638
+ Writing RDMs to file at iteration          638
+ Reset fdv av at iteration          639
+ Writing RDMs to file at iteration          639
+ Reset fdv av at iteration          640
+           220770   204769701.632        9974.32161656      -0.501951155655      -0.502950306995       -13482.1593393             189065051        22556525   42.8492202759                  272
+ Writing RDMs to file at iteration          640
+ Reset fdv av at iteration          641
+ Writing RDMs to file at iteration          641
+ Reset fdv av at iteration          642
+ Writing RDMs to file at iteration          642
+ Reset fdv av at iteration          643
+ Writing RDMs to file at iteration          643
+ Reset fdv av at iteration          644
+ Writing RDMs to file at iteration          644
+ Reset fdv av at iteration          645
+ Writing RDMs to file at iteration          645
+ Reset fdv av at iteration          646
+ Writing RDMs to file at iteration          646
+ Reset fdv av at iteration          647
+ Writing RDMs to file at iteration          647
+ Reset fdv av at iteration          648
+ Writing RDMs to file at iteration          648
+ Reset fdv av at iteration          649
+ Writing RDMs to file at iteration          649
+ Reset fdv av at iteration          650
+           220780   204769137.472        9973.56671191      -0.501999769240      -0.503111474215       -13482.1593880             189064929        22556828   42.8503913879                  253
+ Writing RDMs to file at iteration          650
+ Reset fdv av at iteration          651
+ Writing RDMs to file at iteration          651
+ Reset fdv av at iteration          652
+ Writing RDMs to file at iteration          652
+ Reset fdv av at iteration          653
+ Writing RDMs to file at iteration          653
+ Reset fdv av at iteration          654
+ Writing RDMs to file at iteration          654
+ Reset fdv av at iteration          655
+ Writing RDMs to file at iteration          655
+ Reset fdv av at iteration          656
+ Writing RDMs to file at iteration          656
+ Reset fdv av at iteration          657
+ Writing RDMs to file at iteration          657
+ Reset fdv av at iteration          658
+ Writing RDMs to file at iteration          658
+ Reset fdv av at iteration          659
+ Writing RDMs to file at iteration          659
+ Reset fdv av at iteration          660
+           220790   204770458.879        9973.40944155      -0.502022018536      -0.503191536838       -13482.1594102             189065558        22555401   42.8570327759                  287
+ Writing RDMs to file at iteration          660
+ Reset fdv av at iteration          661
+ Writing RDMs to file at iteration          661
+ Reset fdv av at iteration          662
+ Writing RDMs to file at iteration          662
+ Reset fdv av at iteration          663
+ Writing RDMs to file at iteration          663
+ Reset fdv av at iteration          664
+ Writing RDMs to file at iteration          664
+ Reset fdv av at iteration          665
+ Writing RDMs to file at iteration          665
+ Reset fdv av at iteration          666
+ Writing RDMs to file at iteration          666
+ Reset fdv av at iteration          667
+ Writing RDMs to file at iteration          667
+ Reset fdv av at iteration          668
+ Writing RDMs to file at iteration          668
+ Reset fdv av at iteration          669
+ Writing RDMs to file at iteration          669
+ Reset fdv av at iteration          670
+           220800   204771768.092        9972.65157783      -0.502082931139      -0.503490581078       -13482.1594711             189067663        22554762   42.8509750366                  288
+ Writing RDMs to file at iteration          670
+ Reset fdv av at iteration          671
+ Writing RDMs to file at iteration          671
+ Reset fdv av at iteration          672
+ Writing RDMs to file at iteration          672
+ Reset fdv av at iteration          673
+ Writing RDMs to file at iteration          673
+ Reset fdv av at iteration          674
+ Writing RDMs to file at iteration          674
+ Reset fdv av at iteration          675
+ Writing RDMs to file at iteration          675
+ Reset fdv av at iteration          676
+ Writing RDMs to file at iteration          676
+ Reset fdv av at iteration          677
+ Writing RDMs to file at iteration          677
+ Reset fdv av at iteration          678
+ Writing RDMs to file at iteration          678
+ Reset fdv av at iteration          679
+ Writing RDMs to file at iteration          679
+ Reset fdv av at iteration          680
+           220810   204769309.985        9972.18963635      -0.502110507729      -0.503386439467       -13482.1594987             189065695        22564405   42.8603515625                  265
+ Writing RDMs to file at iteration          680
+ Reset fdv av at iteration          681
+ Writing RDMs to file at iteration          681
+ Reset fdv av at iteration          682
+ Writing RDMs to file at iteration          682
+ Reset fdv av at iteration          683
+ Writing RDMs to file at iteration          683
+ Reset fdv av at iteration          684
+ Writing RDMs to file at iteration          684
+ Reset fdv av at iteration          685
+ Writing RDMs to file at iteration          685
+ Reset fdv av at iteration          686
+ Writing RDMs to file at iteration          686
+ Reset fdv av at iteration          687
+ Writing RDMs to file at iteration          687
+ Reset fdv av at iteration          688
+ Writing RDMs to file at iteration          688
+ Reset fdv av at iteration          689
+ Writing RDMs to file at iteration          689
+ Reset fdv av at iteration          690
+           220820   204772270.779        9972.02885040      -0.502113117326      -0.503401187828       -13482.1595013             189068899        22563707   42.8736343384                  324
+ Writing RDMs to file at iteration          690
+ Reset fdv av at iteration          691
+ Writing RDMs to file at iteration          691
+ Reset fdv av at iteration          692
+ Writing RDMs to file at iteration          692
+ Reset fdv av at iteration          693
+ Writing RDMs to file at iteration          693
+ Reset fdv av at iteration          694
+ Writing RDMs to file at iteration          694
+ Reset fdv av at iteration          695
+ Writing RDMs to file at iteration          695
+ Reset fdv av at iteration          696
+ Writing RDMs to file at iteration          696
+ Reset fdv av at iteration          697
+ Writing RDMs to file at iteration          697
+ Reset fdv av at iteration          698
+ Writing RDMs to file at iteration          698
+ Reset fdv av at iteration          699
+ Writing RDMs to file at iteration          699
+ Reset fdv av at iteration          700
+           220830   204773014.446        9972.46817426      -0.502122248683      -0.504112730564       -13482.1595104             189069559        22555615   42.8427734375                  273
+ Writing RDMs to file at iteration          700
+ Reset fdv av at iteration          701
+ Writing RDMs to file at iteration          701
+ Reset fdv av at iteration          702
+ Writing RDMs to file at iteration          702
+ Reset fdv av at iteration          703
+ Writing RDMs to file at iteration          703
+ Reset fdv av at iteration          704
+ Writing RDMs to file at iteration          704
+ Reset fdv av at iteration          705
+ Writing RDMs to file at iteration          705
+ Reset fdv av at iteration          706
+ Writing RDMs to file at iteration          706
+ Reset fdv av at iteration          707
+ Writing RDMs to file at iteration          707
+ Reset fdv av at iteration          708
+ Writing RDMs to file at iteration          708
+ Reset fdv av at iteration          709
+ Writing RDMs to file at iteration          709
+ Reset fdv av at iteration          710
+           220840   204772935.135        9972.29612434      -0.502096068720      -0.503999362959       -13482.1594843             189069386        22554933   42.8453140259                  291
+ Writing RDMs to file at iteration          710
+ Reset fdv av at iteration          711
+ Writing RDMs to file at iteration          711
+ Reset fdv av at iteration          712
+ Writing RDMs to file at iteration          712
+ Reset fdv av at iteration          713
+ Writing RDMs to file at iteration          713
+ Reset fdv av at iteration          714
+ Writing RDMs to file at iteration          714
+ Reset fdv av at iteration          715
+ Writing RDMs to file at iteration          715
+ Reset fdv av at iteration          716
+ Writing RDMs to file at iteration          716
+ Reset fdv av at iteration          717
+ Writing RDMs to file at iteration          717
+ Reset fdv av at iteration          718
+ Writing RDMs to file at iteration          718
+ Reset fdv av at iteration          719
+ Writing RDMs to file at iteration          719
+ Reset fdv av at iteration          720
+           220850   204772544.064        9971.82515292      -0.502134965561      -0.504184047629       -13482.1595232             189069596        22566109   42.8421859741                  318
+ Writing RDMs to file at iteration          720
+ Reset fdv av at iteration          721
+ Writing RDMs to file at iteration          721
+ Reset fdv av at iteration          722
+ Writing RDMs to file at iteration          722
+ Reset fdv av at iteration          723
+ Writing RDMs to file at iteration          723
+ Reset fdv av at iteration          724
+ Writing RDMs to file at iteration          724
+ Reset fdv av at iteration          725
+ Writing RDMs to file at iteration          725
+ Reset fdv av at iteration          726
+ Writing RDMs to file at iteration          726
+ Reset fdv av at iteration          727
+ Writing RDMs to file at iteration          727
+ Reset fdv av at iteration          728
+ Writing RDMs to file at iteration          728
+ Reset fdv av at iteration          729
+ Writing RDMs to file at iteration          729
+ Reset fdv av at iteration          730
+           220860   204771666.330        9971.65216527      -0.502167494584      -0.503881702823       -13482.1595557             189068604        22569723   42.8699226379                  299
+ Writing RDMs to file at iteration          730
+ Reset fdv av at iteration          731
+ Writing RDMs to file at iteration          731
+ Reset fdv av at iteration          732
+ Writing RDMs to file at iteration          732
+ Reset fdv av at iteration          733
+ Writing RDMs to file at iteration          733
+ Reset fdv av at iteration          734
+ Writing RDMs to file at iteration          734
+ Reset fdv av at iteration          735
+ Writing RDMs to file at iteration          735
+ Reset fdv av at iteration          736
+ Writing RDMs to file at iteration          736
+ Reset fdv av at iteration          737
+ Writing RDMs to file at iteration          737
+ Reset fdv av at iteration          738
+ Writing RDMs to file at iteration          738
+ Reset fdv av at iteration          739
+ Writing RDMs to file at iteration          739
+ Reset fdv av at iteration          740
+           220870   204770565.310        9971.78332019      -0.502156260230      -0.503549518651       -13482.1595444             189067690        22562424   42.8445320129                  280
+ Writing RDMs to file at iteration          740
+ Reset fdv av at iteration          741
+ Writing RDMs to file at iteration          741
+ Reset fdv av at iteration          742
+ Writing RDMs to file at iteration          742
+ Reset fdv av at iteration          743
+ Writing RDMs to file at iteration          743
+ Reset fdv av at iteration          744
+ Writing RDMs to file at iteration          744
+ Reset fdv av at iteration          745
+ Writing RDMs to file at iteration          745
+ Reset fdv av at iteration          746
+ Writing RDMs to file at iteration          746
+ Reset fdv av at iteration          747
+ Writing RDMs to file at iteration          747
+ Reset fdv av at iteration          748
+ Writing RDMs to file at iteration          748
+ Reset fdv av at iteration          749
+ Writing RDMs to file at iteration          749
+ Reset fdv av at iteration          750
+           220880   204772165.377        9972.52027001      -0.502168805660      -0.503611185999       -13482.1595570             189069998        22554825   42.8515625000                  305
+ Writing RDMs to file at iteration          750
+ Reset fdv av at iteration          751
+ Writing RDMs to file at iteration          751
+ Reset fdv av at iteration          752
+ Writing RDMs to file at iteration          752
+ Reset fdv av at iteration          753
+ Writing RDMs to file at iteration          753
+ Reset fdv av at iteration          754
+ Writing RDMs to file at iteration          754
+ Reset fdv av at iteration          755
+ Writing RDMs to file at iteration          755
+ Reset fdv av at iteration          756
+ Writing RDMs to file at iteration          756
+ Reset fdv av at iteration          757
+ Writing RDMs to file at iteration          757
+ Reset fdv av at iteration          758
+ Writing RDMs to file at iteration          758
+ Reset fdv av at iteration          759
+ Writing RDMs to file at iteration          759
+ Reset fdv av at iteration          760
+           220890   204771170.810        9972.05637502      -0.502147001144      -0.503706033698       -13482.1595352             189068644        22561717   42.8605461121                  265
+ Writing RDMs to file at iteration          760
+ Reset fdv av at iteration          761
+ Writing RDMs to file at iteration          761
+ Reset fdv av at iteration          762
+ Writing RDMs to file at iteration          762
+ Reset fdv av at iteration          763
+ Writing RDMs to file at iteration          763
+ Reset fdv av at iteration          764
+ Writing RDMs to file at iteration          764
+ Reset fdv av at iteration          765
+ Writing RDMs to file at iteration          765
+ Reset fdv av at iteration          766
+ Writing RDMs to file at iteration          766
+ Reset fdv av at iteration          767
+ Writing RDMs to file at iteration          767
+ Reset fdv av at iteration          768
+ Writing RDMs to file at iteration          768
+ Reset fdv av at iteration          769
+ Writing RDMs to file at iteration          769
+ Reset fdv av at iteration          770
+           220900   204771290.841        9972.49115671      -0.502151107655      -0.503560387818       -13482.1595393             189069802        22557159   42.8624992371                  296
+ Writing RDMs to file at iteration          770
+ Reset fdv av at iteration          771
+ Writing RDMs to file at iteration          771
+ Reset fdv av at iteration          772
+ Writing RDMs to file at iteration          772
+ Reset fdv av at iteration          773
+ Writing RDMs to file at iteration          773
+ Reset fdv av at iteration          774
+ Writing RDMs to file at iteration          774
+ Reset fdv av at iteration          775
+ Writing RDMs to file at iteration          775
+ Reset fdv av at iteration          776
+ Writing RDMs to file at iteration          776
+ Reset fdv av at iteration          777
+ Writing RDMs to file at iteration          777
+ Reset fdv av at iteration          778
+ Writing RDMs to file at iteration          778
+ Reset fdv av at iteration          779
+ Writing RDMs to file at iteration          779
+ Reset fdv av at iteration          780
+           220910   204770865.615        9972.32781863      -0.502136142792      -0.503689024363       -13482.1595243             189069184        22561798   42.8679695129                  290
+ Writing RDMs to file at iteration          780
+ Reset fdv av at iteration          781
+ Writing RDMs to file at iteration          781
+ Reset fdv av at iteration          782
+ Writing RDMs to file at iteration          782
+ Reset fdv av at iteration          783
+ Writing RDMs to file at iteration          783
+ Reset fdv av at iteration          784
+ Writing RDMs to file at iteration          784
+ Reset fdv av at iteration          785
+ Writing RDMs to file at iteration          785
+ Reset fdv av at iteration          786
+ Writing RDMs to file at iteration          786
+ Reset fdv av at iteration          787
+ Writing RDMs to file at iteration          787
+ Reset fdv av at iteration          788
+ Writing RDMs to file at iteration          788
+ Reset fdv av at iteration          789
+ Writing RDMs to file at iteration          789
+ Reset fdv av at iteration          790
+           220920   204773834.898        9972.46291387      -0.502147108393      -0.503741999397       -13482.1595353             189071774        22558915   42.8718757629                  315
+ Writing RDMs to file at iteration          790
+ Reset fdv av at iteration          791
+ Writing RDMs to file at iteration          791
+ Reset fdv av at iteration          792
+ Writing RDMs to file at iteration          792
+ Reset fdv av at iteration          793
+ Writing RDMs to file at iteration          793
+ Reset fdv av at iteration          794
+ Writing RDMs to file at iteration          794
+ Reset fdv av at iteration          795
+ Writing RDMs to file at iteration          795
+ Reset fdv av at iteration          796
+ Writing RDMs to file at iteration          796
+ Reset fdv av at iteration          797
+ Writing RDMs to file at iteration          797
+ Reset fdv av at iteration          798
+ Writing RDMs to file at iteration          798
+ Reset fdv av at iteration          799
+ Writing RDMs to file at iteration          799
+ Reset fdv av at iteration          800
+           220930   204773464.237        9972.89679673      -0.502138548023      -0.504118990824       -13482.1595267             189071495        22560759   42.8558578491                  287
+ Writing RDMs to file at iteration          800
+ Reset fdv av at iteration          801
+ Writing RDMs to file at iteration          801
+ Reset fdv av at iteration          802
+ Writing RDMs to file at iteration          802
+ Reset fdv av at iteration          803
+ Writing RDMs to file at iteration          803
+ Reset fdv av at iteration          804
+ Writing RDMs to file at iteration          804
+ Reset fdv av at iteration          805
+ Writing RDMs to file at iteration          805
+ Reset fdv av at iteration          806
+ Writing RDMs to file at iteration          806
+ Reset fdv av at iteration          807
+ Writing RDMs to file at iteration          807
+ Reset fdv av at iteration          808
+ Writing RDMs to file at iteration          808
+ Reset fdv av at iteration          809
+ Writing RDMs to file at iteration          809
+ Reset fdv av at iteration          810
+           220940   204774507.234        9972.72436120      -0.502121530530      -0.504505219452       -13482.1595097             189072859        22552963   42.8660163879                  290
+ Writing RDMs to file at iteration          810
+ Reset fdv av at iteration          811
+ Writing RDMs to file at iteration          811
+ Reset fdv av at iteration          812
+ Writing RDMs to file at iteration          812
+ Reset fdv av at iteration          813
+ Writing RDMs to file at iteration          813
+ Reset fdv av at iteration          814
+ Writing RDMs to file at iteration          814
+ Reset fdv av at iteration          815
+ Writing RDMs to file at iteration          815
+ Reset fdv av at iteration          816
+ Writing RDMs to file at iteration          816
+ Reset fdv av at iteration          817
+ Writing RDMs to file at iteration          817
+ Reset fdv av at iteration          818
+ Writing RDMs to file at iteration          818
+ Reset fdv av at iteration          819
+ Writing RDMs to file at iteration          819
+ Reset fdv av at iteration          820
+           220950   204774267.056        9972.84537226      -0.502131045598      -0.504417115797       -13482.1595192             189073022        22562523   42.8886718750                  277
+ Writing RDMs to file at iteration          820
+ Reset fdv av at iteration          821
+ Writing RDMs to file at iteration          821
+ Reset fdv av at iteration          822
+ Writing RDMs to file at iteration          822
+ Reset fdv av at iteration          823
+ Writing RDMs to file at iteration          823
+ Reset fdv av at iteration          824
+ Writing RDMs to file at iteration          824
+ Reset fdv av at iteration          825
+ Writing RDMs to file at iteration          825
+ Reset fdv av at iteration          826
+ Writing RDMs to file at iteration          826
+ Reset fdv av at iteration          827
+ Writing RDMs to file at iteration          827
+ Reset fdv av at iteration          828
+ Writing RDMs to file at iteration          828
+ Reset fdv av at iteration          829
+ Writing RDMs to file at iteration          829
+ Reset fdv av at iteration          830
+           220960   204772428.809        9972.06783485      -0.502173770946      -0.504289633026       -13482.1595620             189071201        22564638   42.8851547241                  264
+ Writing RDMs to file at iteration          830
+ Reset fdv av at iteration          831
+ Writing RDMs to file at iteration          831
+ Reset fdv av at iteration          832
+ Writing RDMs to file at iteration          832
+ Reset fdv av at iteration          833
+ Writing RDMs to file at iteration          833
+ Reset fdv av at iteration          834
+ Writing RDMs to file at iteration          834
+ Reset fdv av at iteration          835
+ Writing RDMs to file at iteration          835
+ Reset fdv av at iteration          836
+ Writing RDMs to file at iteration          836
+ Reset fdv av at iteration          837
+ Writing RDMs to file at iteration          837
+ Reset fdv av at iteration          838
+ Writing RDMs to file at iteration          838
+ Reset fdv av at iteration          839
+ Writing RDMs to file at iteration          839
+ Reset fdv av at iteration          840
+           220970   204771616.572        9972.49221020      -0.502148503497      -0.503705986803       -13482.1595367             189070458        22559674   42.8816413879                  306
+ Writing RDMs to file at iteration          840
+ Reset fdv av at iteration          841
+ Writing RDMs to file at iteration          841
+ Reset fdv av at iteration          842
+ Writing RDMs to file at iteration          842
+ Reset fdv av at iteration          843
+ Writing RDMs to file at iteration          843
+ Reset fdv av at iteration          844
+ Writing RDMs to file at iteration          844
+ Reset fdv av at iteration          845
+ Writing RDMs to file at iteration          845
+ Reset fdv av at iteration          846
+ Writing RDMs to file at iteration          846
+ Reset fdv av at iteration          847
+ Writing RDMs to file at iteration          847
+ Reset fdv av at iteration          848
+ Writing RDMs to file at iteration          848
+ Reset fdv av at iteration          849
+ Writing RDMs to file at iteration          849
+ Reset fdv av at iteration          850
+           220980   204770843.929        9973.22533867      -0.502115754511      -0.503501036806       -13482.1595039             189069592        22555844   42.8894538879                  335
+ Writing RDMs to file at iteration          850
+ Reset fdv av at iteration          851
+ Writing RDMs to file at iteration          851
+ Reset fdv av at iteration          852
+ Writing RDMs to file at iteration          852
+ Reset fdv av at iteration          853
+ Writing RDMs to file at iteration          853
+ Reset fdv av at iteration          854
+ Writing RDMs to file at iteration          854
+ Reset fdv av at iteration          855
+ Writing RDMs to file at iteration          855
+ Reset fdv av at iteration          856
+ Writing RDMs to file at iteration          856
+ Reset fdv av at iteration          857
+ Writing RDMs to file at iteration          857
+ Reset fdv av at iteration          858
+ Writing RDMs to file at iteration          858
+ Reset fdv av at iteration          859
+ Writing RDMs to file at iteration          859
+ Reset fdv av at iteration          860
+           220990   204769429.720        9973.36202658      -0.502074967810      -0.503469181722       -13482.1594632             189068899        22556583   42.8902359009                  267
+ Writing RDMs to file at iteration          860
+ Reset fdv av at iteration          861
+ Writing RDMs to file at iteration          861
+ Reset fdv av at iteration          862
+ Writing RDMs to file at iteration          862
+ Reset fdv av at iteration          863
+ Writing RDMs to file at iteration          863
+ Reset fdv av at iteration          864
+ Writing RDMs to file at iteration          864
+ Reset fdv av at iteration          865
+ Writing RDMs to file at iteration          865
+ Reset fdv av at iteration          866
+ Writing RDMs to file at iteration          866
+ Reset fdv av at iteration          867
+ Writing RDMs to file at iteration          867
+ Reset fdv av at iteration          868
+ Writing RDMs to file at iteration          868
+ Reset fdv av at iteration          869
+ Writing RDMs to file at iteration          869
+ Reset fdv av at iteration          870
+           221000   204768939.775        9973.79941759      -0.502060919862      -0.503056897518       -13482.1594491             189068394        22565703   42.8781242371                  277
+ Writing RDMs to file at iteration          870
+ Reset fdv av at iteration          871
+ Writing RDMs to file at iteration          871
+ Reset fdv av at iteration          872
+ Writing RDMs to file at iteration          872
+ Reset fdv av at iteration          873
+ Writing RDMs to file at iteration          873
+ Reset fdv av at iteration          874
+ Writing RDMs to file at iteration          874
+ Reset fdv av at iteration          875
+ Writing RDMs to file at iteration          875
+ Reset fdv av at iteration          876
+ Writing RDMs to file at iteration          876
+ Reset fdv av at iteration          877
+ Writing RDMs to file at iteration          877
+ Reset fdv av at iteration          878
+ Writing RDMs to file at iteration          878
+ Reset fdv av at iteration          879
+ Writing RDMs to file at iteration          879
+ Reset fdv av at iteration          880
+           221010   204770110.041        9973.64277355      -0.502042317145      -0.503026833157       -13482.1594305             189069535        22560574   42.8800773621                  289
+ Writing RDMs to file at iteration          880
+ Reset fdv av at iteration          881
+ Writing RDMs to file at iteration          881
+ Reset fdv av at iteration          882
+ Writing RDMs to file at iteration          882
+ Reset fdv av at iteration          883
+ Writing RDMs to file at iteration          883
+ Reset fdv av at iteration          884
+ Writing RDMs to file at iteration          884
+ Reset fdv av at iteration          885
+ Writing RDMs to file at iteration          885
+ Reset fdv av at iteration          886
+ Writing RDMs to file at iteration          886
+ Reset fdv av at iteration          887
+ Writing RDMs to file at iteration          887
+ Reset fdv av at iteration          888
+ Writing RDMs to file at iteration          888
+ Reset fdv av at iteration          889
+ Writing RDMs to file at iteration          889
+ Reset fdv av at iteration          890
+           221020   204770329.754        9973.78752330      -0.502053726304      -0.503320155381       -13482.1594419             189068886        22564737   42.8937492371                  288
+ Writing RDMs to file at iteration          890
+ Reset fdv av at iteration          891
+ Writing RDMs to file at iteration          891
+ Reset fdv av at iteration          892
+ Writing RDMs to file at iteration          892
+ Reset fdv av at iteration          893
+ Writing RDMs to file at iteration          893
+ Reset fdv av at iteration          894
+ Writing RDMs to file at iteration          894
+ Reset fdv av at iteration          895
+ Writing RDMs to file at iteration          895
+ Reset fdv av at iteration          896
+ Writing RDMs to file at iteration          896
+ Reset fdv av at iteration          897
+ Writing RDMs to file at iteration          897
+ Reset fdv av at iteration          898
+ Writing RDMs to file at iteration          898
+ Reset fdv av at iteration          899
+ Writing RDMs to file at iteration          899
+ Reset fdv av at iteration          900
+           221030   204769839.225        9973.73094127      -0.502047601394      -0.503372134652       -13482.1594358             189068674        22559132   42.8906250000                  297
+ Writing RDMs to file at iteration          900
+ Reset fdv av at iteration          901
+ Writing RDMs to file at iteration          901
+ Reset fdv av at iteration          902
+ Writing RDMs to file at iteration          902
+ Reset fdv av at iteration          903
+ Writing RDMs to file at iteration          903
+ Reset fdv av at iteration          904
+ Writing RDMs to file at iteration          904
+ Reset fdv av at iteration          905
+ Writing RDMs to file at iteration          905
+ Reset fdv av at iteration          906
+ Writing RDMs to file at iteration          906
+ Reset fdv av at iteration          907
+ Writing RDMs to file at iteration          907
+ Reset fdv av at iteration          908
+ Writing RDMs to file at iteration          908
+ Reset fdv av at iteration          909
+ Writing RDMs to file at iteration          909
+ Reset fdv av at iteration          910
+           221040   204770365.200        9974.46965936      -0.502030360685      -0.503358633865       -13482.1594185             189070139        22560500   42.8796882629                  274
+ Writing RDMs to file at iteration          910
+ Reset fdv av at iteration          911
+ Writing RDMs to file at iteration          911
+ Reset fdv av at iteration          912
+ Writing RDMs to file at iteration          912
+ Reset fdv av at iteration          913
+ Writing RDMs to file at iteration          913
+ Reset fdv av at iteration          914
+ Writing RDMs to file at iteration          914
+ Reset fdv av at iteration          915
+ Writing RDMs to file at iteration          915
+ Reset fdv av at iteration          916
+ Writing RDMs to file at iteration          916
+ Reset fdv av at iteration          917
+ Writing RDMs to file at iteration          917
+ Reset fdv av at iteration          918
+ Writing RDMs to file at iteration          918
+ Reset fdv av at iteration          919
+ Writing RDMs to file at iteration          919
+ Reset fdv av at iteration          920
+           221050   204768369.780        9974.90753765      -0.501972766670      -0.503010230628       -13482.1593610             189068475        22563191   42.8648452759                  283
+ Writing RDMs to file at iteration          920
+ Reset fdv av at iteration          921
+ Writing RDMs to file at iteration          921
+ Reset fdv av at iteration          922
+ Writing RDMs to file at iteration          922
+ Reset fdv av at iteration          923
+ Writing RDMs to file at iteration          923
+ Reset fdv av at iteration          924
+ Writing RDMs to file at iteration          924
+ Reset fdv av at iteration          925
+ Writing RDMs to file at iteration          925
+ Reset fdv av at iteration          926
+ Writing RDMs to file at iteration          926
+ Reset fdv av at iteration          927
+ Writing RDMs to file at iteration          927
+ Reset fdv av at iteration          928
+ Writing RDMs to file at iteration          928
+ Reset fdv av at iteration          929
+ Writing RDMs to file at iteration          929
+ Reset fdv av at iteration          930
+           221060   204768887.929        9975.05002751      -0.501922419318      -0.502826349729       -13482.1593106             189068521        22559415   42.8718757629                  300
+ Writing RDMs to file at iteration          930
+ Reset fdv av at iteration          931
+ Writing RDMs to file at iteration          931
+ Reset fdv av at iteration          932
+ Writing RDMs to file at iteration          932
+ Reset fdv av at iteration          933
+ Writing RDMs to file at iteration          933
+ Reset fdv av at iteration          934
+ Writing RDMs to file at iteration          934
+ Reset fdv av at iteration          935
+ Writing RDMs to file at iteration          935
+ Reset fdv av at iteration          936
+ Writing RDMs to file at iteration          936
+ Reset fdv av at iteration          937
+ Writing RDMs to file at iteration          937
+ Reset fdv av at iteration          938
+ Writing RDMs to file at iteration          938
+ Reset fdv av at iteration          939
+ Writing RDMs to file at iteration          939
+ Reset fdv av at iteration          940
+           221070   204770433.730        9975.19600160      -0.501926097293      -0.503105893313       -13482.1593143             189070590        22558456   42.8578109741                  317
+Writing out a popsfile after  12.000 hours...
+ 
+*********************************
+Writing a 64-bit POPSFILEBIN...
+Writing a total of 189004026 determinants.
+*********************************
+ 
+Time taken to write out POPSFILE: 173.895 seconds.
+ Writing RDMs to file at iteration          940
+ Reset fdv av at iteration          941
+ Writing RDMs to file at iteration          941
+ Reset fdv av at iteration          942
+ Writing RDMs to file at iteration          942
+ Reset fdv av at iteration          943
+ Writing RDMs to file at iteration          943
+ Reset fdv av at iteration          944
+ Writing RDMs to file at iteration          944
+ Reset fdv av at iteration          945
+ Writing RDMs to file at iteration          945
+ Reset fdv av at iteration          946
+ Writing RDMs to file at iteration          946
+ Reset fdv av at iteration          947
+ Writing RDMs to file at iteration          947
+ Reset fdv av at iteration          948
+ Writing RDMs to file at iteration          948
+ Reset fdv av at iteration          949
+ Writing RDMs to file at iteration          949
+ Reset fdv av at iteration          950
+           221080   204770780.428        9974.73802085      -0.501930937213      -0.503644047804       -13482.1593191             189071263        22566675   42.8687515259                  284
+ Writing RDMs to file at iteration          950
+ Reset fdv av at iteration          951
+ Writing RDMs to file at iteration          951
+ Reset fdv av at iteration          952
+ Writing RDMs to file at iteration          952
+ Reset fdv av at iteration          953
+ Writing RDMs to file at iteration          953
+ Reset fdv av at iteration          954
+ Writing RDMs to file at iteration          954
+ Reset fdv av at iteration          955
+ Writing RDMs to file at iteration          955
+ Reset fdv av at iteration          956
+ Writing RDMs to file at iteration          956
+ Reset fdv av at iteration          957
+ Writing RDMs to file at iteration          957
+ Reset fdv av at iteration          958
+ Writing RDMs to file at iteration          958
+ Reset fdv av at iteration          959
+ Writing RDMs to file at iteration          959
+ Reset fdv av at iteration          960
+           221090   204770100.223        9974.57108536      -0.501911868245      -0.503472899879       -13482.1593001             189070126        22562121   42.8437500000                  276
+ Writing RDMs to file at iteration          960
+ Reset fdv av at iteration          961
+ Writing RDMs to file at iteration          961
+ Reset fdv av at iteration          962
+ Writing RDMs to file at iteration          962
+ Reset fdv av at iteration          963
+ Writing RDMs to file at iteration          963
+ Reset fdv av at iteration          964
+ Writing RDMs to file at iteration          964
+ Reset fdv av at iteration          965
+ Writing RDMs to file at iteration          965
+ Reset fdv av at iteration          966
+ Writing RDMs to file at iteration          966
+ Reset fdv av at iteration          967
+ Writing RDMs to file at iteration          967
+ Reset fdv av at iteration          968
+ Writing RDMs to file at iteration          968
+ Reset fdv av at iteration          969
+ Writing RDMs to file at iteration          969
+ Reset fdv av at iteration          970
+           221100   204769382.838        9975.00637262      -0.501943913038      -0.503092721009       -13482.1593321             189069410        22558805   42.8281250000                  329
+ Writing RDMs to file at iteration          970
+ Reset fdv av at iteration          971
+ Writing RDMs to file at iteration          971
+ Reset fdv av at iteration          972
+ Writing RDMs to file at iteration          972
+ Reset fdv av at iteration          973
+ Writing RDMs to file at iteration          973
+ Reset fdv av at iteration          974
+ Writing RDMs to file at iteration          974
+ Reset fdv av at iteration          975
+ Writing RDMs to file at iteration          975
+ Reset fdv av at iteration          976
+ Writing RDMs to file at iteration          976
+ Reset fdv av at iteration          977
+ Writing RDMs to file at iteration          977
+ Reset fdv av at iteration          978
+ Writing RDMs to file at iteration          978
+ Reset fdv av at iteration          979
+ Writing RDMs to file at iteration          979
+ Reset fdv av at iteration          980
+           221110   204768377.273        9974.84719377      -0.501916831701      -0.502960905041       -13482.1593050             189068194        22565319   42.8382797241                  299
+ Writing RDMs to file at iteration          980
+ Reset fdv av at iteration          981
+ Writing RDMs to file at iteration          981
+ Reset fdv av at iteration          982
+ Writing RDMs to file at iteration          982
+ Reset fdv av at iteration          983
+ Writing RDMs to file at iteration          983
+ Reset fdv av at iteration          984
+ Writing RDMs to file at iteration          984
+ Reset fdv av at iteration          985
+ Writing RDMs to file at iteration          985
+ Reset fdv av at iteration          986
+ Writing RDMs to file at iteration          986
+ Reset fdv av at iteration          987
+ Writing RDMs to file at iteration          987
+ Reset fdv av at iteration          988
+ Writing RDMs to file at iteration          988
+ Reset fdv av at iteration          989
+ Writing RDMs to file at iteration          989
+ Reset fdv av at iteration          990
+           221120   204768784.164        9974.69046429      -0.501903629496      -0.502833867075       -13482.1592918             189068524        22564427   42.8476562500                  280
+ Writing RDMs to file at iteration          990
+ Reset fdv av at iteration          991
+ Writing RDMs to file at iteration          991
+ Reset fdv av at iteration          992
+ Writing RDMs to file at iteration          992
+ Reset fdv av at iteration          993
+ Writing RDMs to file at iteration          993
+ Reset fdv av at iteration          994
+ Writing RDMs to file at iteration          994
+ Reset fdv av at iteration          995
+ Writing RDMs to file at iteration          995
+ Reset fdv av at iteration          996
+ Writing RDMs to file at iteration          996
+ Reset fdv av at iteration          997
+ Writing RDMs to file at iteration          997
+ Reset fdv av at iteration          998
+ Writing RDMs to file at iteration          998
+ Reset fdv av at iteration          999
+ Writing RDMs to file at iteration          999
+ Reset fdv av at iteration         1000
+Beginning to average shift value on iteration:         221130
+Beginning to average shift value on iteration:         221130
+           221130   204769248.978        9976.03495626      -0.501835464812      -0.502819311946       -13482.1592237             189069506        22560549   42.9292984009                  296
+ Writing RDMs to file at iteration         1000
+ Reset fdv av at iteration         1001
+ Writing RDMs to file at iteration         1001
+ Reset fdv av at iteration         1002
+ Writing RDMs to file at iteration         1002
+ Reset fdv av at iteration         1003
+ Writing RDMs to file at iteration         1003
+ Reset fdv av at iteration         1004
+ Writing RDMs to file at iteration         1004
+ Reset fdv av at iteration         1005
+ Writing RDMs to file at iteration         1005
+ Reset fdv av at iteration         1006
+ Writing RDMs to file at iteration         1006
+ Reset fdv av at iteration         1007
+ Writing RDMs to file at iteration         1007
+ Reset fdv av at iteration         1008
+ Writing RDMs to file at iteration         1008
+ Reset fdv av at iteration         1009
+ Writing RDMs to file at iteration         1009
+ Reset fdv av at iteration         1010
+           221140   204770802.486        9974.98006830      -0.501854991574      -0.503202114595       -13482.1592432             189070642        22553701   43.8695297241                  281
+ Writing RDMs to file at iteration         1010
+ Reset fdv av at iteration         1011
+ Writing RDMs to file at iteration         1011
+ Reset fdv av at iteration         1012
+ Writing RDMs to file at iteration         1012
+ Reset fdv av at iteration         1013
+ Writing RDMs to file at iteration         1013
+ Reset fdv av at iteration         1014
+ Writing RDMs to file at iteration         1014
+ Reset fdv av at iteration         1015
+ Writing RDMs to file at iteration         1015
+ Reset fdv av at iteration         1016
+ Writing RDMs to file at iteration         1016
+ Reset fdv av at iteration         1017
+ Writing RDMs to file at iteration         1017
+ Reset fdv av at iteration         1018
+ Writing RDMs to file at iteration         1018
+ Reset fdv av at iteration         1019
+ Writing RDMs to file at iteration         1019
+ Reset fdv av at iteration         1020
+           221150   204768507.715        9974.51935071      -0.501853301465      -0.503215086008       -13482.1592415             189068834        22558151   43.8765640259                  288
+ Writing RDMs to file at iteration         1020
+ Reset fdv av at iteration         1021
+ Writing RDMs to file at iteration         1021
+ Reset fdv av at iteration         1022
+ Writing RDMs to file at iteration         1022
+ Reset fdv av at iteration         1023
+ Writing RDMs to file at iteration         1023
+ Reset fdv av at iteration         1024
+ Writing RDMs to file at iteration         1024
+ Reset fdv av at iteration         1025
+ Writing RDMs to file at iteration         1025
+ Reset fdv av at iteration         1026
+ Writing RDMs to file at iteration         1026
+ Reset fdv av at iteration         1027
+ Writing RDMs to file at iteration         1027
+ Reset fdv av at iteration         1028
+ Writing RDMs to file at iteration         1028
+ Reset fdv av at iteration         1029
+ Writing RDMs to file at iteration         1029
+ Reset fdv av at iteration         1030
+           221160   204768836.113        9973.75803518      -0.501864923304      -0.502794123887       -13482.1592531             189068725        22558220   43.8792953491                  276
+ Writing RDMs to file at iteration         1030
+ Reset fdv av at iteration         1031
+ Writing RDMs to file at iteration         1031
+ Reset fdv av at iteration         1032
+ Writing RDMs to file at iteration         1032
+ Reset fdv av at iteration         1033
+ Writing RDMs to file at iteration         1033
+ Reset fdv av at iteration         1034
+ Writing RDMs to file at iteration         1034
+ Reset fdv av at iteration         1035
+ Writing RDMs to file at iteration         1035
+ Reset fdv av at iteration         1036
+ Writing RDMs to file at iteration         1036
+ Reset fdv av at iteration         1037
+ Writing RDMs to file at iteration         1037
+ Reset fdv av at iteration         1038
+ Writing RDMs to file at iteration         1038
+ Reset fdv av at iteration         1039
+ Writing RDMs to file at iteration         1039
+ Reset fdv av at iteration         1040
+           221170   204768975.662        9974.20310420      -0.501860145737      -0.503001062633       -13482.1592483             189069374        22557352   43.8703117371                  287
+ Writing RDMs to file at iteration         1040
+ Reset fdv av at iteration         1041
+ Writing RDMs to file at iteration         1041
+ Reset fdv av at iteration         1042
+ Writing RDMs to file at iteration         1042
+ Reset fdv av at iteration         1043
+ Writing RDMs to file at iteration         1043
+ Reset fdv av at iteration         1044
+ Writing RDMs to file at iteration         1044
+ Reset fdv av at iteration         1045
+ Writing RDMs to file at iteration         1045
+ Reset fdv av at iteration         1046
+ Writing RDMs to file at iteration         1046
+ Reset fdv av at iteration         1047
+ Writing RDMs to file at iteration         1047
+ Reset fdv av at iteration         1048
+ Writing RDMs to file at iteration         1048
+ Reset fdv av at iteration         1049
+ Writing RDMs to file at iteration         1049
+ Reset fdv av at iteration         1050
+           221180   204768119.083        9973.14534112      -0.501856361082      -0.502920207288       -13482.1592445             189068567        22560916   43.8730468750                  296
+ Writing RDMs to file at iteration         1050
+ Reset fdv av at iteration         1051
+ Writing RDMs to file at iteration         1051
+ Reset fdv av at iteration         1052
+ Writing RDMs to file at iteration         1052
+ Reset fdv av at iteration         1053
+ Writing RDMs to file at iteration         1053
+ Reset fdv av at iteration         1054
+ Writing RDMs to file at iteration         1054
+ Reset fdv av at iteration         1055
+ Writing RDMs to file at iteration         1055
+ Reset fdv av at iteration         1056
+ Writing RDMs to file at iteration         1056
+ Reset fdv av at iteration         1057
+ Writing RDMs to file at iteration         1057
+ Reset fdv av at iteration         1058
+ Writing RDMs to file at iteration         1058
+ Reset fdv av at iteration         1059
+ Writing RDMs to file at iteration         1059
+ Reset fdv av at iteration         1060
+           221190   204769085.367        9973.28866006      -0.501862635261      -0.502722106043       -13482.1592508             189069253        22556227   43.8753890991                  288
+ Writing RDMs to file at iteration         1060
+ Reset fdv av at iteration         1061
+ Writing RDMs to file at iteration         1061
+ Reset fdv av at iteration         1062
+ Writing RDMs to file at iteration         1062
+ Reset fdv av at iteration         1063
+ Writing RDMs to file at iteration         1063
+ Reset fdv av at iteration         1064
+ Writing RDMs to file at iteration         1064
+ Reset fdv av at iteration         1065
+ Writing RDMs to file at iteration         1065
+ Reset fdv av at iteration         1066
+ Writing RDMs to file at iteration         1066
+ Reset fdv av at iteration         1067
+ Writing RDMs to file at iteration         1067
+ Reset fdv av at iteration         1068
+ Writing RDMs to file at iteration         1068
+ Reset fdv av at iteration         1069
+ Writing RDMs to file at iteration         1069
+ Reset fdv av at iteration         1070
+           221200   204769135.661        9974.93424719      -0.501812631000      -0.503009473626       -13482.1592008             189069635        22557699   43.8679695129                  269
+ Writing RDMs to file at iteration         1070
+ Reset fdv av at iteration         1071
+ Writing RDMs to file at iteration         1071
+ Reset fdv av at iteration         1072
+ Writing RDMs to file at iteration         1072
+ Reset fdv av at iteration         1073
+ Writing RDMs to file at iteration         1073
+ Reset fdv av at iteration         1074
+ Writing RDMs to file at iteration         1074
+ Reset fdv av at iteration         1075
+ Writing RDMs to file at iteration         1075
+ Reset fdv av at iteration         1076
+ Writing RDMs to file at iteration         1076
+ Reset fdv av at iteration         1077
+ Writing RDMs to file at iteration         1077
+ Reset fdv av at iteration         1078
+ Writing RDMs to file at iteration         1078
+ Reset fdv av at iteration         1079
+ Writing RDMs to file at iteration         1079
+ Reset fdv av at iteration         1080
+           221210   204770651.204        9973.87583619      -0.501827938228      -0.503259226940       -13482.1592161             189070982        22557551   43.8652343750                  298
+ Writing RDMs to file at iteration         1080
+ Reset fdv av at iteration         1081
+ Writing RDMs to file at iteration         1081
+ Reset fdv av at iteration         1082
+ Writing RDMs to file at iteration         1082
+ Reset fdv av at iteration         1083
+ Writing RDMs to file at iteration         1083
+ Reset fdv av at iteration         1084
+ Writing RDMs to file at iteration         1084
+ Reset fdv av at iteration         1085
+ Writing RDMs to file at iteration         1085
+ Reset fdv av at iteration         1086
+ Writing RDMs to file at iteration         1086
+ Reset fdv av at iteration         1087
+ Writing RDMs to file at iteration         1087
+ Reset fdv av at iteration         1088
+ Writing RDMs to file at iteration         1088
+ Reset fdv av at iteration         1089
+ Writing RDMs to file at iteration         1089
+ Reset fdv av at iteration         1090
+           221220   204770252.482        9974.01342181      -0.501836727030      -0.503518239232       -13482.1592249             189071203        22554442   43.8601570129                  281
+ Writing RDMs to file at iteration         1090
+ Reset fdv av at iteration         1091
+ Writing RDMs to file at iteration         1091
+ Reset fdv av at iteration         1092
+ Writing RDMs to file at iteration         1092
+ Reset fdv av at iteration         1093
+ Writing RDMs to file at iteration         1093
+ Reset fdv av at iteration         1094
+ Writing RDMs to file at iteration         1094
+ Reset fdv av at iteration         1095
+ Writing RDMs to file at iteration         1095
+ Reset fdv av at iteration         1096
+ Writing RDMs to file at iteration         1096
+ Reset fdv av at iteration         1097
+ Writing RDMs to file at iteration         1097
+ Reset fdv av at iteration         1098
+ Writing RDMs to file at iteration         1098
+ Reset fdv av at iteration         1099
+ Writing RDMs to file at iteration         1099
+ Reset fdv av at iteration         1100
+           221230   204769889.163        9974.14672884      -0.501852207977      -0.503351515414       -13482.1592404             189070835        22557930   43.8628921509                  282
+ Writing RDMs to file at iteration         1100
+ Reset fdv av at iteration         1101
+ Writing RDMs to file at iteration         1101
+ Reset fdv av at iteration         1102
+ Writing RDMs to file at iteration         1102
+ Reset fdv av at iteration         1103
+ Writing RDMs to file at iteration         1103
+ Reset fdv av at iteration         1104
+ Writing RDMs to file at iteration         1104
+ Reset fdv av at iteration         1105
+ Writing RDMs to file at iteration         1105
+ Reset fdv av at iteration         1106
+ Writing RDMs to file at iteration         1106
+ Reset fdv av at iteration         1107
+ Writing RDMs to file at iteration         1107
+ Reset fdv av at iteration         1108
+ Writing RDMs to file at iteration         1108
+ Reset fdv av at iteration         1109
+ Writing RDMs to file at iteration         1109
+ Reset fdv av at iteration         1110
+           221240   204769945.895        9973.08273590      -0.501893533224      -0.503221433207       -13482.1592817             189070520        22563255   43.8718757629                  295
+ Writing RDMs to file at iteration         1110
+ Reset fdv av at iteration         1111
+ Writing RDMs to file at iteration         1111
+ Reset fdv av at iteration         1112
+ Writing RDMs to file at iteration         1112
+ Reset fdv av at iteration         1113
+ Writing RDMs to file at iteration         1113
+ Reset fdv av at iteration         1114
+ Writing RDMs to file at iteration         1114
+ Reset fdv av at iteration         1115
+ Writing RDMs to file at iteration         1115
+ Reset fdv av at iteration         1116
+ Writing RDMs to file at iteration         1116
+ Reset fdv av at iteration         1117
+ Writing RDMs to file at iteration         1117
+ Reset fdv av at iteration         1118
+ Writing RDMs to file at iteration         1118
+ Reset fdv av at iteration         1119
+ Writing RDMs to file at iteration         1119
+ Reset fdv av at iteration         1120
+           221250   204770564.768        9973.22169617      -0.501929845134      -0.503265347175       -13482.1593180             189070608        22563672   43.8585929871                  293
+ Writing RDMs to file at iteration         1120
+ Reset fdv av at iteration         1121
+ Writing RDMs to file at iteration         1121
+ Reset fdv av at iteration         1122
+ Writing RDMs to file at iteration         1122
+ Reset fdv av at iteration         1123
+ Writing RDMs to file at iteration         1123
+ Reset fdv av at iteration         1124
+ Writing RDMs to file at iteration         1124
+ Reset fdv av at iteration         1125
+ Writing RDMs to file at iteration         1125
+ Reset fdv av at iteration         1126
+ Writing RDMs to file at iteration         1126
+ Reset fdv av at iteration         1127
+ Writing RDMs to file at iteration         1127
+ Reset fdv av at iteration         1128
+ Writing RDMs to file at iteration         1128
+ Reset fdv av at iteration         1129
+ Writing RDMs to file at iteration         1129
+ Reset fdv av at iteration         1130
+           221260   204768513.985        9972.76023670      -0.501930902734      -0.503108179738       -13482.1593191             189069221        22559150   43.8656234741                  298
+ Writing RDMs to file at iteration         1130
+ Reset fdv av at iteration         1131
+ Writing RDMs to file at iteration         1131
+ Reset fdv av at iteration         1132
+ Writing RDMs to file at iteration         1132
+ Reset fdv av at iteration         1133
+ Writing RDMs to file at iteration         1133
+ Reset fdv av at iteration         1134
+ Writing RDMs to file at iteration         1134
+ Reset fdv av at iteration         1135
+ Writing RDMs to file at iteration         1135
+ Reset fdv av at iteration         1136
+ Writing RDMs to file at iteration         1136
+ Reset fdv av at iteration         1137
+ Writing RDMs to file at iteration         1137
+ Reset fdv av at iteration         1138
+ Writing RDMs to file at iteration         1138
+ Reset fdv av at iteration         1139
+ Writing RDMs to file at iteration         1139
+ Reset fdv av at iteration         1140
+           221270   204767506.185        9972.30098076      -0.501921103824      -0.502648576773       -13482.1593093             189068105        22551020   43.8660163879                  282
+ Writing RDMs to file at iteration         1140
+ Reset fdv av at iteration         1141
+ Writing RDMs to file at iteration         1141
+ Reset fdv av at iteration         1142
+ Writing RDMs to file at iteration         1142
+ Reset fdv av at iteration         1143
+ Writing RDMs to file at iteration         1143
+ Reset fdv av at iteration         1144
+ Writing RDMs to file at iteration         1144
+ Reset fdv av at iteration         1145
+ Writing RDMs to file at iteration         1145
+ Reset fdv av at iteration         1146
+ Writing RDMs to file at iteration         1146
+ Reset fdv av at iteration         1147
+ Writing RDMs to file at iteration         1147
+ Reset fdv av at iteration         1148
+ Writing RDMs to file at iteration         1148
+ Reset fdv av at iteration         1149
+ Writing RDMs to file at iteration         1149
+ Reset fdv av at iteration         1150
+           221280   204767976.167        9971.84963332      -0.501962194253      -0.502674344041       -13482.1593504             189068379        22556702   43.8699226379                  297
+ Writing RDMs to file at iteration         1150
+ Reset fdv av at iteration         1151
+ Writing RDMs to file at iteration         1151
+ Reset fdv av at iteration         1152
+ Writing RDMs to file at iteration         1152
+ Reset fdv av at iteration         1153
+ Writing RDMs to file at iteration         1153
+ Reset fdv av at iteration         1154
+ Writing RDMs to file at iteration         1154
+ Reset fdv av at iteration         1155
+ Writing RDMs to file at iteration         1155
+ Reset fdv av at iteration         1156
+ Writing RDMs to file at iteration         1156
+ Reset fdv av at iteration         1157
+ Writing RDMs to file at iteration         1157
+ Reset fdv av at iteration         1158
+ Writing RDMs to file at iteration         1158
+ Reset fdv av at iteration         1159
+ Writing RDMs to file at iteration         1159
+ Reset fdv av at iteration         1160
+           221290   204767350.594        9971.69922381      -0.501992998802      -0.502619160042       -13482.1593812             189068346        22564875   43.8816413879                  305
+ Writing RDMs to file at iteration         1160
+ Reset fdv av at iteration         1161
+ Writing RDMs to file at iteration         1161
+ Reset fdv av at iteration         1162
+ Writing RDMs to file at iteration         1162
+ Reset fdv av at iteration         1163
+ Writing RDMs to file at iteration         1163
+ Reset fdv av at iteration         1164
+ Writing RDMs to file at iteration         1164
+ Reset fdv av at iteration         1165
+ Writing RDMs to file at iteration         1165
+ Reset fdv av at iteration         1166
+ Writing RDMs to file at iteration         1166
+ Reset fdv av at iteration         1167
+ Writing RDMs to file at iteration         1167
+ Reset fdv av at iteration         1168
+ Writing RDMs to file at iteration         1168
+ Reset fdv av at iteration         1169
+ Writing RDMs to file at iteration         1169
+ Reset fdv av at iteration         1170
+           221300   204769335.327        9971.84934675      -0.501971499489      -0.502718048901       -13482.1593597             189069996        22557983   43.8812484741                  268
+ Writing RDMs to file at iteration         1170
+ Reset fdv av at iteration         1171
+ Writing RDMs to file at iteration         1171
+ Reset fdv av at iteration         1172
+ Writing RDMs to file at iteration         1172
+ Reset fdv av at iteration         1173
+ Writing RDMs to file at iteration         1173
+ Reset fdv av at iteration         1174
+ Writing RDMs to file at iteration         1174
+ Reset fdv av at iteration         1175
+ Writing RDMs to file at iteration         1175
+ Reset fdv av at iteration         1176
+ Writing RDMs to file at iteration         1176
+ Reset fdv av at iteration         1177
+ Writing RDMs to file at iteration         1177
+ Reset fdv av at iteration         1178
+ Writing RDMs to file at iteration         1178
+ Reset fdv av at iteration         1179
+ Writing RDMs to file at iteration         1179
+ Reset fdv av at iteration         1180
+           221310   204769364.208        9972.89761982      -0.501954925853      -0.503199736536       -13482.1593431             189070149        22550250   43.8832015991                  295
+ Writing RDMs to file at iteration         1180
+ Reset fdv av at iteration         1181
+ Writing RDMs to file at iteration         1181
+ Reset fdv av at iteration         1182
+ Writing RDMs to file at iteration         1182
+ Reset fdv av at iteration         1183
+ Writing RDMs to file at iteration         1183
+ Reset fdv av at iteration         1184
+ Writing RDMs to file at iteration         1184
+ Reset fdv av at iteration         1185
+ Writing RDMs to file at iteration         1185
+ Reset fdv av at iteration         1186
+ Writing RDMs to file at iteration         1186
+ Reset fdv av at iteration         1187
+ Writing RDMs to file at iteration         1187
+ Reset fdv av at iteration         1188
+ Writing RDMs to file at iteration         1188
+ Reset fdv av at iteration         1189
+ Writing RDMs to file at iteration         1189
+ Reset fdv av at iteration         1190
+           221320   204771281.747        9972.73823752      -0.501950667166      -0.503174898107       -13482.1593389             189071889        22559015   43.8800773621                  297
+ Writing RDMs to file at iteration         1190
+ Reset fdv av at iteration         1191
+ Writing RDMs to file at iteration         1191
+ Reset fdv av at iteration         1192
+ Writing RDMs to file at iteration         1192
+ Reset fdv av at iteration         1193
+ Writing RDMs to file at iteration         1193
+ Reset fdv av at iteration         1194
+ Writing RDMs to file at iteration         1194
+ Reset fdv av at iteration         1195
+ Writing RDMs to file at iteration         1195
+ Reset fdv av at iteration         1196
+ Writing RDMs to file at iteration         1196
+ Reset fdv av at iteration         1197
+ Writing RDMs to file at iteration         1197
+ Reset fdv av at iteration         1198
+ Writing RDMs to file at iteration         1198
+ Reset fdv av at iteration         1199
+ Writing RDMs to file at iteration         1199
+ Reset fdv av at iteration         1200
+           221330   204771329.245        9972.87842862      -0.501950928949      -0.503639993429       -13482.1593391             189071673        22561225   43.8753890991                  320
+ Writing RDMs to file at iteration         1200
+ Reset fdv av at iteration         1201
+ Writing RDMs to file at iteration         1201
+ Reset fdv av at iteration         1202
+ Writing RDMs to file at iteration         1202
+ Reset fdv av at iteration         1203
+ Writing RDMs to file at iteration         1203
+ Reset fdv av at iteration         1204
+ Writing RDMs to file at iteration         1204
+ Reset fdv av at iteration         1205
+ Writing RDMs to file at iteration         1205
+ Reset fdv av at iteration         1206
+ Writing RDMs to file at iteration         1206
+ Reset fdv av at iteration         1207
+ Writing RDMs to file at iteration         1207
+ Reset fdv av at iteration         1208
+ Writing RDMs to file at iteration         1208
+ Reset fdv av at iteration         1209
+ Writing RDMs to file at iteration         1209
+ Reset fdv av at iteration         1210
+           221340   204770161.766        9973.61051986      -0.501882364553      -0.503365974326       -13482.1592706             189071535        22559141   43.8761711121                  301
+ Writing RDMs to file at iteration         1210
+ Reset fdv av at iteration         1211
+ Writing RDMs to file at iteration         1211
+ Reset fdv av at iteration         1212
+ Writing RDMs to file at iteration         1212
+ Reset fdv av at iteration         1213
+ Writing RDMs to file at iteration         1213
+ Reset fdv av at iteration         1214
+ Writing RDMs to file at iteration         1214
+ Reset fdv av at iteration         1215
+ Writing RDMs to file at iteration         1215
+ Reset fdv av at iteration         1216
+ Writing RDMs to file at iteration         1216
+ Reset fdv av at iteration         1217
+ Writing RDMs to file at iteration         1217
+ Reset fdv av at iteration         1218
+ Writing RDMs to file at iteration         1218
+ Reset fdv av at iteration         1219
+ Writing RDMs to file at iteration         1219
+ Reset fdv av at iteration         1220
+           221350   204770634.494        9972.84597493      -0.501890989333      -0.503248973348       -13482.1592792             189071289        22555764   43.8765640259                  287
+ Writing RDMs to file at iteration         1220
+ Reset fdv av at iteration         1221
+ Writing RDMs to file at iteration         1221
+ Reset fdv av at iteration         1222
+ Writing RDMs to file at iteration         1222
+ Reset fdv av at iteration         1223
+ Writing RDMs to file at iteration         1223
+ Reset fdv av at iteration         1224
+ Writing RDMs to file at iteration         1224
+ Reset fdv av at iteration         1225
+ Writing RDMs to file at iteration         1225
+ Reset fdv av at iteration         1226
+ Writing RDMs to file at iteration         1226
+ Reset fdv av at iteration         1227
+ Writing RDMs to file at iteration         1227
+ Reset fdv av at iteration         1228
+ Writing RDMs to file at iteration         1228
+ Reset fdv av at iteration         1229
+ Writing RDMs to file at iteration         1229
+ Reset fdv av at iteration         1230
+           221360   204771394.688        9973.28386882      -0.501898772035      -0.503329777143       -13482.1592870             189072107        22563981   43.8761711121                  258
+ Writing RDMs to file at iteration         1230
+ Reset fdv av at iteration         1231
+ Writing RDMs to file at iteration         1231
+ Reset fdv av at iteration         1232
+ Writing RDMs to file at iteration         1232
+ Reset fdv av at iteration         1233
+ Writing RDMs to file at iteration         1233
+ Reset fdv av at iteration         1234
+ Writing RDMs to file at iteration         1234
+ Reset fdv av at iteration         1235
+ Writing RDMs to file at iteration         1235
+ Reset fdv av at iteration         1236
+ Writing RDMs to file at iteration         1236
+ Reset fdv av at iteration         1237
+ Writing RDMs to file at iteration         1237
+ Reset fdv av at iteration         1238
+ Writing RDMs to file at iteration         1238
+ Reset fdv av at iteration         1239
+ Writing RDMs to file at iteration         1239
+ Reset fdv av at iteration         1240
+           221370   204770215.035        9974.02017811      -0.501878778332      -0.503292345439       -13482.1592670             189071438        22560909   43.8808593750                  298
+ Writing RDMs to file at iteration         1240
+ Reset fdv av at iteration         1241
+ Writing RDMs to file at iteration         1241
+ Reset fdv av at iteration         1242
+ Writing RDMs to file at iteration         1242
+ Reset fdv av at iteration         1243
+ Writing RDMs to file at iteration         1243
+ Reset fdv av at iteration         1244
+ Writing RDMs to file at iteration         1244
+ Reset fdv av at iteration         1245
+ Writing RDMs to file at iteration         1245
+ Reset fdv av at iteration         1246
+ Writing RDMs to file at iteration         1246
+ Reset fdv av at iteration         1247
+ Writing RDMs to file at iteration         1247
+ Reset fdv av at iteration         1248
+ Writing RDMs to file at iteration         1248
+ Reset fdv av at iteration         1249
+ Writing RDMs to file at iteration         1249
+ Reset fdv av at iteration         1250
+           221380   204769351.440        9974.75680397      -0.501871976116      -0.503274495924       -13482.1592602             189070337        22552225   43.8832015991                  290
+ Writing RDMs to file at iteration         1250
+ Reset fdv av at iteration         1251
+ Writing RDMs to file at iteration         1251
+ Reset fdv av at iteration         1252
+ Writing RDMs to file at iteration         1252
+ Reset fdv av at iteration         1253
+ Writing RDMs to file at iteration         1253
+ Reset fdv av at iteration         1254
+ Writing RDMs to file at iteration         1254
+ Reset fdv av at iteration         1255
+ Writing RDMs to file at iteration         1255
+ Reset fdv av at iteration         1256
+ Writing RDMs to file at iteration         1256
+ Reset fdv av at iteration         1257
+ Writing RDMs to file at iteration         1257
+ Reset fdv av at iteration         1258
+ Writing RDMs to file at iteration         1258
+ Reset fdv av at iteration         1259
+ Writing RDMs to file at iteration         1259
+ Reset fdv av at iteration         1260
+           221390   204770613.305        9974.29335617      -0.501852770626      -0.503298449170       -13482.1592410             189070737        22555302   43.8878898621                  272
+Writing out a popsfile after  16.000 hours...
+ 
+*********************************
+Writing a 64-bit POPSFILEBIN...
+Writing a total of 189004374 determinants.
+*********************************
+ 
+Time taken to write out POPSFILE: 172.953 seconds.
+ Writing RDMs to file at iteration         1260
+ Reset fdv av at iteration         1261
+ Writing RDMs to file at iteration         1261
+ Reset fdv av at iteration         1262
+ Writing RDMs to file at iteration         1262
+ Reset fdv av at iteration         1263
+ Writing RDMs to file at iteration         1263
+ Reset fdv av at iteration         1264
+ Writing RDMs to file at iteration         1264
+ Reset fdv av at iteration         1265
+ Writing RDMs to file at iteration         1265
+ Reset fdv av at iteration         1266
+ Writing RDMs to file at iteration         1266
+ Reset fdv av at iteration         1267
+ Writing RDMs to file at iteration         1267
+ Reset fdv av at iteration         1268
+ Writing RDMs to file at iteration         1268
+ Reset fdv av at iteration         1269
+ Writing RDMs to file at iteration         1269
+ Reset fdv av at iteration         1270
+           221400   204767552.800        9974.72945223      -0.501844399552      -0.502882476439       -13482.1592326             189068400        22565626   43.8718757629                  258
+ Writing RDMs to file at iteration         1270
+ Reset fdv av at iteration         1271
+ Writing RDMs to file at iteration         1271
+ Reset fdv av at iteration         1272
+ Writing RDMs to file at iteration         1272
+ Reset fdv av at iteration         1273
+ Writing RDMs to file at iteration         1273
+ Reset fdv av at iteration         1274
+ Writing RDMs to file at iteration         1274
+ Reset fdv av at iteration         1275
+ Writing RDMs to file at iteration         1275
+ Reset fdv av at iteration         1276
+ Writing RDMs to file at iteration         1276
+ Reset fdv av at iteration         1277
+ Writing RDMs to file at iteration         1277
+ Reset fdv av at iteration         1278
+ Writing RDMs to file at iteration         1278
+ Reset fdv av at iteration         1279
+ Writing RDMs to file at iteration         1279
+ Reset fdv av at iteration         1280
+           221410   204767593.704        9974.87137012      -0.501814334769      -0.502554405522       -13482.1592025             189068501        22558991   43.8867187500                  285
+ Writing RDMs to file at iteration         1280
+ Reset fdv av at iteration         1281
+ Writing RDMs to file at iteration         1281
+ Reset fdv av at iteration         1282
+ Writing RDMs to file at iteration         1282
+ Reset fdv av at iteration         1283
+ Writing RDMs to file at iteration         1283
+ Reset fdv av at iteration         1284
+ Writing RDMs to file at iteration         1284
+ Reset fdv av at iteration         1285
+ Writing RDMs to file at iteration         1285
+ Reset fdv av at iteration         1286
+ Writing RDMs to file at iteration         1286
+ Reset fdv av at iteration         1287
+ Writing RDMs to file at iteration         1287
+ Reset fdv av at iteration         1288
+ Writing RDMs to file at iteration         1288
+ Reset fdv av at iteration         1289
+ Writing RDMs to file at iteration         1289
+ Reset fdv av at iteration         1290
+           221420   204768377.468        9975.61862659      -0.501788802587      -0.502492930378       -13482.1591770             189068568        22565650   43.8847656250                  284
+ Writing RDMs to file at iteration         1290
+ Reset fdv av at iteration         1291
+ Writing RDMs to file at iteration         1291
+ Reset fdv av at iteration         1292
+ Writing RDMs to file at iteration         1292
+ Reset fdv av at iteration         1293
+ Writing RDMs to file at iteration         1293
+ Reset fdv av at iteration         1294
+ Writing RDMs to file at iteration         1294
+ Reset fdv av at iteration         1295
+ Writing RDMs to file at iteration         1295
+ Reset fdv av at iteration         1296
+ Writing RDMs to file at iteration         1296
+ Reset fdv av at iteration         1297
+ Writing RDMs to file at iteration         1297
+ Reset fdv av at iteration         1298
+ Writing RDMs to file at iteration         1298
+ Reset fdv av at iteration         1299
+ Writing RDMs to file at iteration         1299
+ Reset fdv av at iteration         1300
+           221430   204768884.873        9975.16683175      -0.501768585922      -0.502981097333       -13482.1591568             189069646        22559453   43.8847656250                  301
+ Writing RDMs to file at iteration         1300
+ Reset fdv av at iteration         1301
+ Writing RDMs to file at iteration         1301
+ Reset fdv av at iteration         1302
+ Writing RDMs to file at iteration         1302
+ Reset fdv av at iteration         1303
+ Writing RDMs to file at iteration         1303
+ Reset fdv av at iteration         1304
+ Writing RDMs to file at iteration         1304
+ Reset fdv av at iteration         1305
+ Writing RDMs to file at iteration         1305
+ Reset fdv av at iteration         1306
+ Writing RDMs to file at iteration         1306
+ Reset fdv av at iteration         1307
+ Writing RDMs to file at iteration         1307
+ Reset fdv av at iteration         1308
+ Writing RDMs to file at iteration         1308
+ Reset fdv av at iteration         1309
+ Writing RDMs to file at iteration         1309
+ Reset fdv av at iteration         1310
+           221440   204769128.524        9975.00809396      -0.501793697753      -0.503092814493       -13482.1591819             189070487        22554002   43.8835945129                  302
+ Writing RDMs to file at iteration         1310
+ Reset fdv av at iteration         1311
+ Writing RDMs to file at iteration         1311
+ Reset fdv av at iteration         1312
+ Writing RDMs to file at iteration         1312
+ Reset fdv av at iteration         1313
+ Writing RDMs to file at iteration         1313
+ Reset fdv av at iteration         1314
+ Writing RDMs to file at iteration         1314
+ Reset fdv av at iteration         1315
+ Writing RDMs to file at iteration         1315
+ Reset fdv av at iteration         1316
+ Writing RDMs to file at iteration         1316
+ Reset fdv av at iteration         1317
+ Writing RDMs to file at iteration         1317
+ Reset fdv av at iteration         1318
+ Writing RDMs to file at iteration         1318
+ Reset fdv av at iteration         1319
+ Writing RDMs to file at iteration         1319
+ Reset fdv av at iteration         1320
+           221450   204769479.159        9975.14662945      -0.501781567353      -0.502847966679       -13482.1591698             189070139        22568839   43.8773422241                  264
+ Writing RDMs to file at iteration         1320
+ Reset fdv av at iteration         1321
+ Writing RDMs to file at iteration         1321
+ Reset fdv av at iteration         1322
+ Writing RDMs to file at iteration         1322
+ Reset fdv av at iteration         1323
+ Writing RDMs to file at iteration         1323
+ Reset fdv av at iteration         1324
+ Writing RDMs to file at iteration         1324
+ Reset fdv av at iteration         1325
+ Writing RDMs to file at iteration         1325
+ Reset fdv av at iteration         1326
+ Writing RDMs to file at iteration         1326
+ Reset fdv av at iteration         1327
+ Writing RDMs to file at iteration         1327
+ Reset fdv av at iteration         1328
+ Writing RDMs to file at iteration         1328
+ Reset fdv av at iteration         1329
+ Writing RDMs to file at iteration         1329
+ Reset fdv av at iteration         1330
+           221460   204769594.278        9974.68861973      -0.501790031564      -0.503155972625       -13482.1591782             189070069        22559300   43.8839836121                  302
+ Writing RDMs to file at iteration         1330
+ Reset fdv av at iteration         1331
+ Writing RDMs to file at iteration         1331
+ Reset fdv av at iteration         1332
+ Writing RDMs to file at iteration         1332
+ Reset fdv av at iteration         1333
+ Writing RDMs to file at iteration         1333
+ Reset fdv av at iteration         1334
+ Writing RDMs to file at iteration         1334
+ Reset fdv av at iteration         1335
+ Writing RDMs to file at iteration         1335
+ Reset fdv av at iteration         1336
+ Writing RDMs to file at iteration         1336
+ Reset fdv av at iteration         1337
+ Writing RDMs to file at iteration         1337
+ Reset fdv av at iteration         1338
+ Writing RDMs to file at iteration         1338
+ Reset fdv av at iteration         1339
+ Writing RDMs to file at iteration         1339
+ Reset fdv av at iteration         1340
+           221470   204768966.293        9974.82640696      -0.501796088975      -0.503096200929       -13482.1591843             189069681        22559456   43.8703117371                  297
+ CHANGEVARS file detected on iteration         1340
+SOFTEXIT
+ SOFTEXIT triggered. Exiting run.
+ Writing RDMs to file at iteration         1340
+ Reset fdv av at iteration         1341
+ Writing RDMs to file at iteration         1341
+ Reset fdv av at iteration         1342
+ Writing RDMs to file at iteration         1342
+ Reset fdv av at iteration         1343
+ Writing RDMs to file at iteration         1343
+ Reset fdv av at iteration         1344
+ Writing RDMs to file at iteration         1344
+ Reset fdv av at iteration         1345
+ Writing RDMs to file at iteration         1345
+ Reset fdv av at iteration         1346
+ Writing RDMs to file at iteration         1346
+ Reset fdv av at iteration         1347
+ Writing RDMs to file at iteration         1347
+ Reset fdv av at iteration         1348
+ Writing RDMs to file at iteration         1348
+ Reset fdv av at iteration         1349
+ Writing RDMs to file at iteration         1349
+ Reset fdv av at iteration         1350
+           221480   204766518.742        9975.56449764      -0.501784974519      -0.502674801781       -13482.1591732             189067198        22563502   43.8761711121                  292
+ CHANGEVARS file detected on iteration         1350
+SOFTEXIT
+ SOFTEXIT triggered. Exiting run.
+ Writing RDMs to file at iteration         1350
+ Reset fdv av at iteration         1351
+ Writing RDMs to file at iteration         1351
+ Reset fdv av at iteration         1352
+ Writing RDMs to file at iteration         1352
+ Reset fdv av at iteration         1353
+ Writing RDMs to file at iteration         1353
+ Reset fdv av at iteration         1354
+ Writing RDMs to file at iteration         1354
+ Reset fdv av at iteration         1355
+ Writing RDMs to file at iteration         1355
+ Reset fdv av at iteration         1356
+ Writing RDMs to file at iteration         1356
+ Reset fdv av at iteration         1357
+ Writing RDMs to file at iteration         1357
+ Reset fdv av at iteration         1358
+ Writing RDMs to file at iteration         1358
+ Reset fdv av at iteration         1359
+ Writing RDMs to file at iteration         1359
+ Reset fdv av at iteration         1360
+           221490   204766767.364        9975.40904994      -0.501790169690      -0.502230823403       -13482.1591784             189066730        22564490   43.8800773621                  321
+ CHANGEVARS file detected on iteration         1360
+SOFTEXIT
+ SOFTEXIT triggered. Exiting run.
+ Writing RDMs to file at iteration         1360
+ Reset fdv av at iteration         1361
+ Writing RDMs to file at iteration         1361
+ Reset fdv av at iteration         1362
+ Writing RDMs to file at iteration         1362
