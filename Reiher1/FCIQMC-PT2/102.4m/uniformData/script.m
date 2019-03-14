@@ -1,5 +1,5 @@
 clear('all')
-RDMEstimates102d4m=load('RDMEstimates');
+RDMEstimates102d4m=load('RDMEstimates.forMatlab');
 plot(RDMEstimates102d4m(:,1));
 %%
 for i=10000:size(RDMEstimates102d4m,1)
@@ -8,13 +8,13 @@ for i=10000:size(RDMEstimates102d4m,1)
     end
 end
 %%
-
-RDMEstimates102d4m_stepsize1=RDMEstimates102d4m(1:87348,:);
+whereItswitchesFromEvery1toEvery10=90565;
+RDMEstimates102d4m_stepsize1=RDMEstimates102d4m(1:whereItswitchesFromEvery1toEvery10,:);
 
 summed=10*movmean(RDMEstimates102d4m_stepsize1(:,2:end),[0 9],1);
-RDMEstimates204d8m_stepsize1_averaged=[RDMEstimates102d4m_stepsize1(1:10:end,1) summed(1:10:end,:)];
+RDMEstimates102d4m_stepsize1_averaged=[RDMEstimates102d4m_stepsize1(1:10:end,1) summed(1:10:end,:)];
 
-RDMEstimates102d4m_stepsize10=RDMEstimates102d4m(87348+1:end,:);
+RDMEstimates102d4m_stepsize10=RDMEstimates102d4m(whereItswitchesFromEvery1toEvery10+1:end,:);
 
 RDMEstimates102d4m_uniform=[RDMEstimates102d4m_stepsize1_averaged ;RDMEstimates102d4m_stepsize10];
 save('RDMEstimates.uniform','RDMEstimates102d4m_uniform','-ASCII');
