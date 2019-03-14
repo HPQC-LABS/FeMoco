@@ -1,5 +1,5 @@
 RHF:                                                                    -13481.657388185977
-UHF:                                                                    -13481.6685094
+RHF-SCR:                                                                -13481.6685094
 
 MP2:                                                                    -13482.059544643595
 
@@ -58,7 +58,7 @@ Nw = 204.8 million                                                      -13482.1
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.1749(20)
+Nw = 102.4 million                                                      -13482.1738(17)
 Nw = 204.8 million                                                      -13482.1754(06), plot in matlab, then check with Nick
 Nw = 409.6 million                                                      -13482.17640(070)
 
