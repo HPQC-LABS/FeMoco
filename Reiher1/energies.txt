@@ -54,12 +54,12 @@ Extrapolated DMRG                                                       -13482.1
 
 FCIQMC-RDM:
 Nw = 102.4 million                                                      -13482.1636(1)
-Nw = 204.8 million                                                      -13482.16636(3)
+Nw = 204.8 million                                                      -13482.16638(4), but see what Nick says
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
 Nw = 102.4 million                                                      -13482.1738(17)
-Nw = 204.8 million                                                      -13482.1754(06), plot in matlab, then check with Nick
+Nw = 204.8 million                                                      -13482.1753(06)
 Nw = 409.6 million                                                      -13482.17640(070)
 
 Extrapolated FCIQMC-PT2:                                                -13482.1823007634
