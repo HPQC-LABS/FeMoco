@@ -2,7 +2,7 @@ clear('all')
 RDMEstimates102d4m=load('RDMEstimates.forMatlab');
 plot(RDMEstimates102d4m(:,1));
 %%
-RDMEstimates102d4m=load('RDMEstimates.uniform.Nick.withNew.forMatlab');
+RDMEstimates102d4m=load('RDMEstimates.uniform.forMatlab');
 plot(RDMEstimates102d4m(:,1));
 %%
 jumpSize=10;
