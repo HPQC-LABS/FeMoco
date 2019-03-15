@@ -2,8 +2,12 @@ clear('all')
 RDMEstimates102d4m=load('RDMEstimates.forMatlab');
 plot(RDMEstimates102d4m(:,1));
 %%
-for i=10000:size(RDMEstimates102d4m,1)
-    if RDMEstimates102d4m(i,1) ~= RDMEstimates102d4m(i-1,1)+1
+RDMEstimates102d4m=load('RDMEstimates.uniform.Nick.withNew.forMatlab');
+plot(RDMEstimates102d4m(:,1));
+%%
+jumpSize=10;
+for i=2:size(RDMEstimates102d4m,1)
+    if RDMEstimates102d4m(i,1) ~= RDMEstimates102d4m(i-1,1)+10
         display(i)
     end
 end
