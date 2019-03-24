@@ -30,8 +30,10 @@ CCSDT(2)_Q-NWCHEM                                                       -13482.1
 CCCSDTQP(cf)-NWCHEM                                                     -13482.180304
 CCSDT(Q)-MRCC                                                           -13482.181613872461
 CCSDTQ-MRCC (running, 4 days/iteration)                                 -13482.18178301
+Extrapolated CC                                                         -13482.1825981323
 CCSDTQ-CFOUR is also possible (figure out how to get >50 iterations)
 CCSDTQ(P)-MRCC (need 2.6TB with 12 cores and local disk, very do-able)
+ 
 
 TCC:
 TCCSD CAS1(8,8)                                                         -13482.189928 
@@ -51,6 +53,7 @@ D=4000, discarded weight= 2.8062357E-05	(backward from 4000)            -13482.1
 D=4000, discarded weight= 2.7185279E-05	(forward  from 2000)            -13482.175930340
 D=5000, discarded weight= 2.4106249E-05	(forward  from 2000)            -13482.176809213
 Extrapolated DMRG                                                       -13482.1805     +/- 0.0007
+Extrapolated DMRG (linear fit with only last two points)                -13482.1836900591
 
 FCIQMC-RDM:
 Nw = 102.4 million                                                      -13482.1637(1)
