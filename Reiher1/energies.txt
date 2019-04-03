@@ -1,5 +1,5 @@
-RHF:                                                                    -13481.657388185977
-RHF-SCR:                                                                -13481.6685094
+Lowest energy determinant                                               -13481.657388185977
+RHF-SCF:                                                                -13481.6685094
 
 MP2:                                                                    -13482.059544643595
 
@@ -56,16 +56,16 @@ Extrapolated DMRG                                                       -13482.1
 Extrapolated DMRG (linear fit with only last two points)                -13482.1836900591
 
 FCIQMC-RDM:
-Nw = 102.4 million                                                      -13482.1637(1)
+Nw = 102.4 million                                                      -13482.16375(6)
 Nw = 204.8 million                                                      -13482.16638(4), but see what Nick says
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.1738(15)
+Nw = 102.4 million                                                      -13482.1745(09)
 Nw = 204.8 million                                                      -13482.1753(06)
-Nw = 409.6 million                                                      -13482.17640(070)
+Nw = 409.6 million                                                      -13482.1764(07)
 
-Extrapolated FCIQMC-PT2:                                                -13482.1823007634
+Extrapolated FCIQMC-PT2:                                                -13482.1823007634 (not updated since few commits ago)
 
 102.4m: python blocking.py -f180000 -d4 -d5 -o/ RDMEstimates
 204.8m: python blocking.py -f240000 -d4 -d5 -o/ RDMEstimates
