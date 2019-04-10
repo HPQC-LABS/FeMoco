@@ -61,9 +61,9 @@ Nw = 204.8 million                                                      -13482.1
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.1744(08)
-Nw = 204.8 million                                                      -13482.1753(06)
-Nw = 409.6 million                                                      -13482.1764(07)
+Nw = 102.4 million                                                      -13482.1744(8)
+Nw = 204.8 million                                                      -13482.1753(6)
+Nw = 409.6 million                                                      -13482.1764(7)
 
 Extrapolated FCIQMC-PT2:                                                -13482.1823007634 (not updated since few commits ago)
 
