@@ -56,14 +56,14 @@ Extrapolated DMRG                                                       -13482.1
 Extrapolated DMRG (linear fit with only last two points)                -13482.1836900591
 
 FCIQMC-RDM:
-Nw = 102.4 million                                                      -13482.16375(6)
+Nw = 102.4 million                                                      -13482.16378(5)
 Nw = 204.8 million                                                      -13482.16638(4), but see what Nick says
 Nw = 409.6 million                                                      -13482.16867(5)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.1745(09)
-Nw = 204.8 million                                                      -13482.1753(06)
-Nw = 409.6 million                                                      -13482.1764(07)
+Nw = 102.4 million                                                      -13482.1744(8)
+Nw = 204.8 million                                                      -13482.1753(6)
+Nw = 409.6 million                                                      -13482.1764(7)
 
 Extrapolated FCIQMC-PT2:                                                -13482.1823007634 (not updated since few commits ago)
 
