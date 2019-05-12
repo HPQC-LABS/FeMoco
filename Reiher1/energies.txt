@@ -19,6 +19,13 @@ eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1
 (0.95 Conf.) Extrapolated Energy, using quadratic fit                   -13482.1812095054 +/- 0.0012184577
              Extrapolated Energy, using weighted quadratic fit          -13482.1824665581
 
+Summary of how the extrapolated energy has changed over time:
+
+21 Jul: (0.95 Conf.) Extrapolated Energy: -13482.17902 +- 0.001 Weighted?: -13482.1793 
+12 Aug: (0.95 Conf.) Extrapolated Energy: -13482.17973 +- 0.001 
+12 Nov: (0.95 Conf.) Extrapolated Energy: -13482.18010 +- 0.001 Weighted:  -13482.1808
+21 Nov: (0.95 Conf.) Extrapolated Energy: -13482.18121 +- 0.001 Weighted:  -13482.1825
+
 CC:
 CCSD-MRCC/NWCHEM                                                        -13482.154243391968 
 CCSD-PySCF                                                              -13482.154678438
