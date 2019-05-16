@@ -66,14 +66,13 @@ FCIQMC-RDM:
 Nw = 102.4 million                                                      -13482.16380(4)
 Nw = 204.8 million                                                      -13482.16640(3), but see what Nick says
 Nw = 409.6 million                                                      -13482.16867(5), not working !! still, 2nd bad commit?
-Nw = 1000  million                                                      -13482.17104(5)
+Nw = 1000  million                                                      -13482.17102(4)
 
 FCIQMC-PT2:
 Nw = 102.4 million                                                      -13482.17537(62) ???
 Nw = 204.8 million                                                      -13482.17552(53)
 Nw = 409.6 million                                                      -13482.17633(46) -- needs non-monotonicity to be fixed
-Nw = 1000  million                                                      -13482.17725(59) OR
-Nw = 1000  million                                                      -13482.17735(57) 
+Nw = 1000  million                                                      -13482.17735(53) 
 
 Extrapolated FCIQMC-PT2 (linear):                                       -13482.18092 (only 200m,400m,1b, and with 17725(59))
 Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.18249 (only 200m,400m,1b, and with 17725(59))
