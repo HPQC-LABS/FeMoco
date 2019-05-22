@@ -19,6 +19,13 @@ eps1= 5.00e-06 ndets= 56,502,127 energy_var= -13482.16043411 energy_tot -13482.1
 (0.95 Conf.) Extrapolated Energy, using quadratic fit                   -13482.1812095054 +/- 0.0012184577
              Extrapolated Energy, using weighted quadratic fit          -13482.1824665581
 
+Summary of how the extrapolated energy has changed over time:
+
+21 Jul: (0.95 Conf.) Extrapolated Energy: -13482.17902 +- 0.001 Weighted?: -13482.1793 
+12 Aug: (0.95 Conf.) Extrapolated Energy: -13482.17973 +- 0.001 
+12 Nov: (0.95 Conf.) Extrapolated Energy: -13482.18010 +- 0.001 Weighted:  -13482.1808
+21 Nov: (0.95 Conf.) Extrapolated Energy: -13482.18121 +- 0.001 Weighted:  -13482.1825
+
 CC:
 CCSD-MRCC/NWCHEM                                                        -13482.154243391968 
 CCSD-PySCF                                                              -13482.154678438
@@ -56,19 +63,21 @@ Extrapolated DMRG                                                       -13482.1
 Extrapolated DMRG (linear fit with only last two points)                -13482.1836900591
 
 FCIQMC-RDM:
-Nw = 102.4 million                                                      -13482.16378(4)
-Nw = 204.8 million                                                      -13482.16638(3), but see what Nick says
-Nw = 409.6 million                                                      -13482.16867(5), not working !!!
-Nw = 1000  million                                                      -13482.17087(7), not converged, but this number good
+Nw = 102.4 million                                                      -13482.16380(4)
+Nw = 204.8 million                                                      -13482.16640(3), but see what Nick says
+Nw = 409.6 million                                                      -13482.16867(5), not working !! still, 2nd bad commit?
+Nw = 1000  million                                                      -13482.17102(4)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.1749(7)
-Nw = 204.8 million                                                      -13482.17534(55)
-Nw = 409.6 million                                                      -13482.17628(48)
-Nw = 1000  million                                                      -13482.1766(8), verry uncertain
+Nw = 102.4 million                                                      -13482.17537(62) ???
+Nw = 204.8 million                                                      -13482.17552(53)
+Nw = 409.6 million                                                      -13482.17633(46) -- needs non-monotonicity to be fixed
+Nw = 1000  million                                                      -13482.17735(53) 
 
-Extrapolated FCIQMC-PT2:                                                -13482.1815788148 (including only 200m and 400m)
+Extrapolated FCIQMC-PT2 (linear):                                       -13482.18144 (only 200m,400m,1b, and with 17735(53))
+Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.18589 (only 200m,400m,1b, and with 17735(53))
 
 102.4m: python blocking.py -f180000 -d4 -d5 -o/ RDMEstimates
-204.8m: python blocking.py -f240000 -d4 -d5 -o/ RDMEstimates
-1b:     python blocking.py -f640000 -d4 -d5 -o/ RDMEstimates (but H_ref doesn't seem converged yet at all)
+204.8m: python blocking.py -f240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
+409.6m: python blocking.py -f360000 -d4 -d5 -o/ RDMEstimates.withGapFilled 
+1b:     python blocking.py -f677000 -d4 -d5 -o/ RDMEstimates.clean
