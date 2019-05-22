@@ -66,16 +66,16 @@ FCIQMC-RDM:
 Nw = 102.4 million                                                      -13482.16380(4)
 Nw = 204.8 million                                                      -13482.16640(3), but see what Nick says
 Nw = 409.6 million                                                      -13482.16867(5), not working !! still, 2nd bad commit?
-Nw = 1000  million                                                      -13482.17102(4)
+Nw = 1000  million                                                      -13482.17103(4)
 
 FCIQMC-PT2:
 Nw = 102.4 million                                                      -13482.17537(62) ???
 Nw = 204.8 million                                                      -13482.17552(53)
-Nw = 409.6 million                                                      -13482.17633(46) -- needs non-monotonicity to be fixed
-Nw = 1000  million                                                      -13482.17735(53) 
+Nw = 409.6 million                                                      -13482.17643(45) -- needs non-monotonicity to be fixed
+Nw = 1000  million                                                      -13482.17727(49) -- but strange convergence
 
-Extrapolated FCIQMC-PT2 (linear):                                       -13482.18144 (only 200m,400m,1b, and with 17735(53))
-Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.18589 (only 200m,400m,1b, and with 17735(53))
+Extrapolated FCIQMC-PT2 (linear):                                       -13482.18108 (only 200m,400m,1b, and with 17727(49))
+Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17876 (only 200m,400m,1b, and with 17727(49))
 
 102.4m: python blocking.py -f180000 -d4 -d5 -o/ RDMEstimates
 204.8m: python blocking.py -f240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
