@@ -71,11 +71,11 @@ Nw = 1000  million                                                      -13482.1
 FCIQMC-PT2:
 Nw = 102.4 million                                                      -13482.17537(62) ???
 Nw = 204.8 million                                                      -13482.17552(53)
-Nw = 409.6 million                                                      -13482.17643(45) -- needs non-monotonicity to be fixed
-Nw = 1000  million                                                      -13482.17727(49) -- but strange convergence
+Nw = 409.6 million                                                      -13482.17644(44) -- needs non-monotonicity to be fixed
+Nw = 1000  million                                                      -13482.17726(45) 
 
-Extrapolated FCIQMC-PT2 (linear):                                       -13482.18108 (only 200m,400m,1b, and with 17727(49))
-Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17876 (only 200m,400m,1b, and with 17727(49))
+Extrapolated FCIQMC-PT2 (linear):                                       -13482.18103 (only 200m,400m,1b, and with 17726(45))
+Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17808 (only 200m,400m,1b, and with 17726(45))
 
 102.4m: python blocking.py -f180000 -d4 -d5 -o/ RDMEstimates
 204.8m: python blocking.py -f240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
