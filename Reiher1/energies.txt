@@ -63,14 +63,14 @@ Extrapolated DMRG                                                       -13482.1
 Extrapolated DMRG (linear fit with only last two points)                -13482.1836900591
 
 FCIQMC-RDM:
-Nw = 102.4 million                                                      -13482.16380(4)
+Nw = 102.4 million                                                      -13482.16378(3)
 Nw = 204.8 million                                                      -13482.16640(3), but see what Nick says
 Nw = 409.6 million                                                      -13482.16870(3)
 Nw = 1000  million                                                      -13482.17103(4)
 Nw = 2000  million                                                      -13482.17253(4)
 
 FCIQMC-PT2:
-Nw = 102.4 million                                                      -13482.17537(62) ???
+Nw = 102.4 million                                                      -13482.17485(54) 
 Nw = 204.8 million                                                      -13482.17552(53)
 Nw = 409.6 million                                                      -13482.17654(42) -- needs non-monotonicity to be fixed
 Nw = 1000  million                                                      -13482.17726(45) 
@@ -79,7 +79,7 @@ Nw = 2000  million                                                      -13482.1
 Extrapolated FCIQMC-PT2 (linear):                                       -13482.18107 (only 200m,400m,1b,2b)
 Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17734 (only 200m,400m,1b,2b)
 
-102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates
+102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
 409.6m: python blocking.py -f 360000 -d4 -d5 -o/ RDMEstimates.withGapFilled 
 1b:     python blocking.py -f 677000 -d4 -d5 -o/ RDMEstimates.clean
