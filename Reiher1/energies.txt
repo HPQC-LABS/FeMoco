@@ -84,4 +84,4 @@ Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.1
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
 409.6m: python blocking.py -f 360000 -d4 -d5 -o/ RDMEstimates.withGapFilled 
 1b:     python blocking.py -f 677000 -d4 -d5 -o/ RDMEstimates.clean
-2b:     python blocking.py -f 857800 -d1 -d5 -o/ RDMEstimates (seem not to even need to remove the 0s' and #'s).
+2b:     python blocking.py -f 857800 -d1 -d5 -o/ RDMEstimates.clean
