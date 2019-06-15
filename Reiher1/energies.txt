@@ -78,7 +78,7 @@ Nw = 2000  million,A                                                    -13482.1
 Nw = 2000  million,B                                                    -13482.17768(47) -- need to run for longer
 
 Extrapolated FCIQMC-PT2 (linear):                                       -13482.18107 (only 200m,400m,1b,2b)
-Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17734 (only 200m,400m,1b,2b)
+Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17734 (only 200m,400m,1b,2b) how is it higher than 200b?!
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
