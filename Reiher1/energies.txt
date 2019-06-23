@@ -68,7 +68,7 @@ Nw = 204.8 million                                                      -13482.1
 Nw = 409.6 million                                                      -13482.16870(3)
 Nw = 1000  million                                                      -13482.17103(4)
 Nw = 2000  million                                                      -13482.17252(3)
-Nw = 8000  million                                                      -13482.1750(2)
+Nw = 8000  million                                                      -13482.17498(7)
 
 FCIQMC-PT2:
 Nw = 102.4 million                                                      -13482.17485(54) 
@@ -76,7 +76,7 @@ Nw = 204.8 million                                                      -13482.1
 Nw = 409.6 million                                                      -13482.17654(42) -- needs non-monotonicity to be fixed
 Nw = 1000  million                                                      -13482.17726(45) 
 Nw = 2000  million                                                      -13482.17739(38) -- need to run for longer
-Nw = 8000  million                                                      -13482.1791(15)
+Nw = 8000  million                                                      -13482.17882(70)
 
 Extrapolated FCIQMC-PT2 (linear):                                       -13482.18107 (only 200m,400m,1b,2b)
 Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17734 (only 200m,400m,1b,2b) how is it higher than 200b?!
