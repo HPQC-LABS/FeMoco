@@ -78,8 +78,8 @@ Nw = 1000  million                                                      -13482.1
 Nw = 2000  million                                                      -13482.17739(38) -- need to run for longer
 Nw = 8000  million                                                      -13482.17845(40) -- E_proj just converged, so do some tests.
 
-Extrapolated FCIQMC-PT2 (linear):                                       -13482.18107 (only 200m,400m,1b,2b)
-Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17734 (only 200m,400m,1b,2b) how is it higher than 200b?!
+Extrapolated FCIQMC-PT2 (linear):                                       -13482.18000 (only 200m,400m,1b,2b,8b)
+Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17940 (only 200m,400m,1b,2b,8b) curves up!
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
