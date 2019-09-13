@@ -81,9 +81,18 @@ Nw = 8000  million                                                      -13482.1
 Extrapolated FCIQMC-PT2 (linear):                                       -13482.18000 (only 200m,400m,1b,2b,8b)
 Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.17940 (only 200m,400m,1b,2b,8b) curves up!
 
+AS-Trial:
+Nw = 10    million                                                      -13482.1744(4), error only goes up with bigger blocks
+
+AS-RDM:
+Nw = 10    million                                                      -13481.5(7) so bad because correlated bra and ket?
+
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
 409.6m: python blocking.py -f 360000 -d4 -d5 -o/ RDMEstimates.withGapFilled 
 1b:     python blocking.py -f 677000 -d4 -d5 -o/ RDMEstimates.clean
 2b:     python blocking.py -f 857800 -d4 -d5 -o/ RDMEstimates.clean
 8b:     python blocking.py -f 980280 -d4 -d5 -o/ RDMEstimates.clean
+
+AS:
+10m:    python blocking.py -f 1727480 -d1 -4  -o/ RDMEstimates.onlyNow
