@@ -85,7 +85,7 @@ AS-Trial:
 Nw = 10    million                                                      -13482.1744(4), error only goes up with bigger blocks
 
 AS-RDM:
-Nw = 10    million                                                      -13482.20(2) so bad because correlated bra and ket?
+Nw = 10    million                                                      -13482.205(4), maybe now big error due to 2x stochastic
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
