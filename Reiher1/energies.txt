@@ -86,7 +86,7 @@ Nw = 10    million                                                      -13482.1
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
-Nw = 10    million (2-replicas from beginning)                          -13482.198(8) - still converging
+Nw = 10    million (2-replicas from beginning)                          -13482.194(4) - still converging
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
