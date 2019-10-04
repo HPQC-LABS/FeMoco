@@ -96,5 +96,7 @@ Nw = 10    million (2-replicas from beginning)                          -13482.1
 8b:     python blocking.py -f 980280 -d4 -d5 -o/ RDMEstimates.clean
 
 AS:
+10m:    python blocking.py -f 100000 -d19 -d20 -o/ fciqmc_stats
+10m:    python blocking.py -f 100000 -d31 -d32 -o/ fciqmc_stats
 10m:    python blocking.py -f 1727480 -d1 -d3  -o/ RDMEstimates.onlyNow (split from single-replica)
 10m:    python blocking.py -f 91573 -d1 -d3 -o/ RDMEstimates            (2 replicas from beginning)
