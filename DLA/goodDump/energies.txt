@@ -1,8 +1,8 @@
 FCIQMC-RDM 1m:  -17534.8289(8)
-FCIQMC-RDM 10m: -17534.8970(5)
+FCIQMC-RDM 10m: -17534.8979(3)
 
 FCIQMC-PT2 1m:  -17534.902(7)
-FCIQMC-PT2 10m: -17534.945(2)
+FCIQMC-PT2 10m: -17534.947(1)
 
 python blocking.py -f 1000755 -d4 -d5 -o/ RDMEstimates (1m)
 python blocking.py -f 1836000 -d4 -d5 -o/ RDMEstimates.good (10m)
