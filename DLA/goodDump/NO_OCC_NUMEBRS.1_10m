@@ -1,7 +1,4 @@
-# NOs (natural orbitals) ordered by occupation number
-# MOs (HF orbitals) ordered by energy
-#   NO          NO OCCUPATION NUMBER                  MO          MO OCCUPATION NUMBER
-     1             1.0002079986867851                137            0.38837895355195451    
+     1             1.0002079986867851                137            0.38837895355195451         
      2             1.0001376548479619                138            0.61472931838029821    
      3             1.0000991693175385                133            0.38211773722091352    
      4             1.0000545722739373                134            0.62509472202740313    
