@@ -1,13 +1,16 @@
-FCIQMC-RDM 1m:  -17534.8289(08)
-FCIQMC-RDM 10m: -17534.8983(03)
-FCIQMC-RDM 50m: -17534.9392(03) or 9395(02) if we start from 2074871
+FCIQMC-RDM 1m:   -17534.8289(08)
+FCIQMC-RDM 10m:  -17534.8983(03)
+FCIQMC-RDM 50m:  -17534.9392(03) or 9395(02) if we start from 2074871
+FCIQMC-RDM 100m: -17534.9546(06)
 
-FCIQMC-PT2 1m:  -17534.9020(70)
-FCIQMC-PT2 10m: -17534.9477(10)
-FCIQMC-PT2 50m: -17534.9797(08)
+FCIQMC-PT2 1m:   -17534.9020(70)
+FCIQMC-PT2 10m:  -17534.9477(10)
+FCIQMC-PT2 50m:  -17534.9797(08)
+FCIQMC-PT2 100m: -17534.9918(13)
 
 python blocking.py -f 1000755 -d4 -d5 -o/ RDMEstimates (1m)
 python blocking.py -f 1836000 -d4 -d5 -o/ RDMEstimates.good (10m)
 python blocking.py -f 2062873 -d4 -d5 -o/ RDMEstimates (50m)
+python blocking.py -f 2139390 -d4 -d5 -o/ RDMEstimates (100m) ... but N_HF still going down
 
 Do CCSD with new FCIDUMP that's on nod141.
