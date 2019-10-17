@@ -11,6 +11,6 @@ FCIQMC-PT2 100m: -17534.9921(08)
 python blocking.py -f 1000755 -d4 -d5 -o/ RDMEstimates (1m)
 python blocking.py -f 1836000 -d4 -d5 -o/ RDMEstimates.good (10m)
 python blocking.py -f 2062873 -d4 -d5 -o/ RDMEstimates (50m)
-python blocking.py -f 2139390 -d4 -d5 -o/ RDMEstimates (100m) ... but N_HF still going down (2146393 is a better starting point, but didn't make any difference to the energy, only to the unceratinty... check again later)
+python blocking.py -f 2139390 -d4 -d5 -o/ RDMEstimates (100m) ... but N_HF still going down (2146393 is a better starting point, but didn't make any difference to the energy, only to the unceratinty... check again later... checked now... still N_HF is going down even with this starting point!)
 
 Do CCSD with new FCIDUMP that's on nod141.
