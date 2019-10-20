@@ -83,10 +83,15 @@ Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.1
 
 AS-Trial:
 Nw = 10    million                                                      -13482.1744(4), error only goes up with bigger blocks
+AS-Trial(nadd=20,maxwalkerbloom=10,max-tau=5e-3,pchb)
+Nw = 10    million (replica 1)                                          -13482.1807(4), but error only goes up with bigger blocks
+Nw = 10    million (replica 2)                                          -13482.1815(3), but error only goes up with bigger blocks
+
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
 Nw = 10    million (2-replicas from beginning)                          -13482.194(4) - still converging
+Nw = 10    million (2-replicas from beginning,nadd=20)                  -13482.208(1) 
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
