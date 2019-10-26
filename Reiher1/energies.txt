@@ -109,3 +109,5 @@ AS:
 10m:    python blocking.py -f 91573 -d1 -d3 -o/ RDMEstimates            (2 replicas from beginning)
 50m:    python blocking.py -f 124600 -d19 -d20 -o/ fciqmc_stats
 50m:    python blocking.py -f 124600 -d31 -d32 -o/ fciqmc_stats
+100m:   python blocking.py -f 190600 -d19 -d20 -o/ fciqmc_stats
+100m:   python blocking.py -f 190600 -d31 -d32 -o/ fciqmc_stats
