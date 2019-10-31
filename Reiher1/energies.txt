@@ -100,9 +100,8 @@ Nw = 10    million (split from single-replica)                          -13482.2
 Nw = 10    million (2-replicas from beginning)                          -13482.194(4) - still converging
 Nw = 10    million (2-replicas from beginning,nadd=20)                  -13482.208(1) 
 Nw = 50    million (2-replicas from beginning,nadd=20)                  -13482.2020(6) 
-Nw = 100   million (2-replicas from beginning,nadd=20)                  -13482.1975(11), starting from 190600
-Nw = 100   million (2-replicas from beginning,nadd=20)                  -13482.1980(09), starting from 184600 
-Nw = 200   million (2-replicas from beginning,nadd=20)                  -13482.1943(08)
+Nw = 100   million (2-replicas from beginning,nadd=20)                  -13482.1980(09), might go higher (where it should be) if strating later
+Nw = 200   million (2-replicas from beginning,nadd=20)                  -13482.1947(07)
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
