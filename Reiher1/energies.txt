@@ -125,3 +125,4 @@ AS:
 100m:   python blocking.py -f 190600 -d1 -d3 -o/ RDMEstimates
 200m:   python blocking.py -f 214400 -d31 -d32 -o/ fciqmc_stats
 200m:   python blocking.py -f 220463  -d1 -d3 -o/ RDMEstimates
+400m:   python blocking.py -f 250400 -d31 -d32 -o/ fciqmc_stats
