@@ -94,6 +94,9 @@ Nw = 200   million (replica 1)                                          -13482.1
 Nw = 200   million (replica 2)                                          -13482.1824(3), but error only goes up with bigger blocks
 Nw = 200   million (replica 1), more iterations                         -13482.1822(3), but error only goes up with bigger blocks
 Nw = 200   million (replica 2), more iterations                         -13482.1813(3), but error only goes up with bigger blocks
+Nw = 400   million (replica 1)                                          -13482.1825(1), very early, maybe not even equilibrium
+Nw = 400   million (replica 2)                                          -13482.1820(2), very early, maybe not even equilibrium
+
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
