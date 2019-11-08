@@ -91,9 +91,7 @@ Nw = 50    million (replica 2)                                          -13482.1
 Nw = 100   million (replica 1)                                          -13482.1812(3), but error only goes up with bigger blocks
 Nw = 100   million (replica 2)                                          -13482.1812(3), but error only goes up with bigger blocks
 Nw = 200   million (replica 1)                                          -13482.1822(3), but error only goes up with bigger blocks
-Nw = 200   million (replica 2)                                          -13482.1824(3), but error only goes up with bigger blocks
-Nw = 200   million (replica 1), more iterations                         -13482.1822(3), but error only goes up with bigger blocks
-Nw = 200   million (replica 2), more iterations                         -13482.1813(3), but error only goes up with bigger blocks
+Nw = 200   million (replica 2)                                          -13482.1813(3), but error only goes up with bigger blocks
 Nw = 400   million (replica 1)                                          -13482.1822(99) 
 Nw = 400   million (replica 2)                                          -13482.1809(49)
 
