@@ -84,8 +84,8 @@ Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.1
 AS-Trial:
 Nw = 10    million                                                      -13482.1744(4), error only goes up with bigger blocks
 AS-Trial(nadd=20,maxwalkerbloom=10,max-tau=5e-3,pchb)
-Nw = 10    million (replica 1), needs to be run for longer              -13482.1807(4), but error only goes up with bigger blocks
-Nw = 10    million (replica 2)                                          -13482.1815(3), but error only goes up with bigger blocks
+Nw = 10    million (replica 1)                                          -13482.1808(111)
+Nw = 10    million (replica 2)                                          -13482.1818(82)
 Nw = 50    million (replica 1)                                          -13482.1827(3), but error only goes up with bigger blocks
 Nw = 50    million (replica 2)                                          -13482.1826(3), but error only goes up with bigger blocks
 Nw = 100   million (replica 1)                                          -13482.1812(3), but error only goes up with bigger blocks
@@ -112,16 +112,17 @@ Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1
 8b:     python blocking.py -f 980280 -d4 -d5 -o/ RDMEstimates.clean
 
 AS:
-10m:    python blocking.py -f 100000 -d19 -d20 -o/ fciqmc_stats
-10m:    python blocking.py -f 100000 -d31 -d32 -o/ fciqmc_stats
+10m:    python blocking.py -f 100000 -d19 -d20 -o/ fciqmc_stats (nadd=3)
+10m:    python blocking.py -f 100000 -d31 -d32 -o/ fciqmc_stats 
+10m:    python blocking.py -f 53611 -d19 -d20 -o/ fciqmc_stats (nadd=20)
 10m:    python blocking.py -f 1727480 -d1 -d3  -o/ RDMEstimates.onlyNow (split from single-replica)
 10m:    python blocking.py -f 91573 -d1 -d3 -o/ RDMEstimates            (2 replicas from beginning)
 50m:    python blocking.py -f 124600 -d19 -d20 -o/ fciqmc_stats
-50m:    python blocking.py -f 124600 -d31 -d32 -o/ fciqmc_stats
 100m:   python blocking.py -f 190600 -d19 -d20 -o/ fciqmc_stats
-100m:   python blocking.py -f 190600 -d31 -d32 -o/ fciqmc_stats
 100m:   python blocking.py -f 190600 -d1 -d3 -o/ RDMEstimates
 200m:   python blocking.py -f 214400 -d31 -d32 -o/ fciqmc_stats
 200m:   python blocking.py -f 220463  -d1 -d3 -o/ RDMEstimates
 400m:   python blocking.py -f 254200 -d31 -d32 -o/ fciqmc_stats
 400m:   python blocking.py -f 254463  -d1 -d3 -o/ RDMEstimates.clean
+
+
