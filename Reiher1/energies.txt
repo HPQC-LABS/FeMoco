@@ -102,7 +102,8 @@ Nw = 10    million (2-replicas from beginning,nadd=20)                  -13482.2
 Nw = 50    million (2-replicas from beginning,nadd=20)                  -13482.2020(6) 
 Nw = 100   million (2-replicas from beginning,nadd=20)                  -13482.1980(09), might go higher (where it should be) if starting later
 Nw = 200   million (2-replicas from beginning,nadd=20)                  -13482.1947(07)
-Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1933(12)
+Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1933(12), every 100  iterations
+Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1917(21), every 1500 iterations
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
@@ -124,5 +125,5 @@ AS:
 200m:   python blocking.py -f 220463  -d1 -d3 -o/ RDMEstimates
 400m:   python blocking.py -f 254200 -d31 -d32 -o/ fciqmc_stats
 400m:   python blocking.py -f 254463  -d1 -d3 -o/ RDMEstimates.clean
-
+400m:   python blocking.py -f 259314  -d1 -d3 -o/ RDMEstimates
 
