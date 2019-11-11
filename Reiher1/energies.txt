@@ -92,8 +92,8 @@ Nw = 100   million (replica 1)                                          -13482.1
 Nw = 100   million (replica 2)                                          -13482.1812(3), but error only goes up with bigger blocks
 Nw = 200   million (replica 1)                                          -13482.1822(3), but error only goes up with bigger blocks
 Nw = 200   million (replica 2)                                          -13482.1813(3), but error only goes up with bigger blocks
-Nw = 400   million (replica 1)                                          -13482.1821(111), why is this going UP? 
-Nw = 400   million (replica 2)                                          -13482.1809(55), why is this going UP?
+Nw = 400   million (replica 1)                                          -13482.1818(3)
+Nw = 400   million (replica 2)                                          -13482.1805(3)
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
@@ -103,7 +103,7 @@ Nw = 50    million (2-replicas from beginning,nadd=20)                  -13482.2
 Nw = 100   million (2-replicas from beginning,nadd=20)                  -13482.1980(09), might go higher (where it should be) if starting later
 Nw = 200   million (2-replicas from beginning,nadd=20)                  -13482.1947(07)
 Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1933(12), every 100  iterations
-Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1917(21), every 1500 iterations
+Nw = 400   million (2-replicas from beginning,nadd=20)                  -13482.1934(18), every 1500 iterations
 
 102.4m: python blocking.py -f 180000 -d4 -d5 -o/ RDMEstimates.uniform
 204.8m: python blocking.py -f 240000 -d4 -d5 -o/ RDMEstimates.uniform.Nick.withNew
@@ -123,7 +123,7 @@ AS:
 100m:   python blocking.py -f 190600 -d1 -d3 -o/ RDMEstimates
 200m:   python blocking.py -f 214400 -d31 -d32 -o/ fciqmc_stats
 200m:   python blocking.py -f 220463  -d1 -d3 -o/ RDMEstimates
-400m:   python blocking.py -f 254200 -d31 -d32 -o/ fciqmc_stats
+400m:   python blocking.py -f 254200 -d31 -d32 -o/ fciqmc_stats.clean
 400m:   python blocking.py -f 254463  -d1 -d3 -o/ RDMEstimates.clean
 400m:   python blocking.py -f 259314  -d1 -d3 -o/ RDMEstimates
 
