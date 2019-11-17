@@ -84,8 +84,8 @@ Extrapolated FCIQMC-PT2 (quadratic):                                    -13482.1
 AS-Trial:
 Nw = 10    million                                                      -13482.1744(4), error only goes up with bigger blocks
 AS-Trial(nadd=20,maxwalkerbloom=10,max-tau=5e-3,pchb)
-Nw = 10    million (replica 1)                                          -13482.1808(111)
-Nw = 10    million (replica 2)                                          -13482.1818(82)
+Nw = 10    million (replica 1)                                          -13482.1816(3), but error only goes up with bigger blocks
+Nw = 10    million (replica 2)                                          -13482.1820(3), but error only goes up with bigger blocks
 Nw = 50    million (replica 1)                                          -13482.1827(3), but error only goes up with bigger blocks
 Nw = 50    million (replica 2)                                          -13482.1826(3), but error only goes up with bigger blocks
 Nw = 100   million (replica 1)                                          -13482.1812(3), but error only goes up with bigger blocks
