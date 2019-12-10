@@ -95,7 +95,7 @@ Nw = 200   million (replica 2)                                          -13482.1
 Nw = 400   million (replica 1)                                          -13482.1818(3)
 Nw = 400   million (replica 2)                                          -13482.1805(3)
 Nw = 1000  million (replica 1)                                          -13482.1793(3), but error only goes up with bigger blocks
-Nw = 1000  million (replica 2)                                          -13482.1801(3), but error only goes up with bigger blocks
+Nw = 1000  million (replica 2)                                          -13482.1800(3), but error only goes up with bigger blocks
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
