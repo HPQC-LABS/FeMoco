@@ -96,9 +96,10 @@ Nw = 400   million (replica 1)                                          -13482.1
 Nw = 400   million (replica 2)                                          -13482.1805(3)
 Nw = 1000  million (replica 1)                                          -13482.1793(3), but error only goes up with bigger blocks
 Nw = 1000  million (replica 2)                                          -13482.1800(3), but error only goes up with bigger blocks
-Nw = 2000  million (replica 1)                                          -13482.1796(4), but error only goes up with bigger blocks
-Nw = 2000  million (replica 2)                                          -13482.1812(6), but error only goes up with bigger blocks
-
+Nw = 2000  million (replica 1)                                          -13482.1796(3), but error only goes up with bigger blocks
+Nw = 2000  million (replica 2)                                          -13482.1812(5), but error only goes up with bigger blocks
+Nw = 2000  million (replica 1)                                          -13482.1804(9), but error only goes up with bigger blocks (NEW CORESPACE and TRIALSPACE)
+Nw = 2000  million (replica 2)                                          -13482.1818(5), but error only goes up with bigger blocks (NEW CORESPACE and TRIALSPACE)
 
 
 AS-RDM:
@@ -135,4 +136,4 @@ AS:
 400m:   python blocking.py -f 259314  -d1 -d3 -o/ RDMEstimates
 1b:     python blocking.py -f 277800 -d31 -d32 -o/ fciqmc_stats
 1b:     python blocking.py -f 277814  -d1 -d3 -o/ RDMEstimates
-2b:     python blocking.py -f 302500 -d31 -d32 -o/ fciqmc_stats but N_HF still going down.
+2b:     python blocking.py -f 316256 -d31 -d32 -o/ fciqmc_stats but N_HF still going down.
