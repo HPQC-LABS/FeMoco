@@ -96,10 +96,10 @@ Nw = 400   million (replica 1)                                          -13482.1
 Nw = 400   million (replica 2)                                          -13482.1805(3)
 Nw = 1000  million (replica 1)                                          -13482.1793(3), but error only goes up with bigger blocks
 Nw = 1000  million (replica 2)                                          -13482.1800(3), but error only goes up with bigger blocks
-Nw = 2000  million (replica 1)                                          -13482.1800(5), but error only goes up with bigger blocks (starting at 302500)
+Nw = 2000  million (replica 1)                                          -13482.1799(5), but error only goes up with bigger blocks (starting at 302500)
 Nw = 2000  million (replica 2)                                          -13482.1811(4), but error only goes up with bigger blocks (starting at 302500)
-Nw = 2000  million (replica 1)                                          -13482.1806(16), but error only goes up with bigger blocks (NEW CORESPACE and TRIALSPACE)
-Nw = 2000  million (replica 2)                                          -13482.1810(3), but error only goes up with bigger blocks (NEW CORESPACE and TRIALSPACE)
+Nw = 2000  million (replica 1)                                          -13482.1804(7), but error only goes up with bigger blocks (NEW TRIALSPACE)
+Nw = 2000  million (replica 2)                                          -13482.1803(5), but error only goes up with bigger blocks (NEW TRIALSPACE)
 
 
 AS-RDM:
