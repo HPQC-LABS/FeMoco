@@ -97,9 +97,11 @@ Nw = 400   million (replica 2)                                          -13482.1
 Nw = 1000  million (replica 1)                                          -13482.1793(3), but error only goes up with bigger blocks
 Nw = 1000  million (replica 2)                                          -13482.1800(3), but error only goes up with bigger blocks
 Nw = 2000  million (replica 1)                                          -13482.1800(5), but error only goes up with bigger blocks (starting at 302500)
-Nw = 2000  million (replica 2)                                          -13482.1809(4), but error only goes up with bigger blocks (starting at 302500)
-Nw = 2000  million (replica 1)                                          -13482.1808(9), but error only goes up with bigger blocks (starting at 316256)
-Nw = 2000  million (replica 2)                                          -13482.1803(8), but error only goes up with bigger blocks (starting at 316256)
+Nw = 2000  million (replica 2)                                          -13482.1810(4), but error only goes up with bigger blocks (starting at 302500)
+Nw = 2000  million (replica 1)                                          -13482.1810(8), but error only goes up with bigger blocks (starting at 316256, thought I started a new semi-stochastic)
+Nw = 2000  million (replica 2)                                          -13482.1808(8), but error only goes up with bigger blocks (starting at 316256, thought I started a new semi-stochastic)
+Nw = 2000  million (replica 1)                                          -13482.1828(5), but error only goes up with bigger blocks (starting at 322382, semi-stochastic actually working from this iteration on, not yet equilibriated though)
+Nw = 2000  million (replica 2)                                          -13482.1826(3), but error only goes up with bigger blocks   (starting at 322382, semi-stochastic actually working from this iteration on, not ye equilibriated though)
 
 AS-RDM:
 Nw = 10    million (split from single-replica)                          -13482.202(3) - not changing much
